@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend service with NATS.io and LangChain/LangGraph",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "clean": "rm -rf dist node_modules"
+  },
+  "dependencies": {
+    "nats": "^2.19.0",
+    "langchain": "^0.1.0",
+    "langgraph": "^0.0.1",
+    "@langchain/core": "^0.1.0",
+    "@langchain/openai": "^0.0.1",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
