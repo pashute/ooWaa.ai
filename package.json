@@ -12,10 +12,11 @@
     "dev:backend": "npm run dev --workspace=backend",
     "dev:frontend": "npm run start --workspace=frontend",
     "install:all": "npm install && npm install --workspace=frontend && npm install --workspace=backend",
-    "clean": "npm run clean --workspace=frontend && npm run clean --workspace=backend"
+    "clean": "npm run clean --workspace=frontend && npm run clean --workspace=backend && rimraf node_modules"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.5"
   },
   "engines": {
     "node": ">=18.0.0",
