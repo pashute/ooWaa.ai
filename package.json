@@ -4,15 +4,15 @@
   "description": "The AI reformer. Knows what it doesn't. Teams with you to get it right.",
   "private": true,
   "workspaces": [
-    "frontend",
-    "backend"
+    "BinAiDashboard",
+    "BinAiBrain"
   ],
   "scripts": {
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
-    "dev:backend": "npm run dev --workspace=backend",
-    "dev:frontend": "npm run start --workspace=frontend",
-    "install:all": "npm install && npm install --workspace=frontend && npm install --workspace=backend",
-    "clean": "npm run clean --workspace=frontend && npm run clean --workspace=backend && rimraf node_modules"
+    "dev": "concurrently \"npm run dev:BinAiBrain\" \"npm run dev:BinAiDashboard\"",
+    "dev:BinAiBrain": "npm run dev --workspace=BinAiBrain",
+    "dev:BinAiDashboard": "npm run start --workspace=BinAiDashboard",
+    "install:all": "npm install && npm install --workspace=BinAiDashboard && npm install --workspace=BinAiBrain",
+    "clean": "npm run clean --workspace=BinAiDashboard && npm run clean --workspace=BinAiBrain && rimraf node_modules"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
