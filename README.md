@@ -6,12 +6,12 @@ The AI reformer. Knows what it doesn't. Teams with you to get it right.
 
 ```
 BinAI.ai/
-├── frontend/          # React Native mobile application (Expo)
+├── BinAiDashboard/          # React Native mobile application (Expo)
 │   ├── App.js        # Main app component
 │   ├── app.json      # Expo configuration
 │   ├── package.json  # Frontend dependencies
 │   └── assets/       # Images and static assets
-├── backend/          # Node.js backend service
+├── BinAiBrain/          # Node.js backend service
 │   ├── src/
 │   │   └── index.js  # Main backend entry point
 │   ├── package.json  # Backend dependencies (NATS.io, LangChain, LangGraph)
@@ -78,18 +78,18 @@ From the root directory:
 npm run dev
 ```
 
-This will start both the backend and frontend concurrently:
-- **Backend**: Runs on port 4222 (NATS) / 3000 (default)
-- **Frontend**: Expo dev server (Metro bundler)
+This will start both the BinAiBrain backend and BinAiDashboard frontend concurrently:
+- **BinAiBrain**: Runs on port 4222 (NATS) / 3000 (default)
+- **BinAiDashboard**: Expo dev server (Metro bundler)
 
 ### Individual Commands
 
 ```bash
 # Start only backend
-npm run dev:backend
+npm run dev:BinAiBrain
 
 # Start only frontend
-npm run dev:frontend
+npm run dev:BinAiDashboard
 
 # Clean all dependencies and build artifacts
 npm run clean
@@ -131,30 +131,30 @@ The following ports are automatically forwarded:
 - `frontend/babel.config.js` - Babel transpiler configuration
 
 ### Backend Configuration
-- `backend/.env` - Environment variables (create from .env.example)
+- `BinAiBrain/.env` - Environment variables (create from .env.example)
 
 ## 📦 NPM Scripts
 
 ### Root Level
 - `npm run dev` - Run both frontend and backend concurrently
-- `npm run dev:backend` - Run only backend
-- `npm run dev:frontend` - Run only frontend
+- `npm run dev:BinAiBrain` - Run only backend
+- `npm run dev:BinAiDashboard` - Run only frontend
 - `npm run install:all` - Install all dependencies
 - `npm run clean` - Clean all workspaces
 
 ### Backend
-- `npm run dev --workspace=backend` - Run backend with hot reload
-- `npm run start --workspace=backend` - Run backend in production mode
+- `npm run dev --workspace=BinAiBrain` - Run backend with hot reload
+- `npm run start --workspace=BinAiBrain` - Run backend in production mode
 
 ### Frontend
-- `npm run start --workspace=frontend` - Start Expo dev server
-- `npm run android --workspace=frontend` - Run on Android emulator
-- `npm run ios --workspace=frontend` - Run on iOS simulator
-- `npm run web --workspace=frontend` - Run as web app
+- `npm run start --workspace=BinAiDashboard` - Start Expo dev server
+- `npm run android --workspace=BinAiDashboard` - Run on Android emulator
+- `npm run ios --workspace=BinAiDashboard` - Run on iOS simulator
+- `npm run web --workspace=BinAiDashboard` - Run as web app
 
 ## 🔐 Environment Variables
 
-See `backend/.env.example` for all available environment variables.
+See `BinAiBrain/.env.example` for all available environment variables.
 
 Required for full functionality:
 - `OPENAI_API_KEY` - OpenAI API key for LangChain
@@ -172,6 +172,6 @@ Details will be provided.
 
 More features and requirements will be added as the project evolves.
 
----
+See Features.md gathered from the brain and dashboard requirements.md files under the two project's src directory. 
 
-**Note**: This is an initial setup. Detailed requirements and features will be implemented in subsequent iterations. 
+**Note**: This is an initial setup. Detailed Requirements and features will be implemented in subsequent iterations. 
