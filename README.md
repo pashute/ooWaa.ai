@@ -17,4 +17,4 @@ If you're wondering "what happened to our last conversation?", see our guide on 
 
 ## Resources
 
-- [Understanding Conversation Continuity](CONVERSATION_CONTINUITY.md) - Learn how AI conversations work and how to maintain context across sessions 
+- [Understanding Conversation Continuity](CONVERSATION_CONTINUITY.md) - Learn how AI conversations work and how to maintain context across sessions
