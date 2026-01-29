@@ -54,5 +54,44 @@ To be completed:
 ## Example
 to be completed
 
-## Some instructioons
-Some instructions for the HOCON report
+```
+prompt_analysis: {
+  prompt: [ Hasmonean brothers war example, 2024.07.26_17.25, linkto: chat17.p31&q=hasmonean ],
+  themes: [ Brother's War history, Greek sources, Herodotus revisited ]
+  threads: [
+    [ 1. Remark about friends health, 
+      [ clear, Background talk, simple, merge into next topic ] 
+      topics: [ (Social Rapport) ] 
+    ] 
+    [ 2. Brother's War history, 
+      [ clear, info request, simple (ai result), answer first ],
+      Topics: [ **Current research**, 
+                1.1 Background, 1.1.1 In Judea, 1.1.2 Roman law,  
+                1.2 War description, 1.3 Research dispute ]
+    ]
+    [ 3. Greek sources including Herodotos
+      [ has-ambiguity, research request, complex (involves ocr),     
+                  address after primary thread ]
+      topics: [ **Brothers war research**,  see strolls ]
+      strolls: [
+        [ 3.1 Sum of Greek sources, 
+              [ clear, info request, simple (ai result) ] ],
+        [ 3.2 Possible dive in, 
+              [ clear, info request, simple (ai result), needs confirmation ] ],
+        [ 3.3 Herodotus revisited, 
+               [ has-ambiguity, analysis request, complex, needs alignment ]]]
+]}
+```
+## Some formatting instructioons    
+Some instructions for the HOCON report    
+- Keep brief.  Few headers if at all. telegraphic.
+- Make readable:  Brackets inline, Join params on one line, Break long lines and indent.
+
+Fields are:  
+    - Threads: name, analysis, topics, and/or strolls.    
+    - Thread/Stroll can have tasks with parameters and gaps
+    - Probes, domains, associations: (key phrases and links)    
+
+Thread/stroll nalysis is: clarity, intent, complexity, priority
+Associations are: domains, paramereters    
+Topics and subtopics are shown as a list with section numbers. 
