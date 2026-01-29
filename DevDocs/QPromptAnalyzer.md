@@ -42,12 +42,13 @@ Questions you ask for creating the report:
 (If just a short remark is expected from a thread, consider merging it into the next response).      
 
 4. ***Knowledge***      
-4.1 What domains of knowledge are addressed in the significant threads?
+4.1 What domains of knowledge are addressed in each of the significant threads?
 4.2 What extra major domains of knowledge will be needed if at all.
+4.3 Could you consolidate some shared domains accross the threads and strolls? 
 
-5. ***Task lists***    
+6. ***Task lists***    
    5.1 Only for complex or critical threads and strolls:     
-   What is the sequence of actions needed for a response?    
+       What is the sequence of actions needed for a response? 
    
    Notes:
    - Ignore for trivial tasks (simple AI result), and those deferred for alignment.    
@@ -55,27 +56,48 @@ Questions you ask for creating the report:
                                connected to an automated system. 
    - Complex thread example: Code update for new feature. (prepare, code, test, check in)
    
-6. **Properties**
-   6.1  For non trivial threads and scrolls: 
+7. **Properties**
+   6.1  For non trivial threads and strolls: 
    
    
 To be completed:    
 - gaps
 - what else?
 
-## Partial example of answers 
+--- 
+
+## Example answers    
+Partial example of answers inside thought process.     
 (after prioritizing threads and strolls)         
+### Domains:    
+- **Hasmonean**       
+  Jewish and Roman history and research, Greek historians, Hebrew records,   
+  Current research (Hebrew, English, German)   
+- **Greek manuscripts**
+  Codecology, philology, Ancient Greek, Historical Talmudic studies, 
+  Ancient Greek historians (Herodotos)
+
+### Threads: 
 1. Remark about friend's health. clear. Background talk. Merge into next topic.    
 2. Hasmonean brother 2nd Jslm war. clear request. simple response (ai result)    
-   [Background in area,  Roman law,  Historical description, Research disputes]    
-   Domains: Roman history, Jewish History,    
-            Hasmonean period current research (English, Hebrew and German)    
-3. Greek sources including Herodotos.     
+   Topics: Background in area,  Roman law,  Historical description, Research disputes
+   Domains: Hasmonean
+
+3. Greek sources including Herodotos    
     some ambiguity and multiple subtopis. research, complex (involves ocr)    
-   Domains: Greek manuscripts, Ancient Greek historians (Herodotos)
+   Domains: Greek manuscripts.  Tasks: see strolls.
+
+Strolls for #3: 
 3.1 Sum of Greek sources. clear and simple (ai result)      
-    [Problems with Kurokopolos, HistoricGreece.ac.hl, List]    
-3.2 Possible dive in.  clear and simple (ai result) needs confirmation    
+    Topics: Source list, Problems with Kurokopolos, HistoricGreece.ac.hl. 
+    Domains: Greek manuscripts, Kurokopolos dispute
+
+3.2 Possible dive in.  Complex (involves OCR) Needs confirmation    
+    Tasks for possible dive in:
+                 Confirm tools, Confirm sources, Aggragate text. 
+                   Analyze. Get research docs, 
+                   Create thread plan, Execute thread plan.
+   
 3.3 Herodotos revisited  has ambiguity (needs alignment discussion) seems complex.     
 
 
@@ -87,35 +109,40 @@ to be completed
 ```
 prompt_analysis: {
   prompt: [ Hasmonean brothers war example, 2024.07.26_17.25, {link: cht17.p31.6}],
-  themes: [ Brother's War history, Greek sources, Herodotus revisited ]
+  themes: [ Brother's War history, Greek sources, Herodotus revisited ], 
+  knowledge: { id: brothers history, domains: [Roman era Jewish history, Roman law],  
   threads: [
-    [ 1. Remark about friends health, 
-      [ clear, Background talk, simple, merge into next topic ] 
+    1. Remark about friends health, {
+      is: [ clear, Background talk, simple, merge into next topic ],
       topics: [ (Social Rapport) ], 
       status: [done, trivial, {merged: cht17.p31.7}, {ignored: cht17.p31.8}] 
-    ] 
-    [ [planned], 2. Brother's War history, 
-      [ clear, info request, simple (ai result), answer first ],
-      Topics: [ **Current research**, 
+    },  
+    2. Brother's War history, {
+      is: [ clear, info request, simple (ai result), answer first ],
+      topics: [ **Current research**, 
                 1.1 Background, 1.1.1 In Judea, 1.1.2 Roman law,  
-                1.2 War description, 1.3 Research dispute ]
-      status: [planned, simple] 
-    ]
-    [ 3. Greek sources including Herodotos
-      [ has-ambiguity, research request, complex (involves ocr),     
-                  address after primary thread ]
-      topics: [ **Brothers war research**,  see strolls ], 
-      status: [ planned ]
+                1.2 War description, 1.3 Research dispute ] ,
+      status: [planned, simple] }
+    }
+    3. Greek sources including Herodotos, {
+      is: [ has-ambiguity, research request, complex (involves ocr),     
+                  address after primary thread ], 
+      topics: [ **Brothers war research**,  see strolls ],      
+      status: [ suggest ],
       strolls: [
-        [ 3.1 Sum of Greek sources, 
-              [ clear, info request, simple (ai result) ],
-              { status: [ ],
-        [ 3.2 Possible dive in, 
-              [ clear, study, complex (ai, ocr, eternal tools), needs confirmation ] 
-              Domains: [Ancient Greek, Advanced Manuscript OCR, Philology, Roman History, Judean History]
-              Tasks: {Tentative list:
-                 [ Confirm tools, Confirm sources, Aggragate text. Analyze. Get research docs, 
-                   Create response plan, Execute response plan]
+            3.1 Sum of Greek sources, {
+                is: [ clear, info request, simple (ai result) ],
+                domains: Greek manuscripts
+                status: [suggest] }
+         3.2 Possible dive in, 
+              [ clear, study, complex (ai, ocr, eternal tools), needs confirmation ],
+              {Domains: [Ancient Greek, Advanced Manuscript OCR, 
+                         Philology, Codecology, Roman History, Judean History]},
+              [ Tasks: { flags Tentative list:
+                 [ {flag: **BRANCH**},  
+                   Confirm tools, Confirm sources, Aggragate text. 
+                   Analyze. Get research docs, 
+                   Create thread plan, Execute thread plan]}
         ],
         [ 3.3 Herodotus revisited, 
                [ has-ambiguity, analysis request, complex, needs alignment ]]]
@@ -131,7 +158,7 @@ Fields are:
     - Thread/Stroll can have tasks with parameters and gaps
     - Probes, domains, associations: (key phrases and links)    
 
-Thread/stroll analysis is: clarity, intent, complexity, priority
+Thread/stroll analysis is: 1.clarity, 2.intent, 3.complexity, 4.priority
 Associations are: domains, paramereters    
 Topics and subtopics are shown as a list with section numbers. 
 For topics turned into strolls simply say "See strolls..." in the topics list.
