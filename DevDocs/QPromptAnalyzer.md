@@ -132,8 +132,8 @@ prompt_analysis: {
       topics: [ **Current research**, 
                 1.1 Background, 1.1.1 In Judea, 1.1.2 Roman law,  
                 1.2 War description, 1.3 Research dispute ] ,
-      status: [planned, simple] }
-    }
+      status: [planned, simple] 
+    },
     3. Greek sources including Herodotos, {
       is: [ has-ambiguity, research request, complex (involves ocr),     
                   address after primary thread ], 
@@ -143,23 +143,25 @@ prompt_analysis: {
         3.1 Sum of Greek sources, {
                 is: [ clear, info request, complex (multiple sources) ],
                 domains: Greek manuscripts
-                status: [suggest] }
+                status: [suggest] ,
                 tasks: {
                     flags: [Tentative list], 
                     sequence: [ get sources,  aggragage, cleanup ]}
+         },
          3.2 Possible dive in, {
             is: [ clear, study, complex (ai, ocr, eternal tools), needs confirmation ],
             domains: [ hasmonean, manuscripts ],
-            status: [ suggest ]
+            status: [ suggest ],
             tasks: {
                     flags: [ **BRANCH!**, Tentative list], 
                     sequence: [
                        Confirm tools, Confirm sources, Aggregate text. 
                        Analyze. Get research docs, 
-                       Create thread plan, Execute thread plan]}}, 
+                       Create thread plan, Execute thread plan]}
+         }, 
          3.3 Herodotus revisited, {
-               is: [ has-ambiguity, analysis request, complex, needs alignment ]]]
-]}
+               is: [ has-ambiguity, analysis request, complex, needs alignment ]}
+]}]}
 ```
 ## Some formatting instructions    
 Some instructions for the HOCON report    
