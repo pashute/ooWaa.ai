@@ -26,14 +26,14 @@ This document outlines all the configuration decisions made for the BinAI.ai pro
 BinAI.ai/
 ├── .devcontainer/        # Codespace configuration
 ├── .vscode/              # VSCode settings
-├── frontend/             # React Native (Expo) workspace
-├── backend/              # Node.js server workspace
+├── BinAiDashboard/             # React Native (Expo) workspace
+├── BinAiBrain/              # Node.js server workspace
 └── package.json          # Root with concurrently scripts
 ```
 
 ## 🔧 Technology Choices
 
-### Frontend: React Native + Expo
+### Frontend (BinAiDashboard): React Native + Expo
 **Why Expo?**
 - Fastest way to get React Native running
 - No need for Xcode/Android Studio initially
@@ -45,7 +45,7 @@ BinAI.ai/
 - React Native CLI (more complex setup)
 - Flutter (different language)
 
-### Backend: Node.js
+### Backend (BinAiBrain):  Node.js
 **Core Technologies:**
 - **NATS.io** - Lightweight, high-performance messaging
 - **LangChain** - Leading LLM application framework
@@ -112,7 +112,7 @@ All ports auto-forward in Codespaces.
 ### NPM Workspaces
 ```json
 {
-  "workspaces": ["frontend", "backend"]
+  "workspaces": ["BinAiDashboard", "backend"]
 }
 ```
 
@@ -180,9 +180,9 @@ npm run dev          # Start everything
 
 - **README.md** - Main documentation
 - **QUICKSTART.md** - Fast setup guide
-- **frontend/README.md** - Frontend specifics
-- **backend/README.md** - Backend specifics
-- **CONFIGURATION.md** - This file
+- **BinAiDashboard/README.md** - Frontend specifics
+- **BinAiBrain/README.md** - Backend specifics
+- **DevDocs/TechSetup.md** - This file
 
 ## 🔄 Next Steps
 
@@ -199,8 +199,8 @@ After initial setup, you can:
 ## 🛠️ Customization Points
 
 ### Easy to Modify
-- **Frontend UI**: Edit `frontend/App.js`
-- **Backend Logic**: Edit `backend/src/index.js`
+- **Frontend UI**: Edit `BinAiDashboard/App.js`
+- **Backend Logic**: Edit `BinAiBrain/src/index.js`
 - **NATS Topics**: Add in backend
 - **Environment Variables**: Update `.env.example`
 
