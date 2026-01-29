@@ -59,9 +59,10 @@ For each identified thread, provide:
    and each of the items is connected with a simple connection.  
    1.4 Do not add trivial connections between items, only outstanding ones. .  
 
-3. **Knowledge base** 
-Add to the semantic network a structured list of key phrases and how they tie into the other information. 
-
+2. **Knowledge base** 
+2.1 Add a structured list of key phrases and how they tie into the other information.
+2.2 Add a structured list of useful links (keep it as short as possible).
+2.3 For confirmed topics - do an early probe and bring up 2nd level topics.
 
 ### **E. Stroll Architecture Blueprint**
 1.  **Recommended Stroll Flow:** Propose a sequence for discussion strolls based on thread priority and logical dependency. Each of these will be discussed during the alignment stages during each discusion. 
@@ -69,34 +70,17 @@ Add to the semantic network a structured list of key phrases and how they tie in
 3.  **Probing Strategy:** Suggest subtle probe types (e.g., clarifying questions, hypotheticals) for the AI to use within each stroll.
 
 ### **F. Meta-Tuning Notes**
-1.  **Process Refinements:** Note any adjustments made to *this* analysis protocol during the current task.
+1.  **Process Refinements:** Suggest refinements to this process if as we advance you realize there are better ways to do this.
 2.  **Heuristics Updated:** Record new rules-of-thumb formed during analysis.
-
----
-
-## **3. Thread Handling Requirements**
-
-1.  **Expect diverse intentions** within a single prompt.
-2.  **Divide the prompt into threads** when multiple lines of thought exist.
-3.  **Categorize each thread** as **Simple** or **Complex**.
-4.  **Provide a quick estimate** for each thread of:
-    - **Importance** (to the user's likely core need)
-    - **Priority** (suggested order of handling: answer now vs. schedule for later discussion)
-
----
-
-## **4. Instruction Update Protocol**
-
-1.  If instructions are provided (non-`"prompt:"` input) regarding the analysis task:
-    - Rephrase the instructions clearly.
-    - **Wait for explicit approval** before integrating them into this protocol.
-    - Upon approval, update this document and confirm the integration.
 
 ---
 
 ## **5. Output Format**
 ~~
-- The report must use clear headings, bullet points, and structured lists.
+- HOCON text. Currently not specified. (anything goes)
+- Human readable and concise. Few headers. Use line breaks. Formatted.  
+- Ready as seed for a Knowledge Graph to be used in the hum&ai process. 
+- Use clear heading, and structured lists.
 - Avoid narrative commentary; maintain a clinical, analytical tone.
 - The final output is **only** the structured report; no additional commentary.
 ~~
