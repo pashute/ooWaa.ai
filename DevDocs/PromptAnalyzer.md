@@ -121,6 +121,9 @@ Our intent is to break this into several components each working separately, and
 - Topic alignment - previous and planned
 - Thread and task builder 
 
-**Document Version:** 1.2  
+## **Appendix 3 - Analysis as questions and examples
+
+
+**Document Version:** 1.3  
 **Last Updated:** 1st human draft  
 **Status:** Ready for `prompt:` analysis.
