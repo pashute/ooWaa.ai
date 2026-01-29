@@ -85,42 +85,51 @@ To be completed:
 
 Partial example of answers inside thought process. (after prioritizing threads and strolls)
 
-### Domains:
-
+```
+##### Domains
 - **hasmonean**
-  Jewish and Roman history and research, Greek historians, Hebrew records, Current research (Hebrew, English, German)
+  Jewish and Roman history and research, Greek historians, 
+  Hebrew records, Current research   (Hebrew, English, German)
 
 - **manuscripts**
-  Codecology, philology, Ancient Greek, Historical Talmudic studies, Ancient Greek historians (Herodotos)
+  Codecology, philology, Ancient Greek, Historical Talmudic studies, 
+  Ancient Greek historians (Herodotos)
 
-### Threads:
+##### Threads 
 
-1. Remark about friend's health. clear. Background talk. Merge into next topic.
+1. Remark about friend's health. 
+   - Clear. Background talk. Merge into next topic.
 
-2. Hasmonean brother 2nd Jslm war. clear request. simple response (ai result)
-   Topics: Background in area, Roman law, Historical description, Research disputes
-   Domains: hasmonean
+2. Hasmonean brother 2nd Jslm war. 
+    - Clear request. simple response (ai result)    
+    - Topics: Background in area, Roman law, Historical description, Research disputes    
+    - Domains: hasmonean. (No tasks. simple response)
 
-3. Greek sources including Herodotos
-   some ambiguity and multiple subtopis. research, complex (involves ocr)
-   Domains: manuscripts. Tasks: see strolls.
+3. Greek sources including Herodotos    
+   - some ambiguity and multiple subtopis. research, complex (involves ocr)    
+   - Domains: manuscripts. 
+   - Tasks: see strolls.    
 
-Strolls for #3:
+- **Strolls for #3:**
 
-3.1 Sum of Greek sources: Clear and simple (ai result)
-    Topics: Source list, Problems with Kurokopolos, HistoricGreece.ac.hl.
-    Domains: Manuscripts, Kurokopolos dispute (Helenic studies)
+3.1 Sum of Greek sources: 
+    - Clear and simple (ai result)
+   - Topics: Source list, Problems with Kurokopolos, HistoricGreece.ac.hl.
+   - Domains: Manuscripts, Kurokopolos dispute (Helenic studies)
 
-3.2 Possible dive in: Complex (involves OCR) Needs confirmation
-    Tasks for possible dive in:
-        Confirm tools, Confirm sources, Aggregate text.
-        Analyze. Get research docs,
-        Create thread plan, Execute thread plan.
-    Domains: OCR (Greek), manuscripts, hasmonean
+3.2 Possible dive in:
+  - Complex (involves OCR) Needs confirmation
+ -  Tasks for possible dive in: 
+     -  Flags: Possible BRANCH!!,  Tentative list.
+     -   Sequence:  1.Confirm tools, 2.Confirm sources, 3.Aggregate text.
+     -              4.Analyze. 5.Get research docs,
+                    6.Create thread plan, 7.Execute thread plan.
+     - Domains: OCR (Greek), manuscripts, hasmonean
 
-3.3 Herodotos revisited: Has ambiguity (needs alignment discussion) seems complex.
-    Domains and tasks - after alignment.
-
+3.3 Herodotos revisited: 
+    - Has ambiguity (needs alignment discussion) seems complex.
+    - Tasks and domains - after alignment.
+```
 
 # HOCON Report
 
