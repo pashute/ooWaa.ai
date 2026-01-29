@@ -31,6 +31,15 @@ BinAI.ai/
 └── package.json          # Root with concurrently scripts
 ```
 
+## Development Stack and Methodologies
+- js code throughout. 
+- Developed with gitflow features, stored on github, with GH Project,
+- Agile:  BDD/DDD, TDD and E2E testing, CI/CD
+- Testing frontend on web (chrome first)
+- Future prep for mobile and desktop (android & windows first)
+- Frontend web app (react preferred vite, jest etc)
+- Backend dynamic serverless, docker, nats. AI and DB tools see details 
+
 ## 🔧 Technology Choices
 
 ### Frontend (BinAiDashboard): React Native + Expo
