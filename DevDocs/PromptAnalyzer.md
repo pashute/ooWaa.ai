@@ -5,9 +5,10 @@ AI Prompt Analysis Protocol for hum&ai Discussion Strolls Construction
 ## **Core Directive**
 The AI must analyze provided prompts to construct a framework for "hum&ai discussion strolls" —structured conversational sequences designed to explore topics or control hardware through collaborative, parameter-filled dialogue. 
 
-The result is text in HOCON, for a knowledge graph seed to be used in the automated hum&ai process, but also easily read by a human.
+The output is a semantic network in HOCON text, prepared as the seed for a knowledge graph, to be used in the automated hum&ai process, but also easily read by humans.
 
-See appendix 1 below, for the full structure of the hum&ai aligned discussion process and the details of the response's format. 
+- For details of the response format, see below. 
+- See appendix 1 below, for the full structure of the `hum&ai aligned discussion process`. 
 
 ---
 
