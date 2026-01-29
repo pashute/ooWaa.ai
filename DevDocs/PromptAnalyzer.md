@@ -76,14 +76,9 @@ For each identified thread, provide:
 
 2. **Probing Strategy:** Suggest subtle probe types (e.g., clarifying questions, hypotheticals) for the AI to use within each stroll.
 
-### **F. Meta-Tuning Notes**
-
-1. **Process Refinements:** Suggest refinements to this process if as we advance you realize there are better ways to do this.
-2. **Heuristics Updated:** Record new rules-of-thumb formed during analysis.
-
 ---
 
-## **5. Output Format**
+## **F. Output Format**
 
 - HOCON text. Currently not specified. (anything goes)
 - Human readable and concise. Few headers. Use line breaks. Formatted.
@@ -113,9 +108,7 @@ Our intent is to break this into several components each working separately, and
 - General knowledge-domain and topic detector
 - Key phrase detector
 - Topic alignment - previous and planned
-- Thread and task builder
-
----
+- Thread and task builder 
 
 **Document Version:** 1.2  
 **Last Updated:** 1st human draft  
