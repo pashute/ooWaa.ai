@@ -70,22 +70,33 @@ For each identified thread, provide:
    - 2.2 Add a structured list of useful links (keep it as short as possible).
    - 2.3 For confirmed topics - do an early probe and bring up 2nd level topics.
 
-### **E. Stroll Architecture Blueprint**
+### **E. Planned Strolls**
 
-1. **Recommended Stroll Flow:** Propose a sequence for discussion strolls based on thread priority and logical dependency. Each of these will be discussed during the alignment stages during each discussion.
+1. **Preserve Previous Plan** Stroll names and their order in the previous plan, if one exists,  must not be changed unless directly ordered to do so. 
 
-2. **Probing Strategy:** Suggest subtle probe types (e.g., clarifying questions, hypotheticals) for the AI to use within each stroll.
+2. **Recommended Stroll Flow:** Propose a sequence for discussion strolls based on thread priority and logical dependency. Each of these will be discussed during the alignment stages during each discussion. If a previous plan exists, add it to  notify briefly of changes. 
 
+3. **Probing Strategy:** Suggest subtle probe types (e.g., clarifying questions, hypotheticals) for the AI to use within each stroll.
+
+4. **Planned Strolls topic hierarchy** Subseuent strolls in the planned strolls list should be grouped together
 ---
 
 ## **F. Output Format**
 
-- HOCON text. Currently not specified. (anything goes)
-- Human readable and concise. Few headers. Use line breaks. Formatted.
-- Ready as seed for a Knowledge Graph to be used in the hum&ai process.
-- Use clear heading, and structured lists.
-- Avoid narrative commentary; maintain a clinical, analytical tone.
-- The final output is **only** the structured report; no additional commentary.
+1. HOCON text. Currently not specified. (anything goes)
+2. Human readable and concise. Few headers. brief content. Use line breaks. Formatted.    
+   2.1  no "id" headings.  no "title" or "name"    
+       e.g.  thread: 1. AI orchestration tools // rather than: id:1, thread: AI orch...
+   2.2 use objects directly as the object name    
+       e.g  thread: AI orchestration tools.    // not: thread: { title: AI orch...
+   2.3 use markup and sparingly remarked headlines for sections
+   2.4 gather short keypair items on one line e.g.
+     \## planned threads
+     \**thread:** AI orchestration tools,  \**priority:** first, \**complexity:** simple
+3. Ready as seed for a Knowledge Graph to be used in the hum&ai process.
+4. Use clear heading, and structured lists.
+5. Avoid narrative commentary; maintain a clinical, analytical tone.
+6. The final output is **only** the structured report; no add5itional commentary.
 
 ---
 
