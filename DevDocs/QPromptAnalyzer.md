@@ -92,6 +92,6 @@ Fields are:
     - Thread/Stroll can have tasks with parameters and gaps
     - Probes, domains, associations: (key phrases and links)    
 
-Thread/stroll nalysis is: clarity, intent, complexity, priority
+Thread/stroll analysis is: clarity, intent, complexity, priority
 Associations are: domains, paramereters    
 Topics and subtopics are shown as a list with section numbers. 
