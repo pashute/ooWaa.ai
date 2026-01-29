@@ -110,7 +110,7 @@ Partial example of answers inside thought process. (after prioritizing threads a
    - Domains: manuscripts. 
    - Tasks: see strolls.    
 
-- **Strolls for #3:**
+##### Strolls for #3:
 
 3.1 Sum of Greek sources: 
     - Clear and simple (ai result)
