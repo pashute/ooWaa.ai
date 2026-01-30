@@ -1,4 +1,4 @@
-# BinAiDashboard Features
+# humAndAI Features
 
 ## Planned Features
 

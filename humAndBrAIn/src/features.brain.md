@@ -1,4 +1,4 @@
-# BinAiBrain Features
+# humAndBrAIn Features
 
 ## Planned Features
 

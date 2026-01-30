@@ -1,4 +1,4 @@
-# BinAI.ai Frontend
+# humAndAI Frontend
 
 React Native frontend built with Expo.
 
