@@ -2,7 +2,15 @@
 
 AI Prompt Analysis Protocol for hum&ai Discussion Strolls Construction
 
+**Document Version:** 1.4  
+**Last Updated:** Strikethrough  
+**Status:** Ready for `prompt:` analysis.
+
+
 ---
+
+Follow QPromptAnalyzer for updated directives.     
+This is an old version
 
 ## **Core Directive**
 
@@ -123,7 +131,3 @@ Our intent is to break this into several components each working separately, and
 
 ## **Appendix 3 - Analysis as questions and examples
 
-
-**Document Version:** 1.3  
-**Last Updated:** 1st human draft  
-**Status:** Ready for `prompt:` analysis.
