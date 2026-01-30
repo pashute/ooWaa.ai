@@ -26,8 +26,8 @@ This document outlines all the configuration decisions made for the BinAI.ai pro
 BinAI.ai/
 ├── .devcontainer/        # Codespace configuration
 ├── .vscode/              # VSCode settings
-├── BinAiDashboard/             # React Native (Expo) workspace
-├── BinAiBrain/              # Node.js server workspace
+├── humAndAI/             # React Native (Expo) workspace
+├── humAndBrAIn/              # Node.js server workspace
 └── package.json          # Root with concurrently scripts
 ```
 
@@ -42,7 +42,7 @@ BinAI.ai/
 
 ## 🔧 Technology Choices
 
-### Frontend (BinAiDashboard): React Native + Expo
+### Frontend (humAndAI): React Native + Expo
 **Why Expo?**
 - Fastest way to get React Native running
 - No need for Xcode/Android Studio initially
@@ -54,7 +54,7 @@ BinAI.ai/
 - React Native CLI (more complex setup)
 - Flutter (different language)
 
-### Backend (BinAiBrain):  Node.js
+### Backend (humAndBrAIn):  Node.js
 **Core Technologies:**
 - **NATS.io** - Lightweight, high-performance messaging
 - **LangChain** - Leading LLM application framework
@@ -121,7 +121,7 @@ All ports auto-forward in Codespaces.
 ### NPM Workspaces
 ```json
 {
-  "workspaces": ["BinAiDashboard", "backend"]
+  "workspaces": ["humAndAI", "humAndBrAIn"]
 }
 ```
 
@@ -189,8 +189,8 @@ npm run dev          # Start everything
 
 - **README.md** - Main documentation
 - **QUICKSTART.md** - Fast setup guide
-- **BinAiDashboard/README.md** - Frontend specifics
-- **BinAiBrain/README.md** - Backend specifics
+- **humAndAI/README.md** - Frontend specifics
+- **humAndBrAIn/README.md** - Backend specifics
 - **DevDocs/TechSetup.md** - This file
 
 ## 🔄 Next Steps
@@ -208,8 +208,8 @@ After initial setup, you can:
 ## 🛠️ Customization Points
 
 ### Easy to Modify
-- **Frontend UI**: Edit `BinAiDashboard/App.js`
-- **Backend Logic**: Edit `BinAiBrain/src/index.js`
+- **Frontend UI**: Edit `humAndAI/App.js`
+- **Backend Logic**: Edit `humAndBrAIn/src/index.js`
 - **NATS Topics**: Add in backend
 - **Environment Variables**: Update `.env.example`
 
