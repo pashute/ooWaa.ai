@@ -1,0 +1,25 @@
+{
+  "name": "oowaa-ai",
+  "version": "1.0.0",
+  "description": "The AI reformer. Knows what it doesn't. Teams with you to get it right.",
+  "private": true,
+  "workspaces": [
+    "humANDai",
+    "humandBrain"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:humandBrain\" \"npm run dev:humANDai\"",
+    "dev:humandBrain": "npm run dev --workspace=humandBrain",
+    "dev:humANDai": "npm run start --workspace=humANDai",
+    "install:all": "npm install && npm install --workspace=humANDai && npm install --workspace=humandBrain",
+    "clean": "npm run clean --workspace=humANDai && npm run clean --workspace=humandBrain && rimraf node_modules"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
