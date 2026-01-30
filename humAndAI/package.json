@@ -1,7 +1,7 @@
 {
-  "name": "binai-dashboard",
+  "name": "humandai",
   "version": "1.0.0",
-  "description": "React Native frontend for BinAI.ai",
+  "description": "React Native frontend for ooWaa.ai",
   "main": "expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
