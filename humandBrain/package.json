@@ -1,5 +1,5 @@
 {
-  "name": "binai-brain",
+  "name": "humandBrain",
   "version": "1.0.0",
   "description": "Backend service with NATS.io and LangChain/LangGraph",
   "main": "src/index.js",
