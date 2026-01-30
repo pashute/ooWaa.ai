@@ -25,10 +25,7 @@ async function startBackend() {
       }
     })();
     
-    console.log('👂 Listening for messages on "binai.test" subject');
-    
-    // LangChain/LangGraph initialization placeholder
-    console.log('🔗 LangChain/LangGraph initialization ready');
+    console.log('👂 Listening for messages on "oowaa.test" subject');
     console.log('   (Configure API keys in .env file)');
     
     // Keep the process running

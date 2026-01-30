@@ -1,4 +1,4 @@
-# BinAI.ai Frontend
+# ooWaa.ai Frontend
 
 React Native frontend built with Expo.
 

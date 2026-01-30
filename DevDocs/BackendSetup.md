@@ -47,7 +47,7 @@ backend/
 
 The backend connects to a NATS server for message-based communication. By default, it:
 - Connects to `nats://localhost:4222`
-- Subscribes to `binai.test` subject
+- Subscribes to `oowaa.test` subject
 - Handles graceful shutdown
 
 ## LangChain/LangGraph

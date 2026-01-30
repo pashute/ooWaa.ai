@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>🤖 BinAI.ai</Text>
+      <Text style={styles.title}>🤖 ooWaa.ai</Text>
       <Text style={styles.subtitle}>The AI reformer</Text>
       <Text style={styles.description}>
         Knows what it doesn't. Teams with you to get it right.

@@ -1,17 +1,17 @@
-# BinAI.ai
+# ooWaa.ai
 
 The AI reformer. Knows what it doesn't. Teams with you to get it right.
 
 ## 🏗️ Project Structure
 
 ```
-BinAI.ai/
-├── BinAiDashboard/          # React Native mobile application (Expo)
+ooWaa.ai/
+├── humANDai/          # React Native mobile application (Expo)
 │   ├── App.js        # Main app component
 │   ├── app.json      # Expo configuration
 │   ├── package.json  # Frontend dependencies
 │   └── assets/       # Images and static assets
-├── BinAiBrain/          # Node.js backend service
+├── humandBrain/          # Node.js backend service
 │   ├── src/
 │   │   └── index.js  # Main backend entry point
 │   ├── package.json  # Backend dependencies (NATS.io, LangChain, LangGraph)
@@ -78,18 +78,18 @@ From the root directory:
 npm run dev
 ```
 
-This will start both the BinAiBrain backend and BinAiDashboard frontend concurrently:
-- **BinAiBrain**: Runs on port 4222 (NATS) / 3000 (default)
-- **BinAiDashboard**: Expo dev server (Metro bundler)
+This will start both the humandBrain backend and humANDai frontend concurrently:
+- **humandBrain**: Runs on port 4222 (NATS) / 3000 (default)
+- **humANDai**: Expo dev server (Metro bundler)
 
 ### Individual Commands
 
 ```bash
 # Start only backend
-npm run dev:BinAiBrain
+npm run dev:humandBrain
 
 # Start only frontend
-npm run dev:BinAiDashboard
+npm run dev:humANDai
 
 # Clean all dependencies and build artifacts
 npm run clean
@@ -131,30 +131,30 @@ The following ports are automatically forwarded:
 - `frontend/babel.config.js` - Babel transpiler configuration
 
 ### Backend Configuration
-- `BinAiBrain/.env` - Environment variables (create from .env.example)
+- `humandBrain/.env` - Environment variables (create from .env.example)
 
 ## 📦 NPM Scripts
 
 ### Root Level
 - `npm run dev` - Run both frontend and backend concurrently
-- `npm run dev:BinAiBrain` - Run only backend
-- `npm run dev:BinAiDashboard` - Run only frontend
+- `npm run dev:humandBrain` - Run only backend
+- `npm run dev:humANDai` - Run only frontend
 - `npm run install:all` - Install all dependencies
 - `npm run clean` - Clean all workspaces
 
 ### Backend
-- `npm run dev --workspace=BinAiBrain` - Run backend with hot reload
-- `npm run start --workspace=BinAiBrain` - Run backend in production mode
+- `npm run dev --workspace=humandBrain` - Run backend with hot reload
+- `npm run start --workspace=humandBrain` - Run backend in production mode
 
 ### Frontend
-- `npm run start --workspace=BinAiDashboard` - Start Expo dev server
-- `npm run android --workspace=BinAiDashboard` - Run on Android emulator
-- `npm run ios --workspace=BinAiDashboard` - Run on iOS simulator
-- `npm run web --workspace=BinAiDashboard` - Run as web app
+- `npm run start --workspace=humANDai` - Start Expo dev server
+- `npm run android --workspace=humANDai` - Run on Android emulator
+- `npm run ios --workspace=humANDai` - Run on iOS simulator
+- `npm run web --workspace=humANDai` - Run as web app
 
 ## 🔐 Environment Variables
 
-See `BinAiBrain/.env.example` for all available environment variables.
+See `humandBrain/.env.example` for all available environment variables.
 
 Required for full functionality:
 - `OPENAI_API_KEY` - OpenAI API key for LangChain
