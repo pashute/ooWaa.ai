@@ -43,9 +43,14 @@
       "version": "18"
     },
     "ghcr.io/devcontainers/features/git:1": {},
-    "ghcr.io/devcontainers/features/github-cli:1": {}
+    "ghcr.io/devcontainers/features/github-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest",
+      "dockerDashComposeVersion": "v2"
+    }
   },
   "forwardPorts": [8081, 3000, 4222],
   "postCreateCommand": "npm install",
-  "remoteUser": "vscode"
+  "remoteUser": "vscode",
+  "idleTimeoutMinutes": 5
 }
