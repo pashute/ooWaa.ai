@@ -2,6 +2,20 @@
 
 The AI reformer. Knows what it doesn't. Teams with you to get it right.
 
+## What is hum&ai aligned discussion?
+
+The AI and the human work as a team to get results through structured aligned discussions.
+
+The prompt is part of a structured aligned discussion called hum&ai, where the AI and the human work as a team to get results.
+
+The discussion runs in **threads** (lines of thought), with **strolls** (a sequence of request-response iterations on a topic) possibly broken into **sections** (a subtopic stroll) and if needed, further broken into **parts**.
+
+This way, **without losing information**, long detailed responses are cut up into short parts, each discussed in several aligned iterations, **proceeding at a human pace**.
+
+The discussion produces (or updates) a brief and concise HOCON report to support the hum&ai process.
+
+**Planned threads:** The remainder of topics not discussed yet, in this and other threads is remembered and maintained with alignment discussions.
+
 ## 🏗️ Project Structure
 
 ```
