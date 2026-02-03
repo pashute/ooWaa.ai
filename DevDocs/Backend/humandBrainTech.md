@@ -1,9 +1,10 @@
 Backend setup
 Version 0.0.1
 
-## Features
+## Technology
 
 - **NATS.io** - High-performance messaging system for microservices
+- 
 - **LangChain** - Framework for building AI applications with LLMs
 - **LangGraph** - Stateful, multi-actor application support
 
