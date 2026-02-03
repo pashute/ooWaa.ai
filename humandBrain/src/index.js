@@ -1,5 +1,6 @@
 import { connect } from 'nats';
 import dotenv from 'dotenv';
+import logger from './logger.js';
 
 // Load environment variables
 dotenv.config();
@@ -9,38 +10,38 @@ const NATS_SERVER = process.env.NATS_SERVER || 'nats://localhost:4222';
 
 async function startBackend() {
   try {
-    console.log('🚀 Starting BinAI.ai Backend...');
-    
+    logger.info('🚀 Starting BinAI.ai Backend...');
+
     // Initialize NATS connection
-    console.log(`📡 Connecting to NATS server at ${NATS_SERVER}...`);
+    logger.info({ server: NATS_SERVER }, '📡 Connecting to NATS server');
     const nc = await connect({ servers: NATS_SERVER });
-    console.log('✅ Connected to NATS server');
-    
+    logger.info('✅ Connected to NATS server');
+
     // Subscribe to a test subject
     const sub = nc.subscribe('binai.test');
     (async () => {
       for await (const msg of sub) {
-        console.log(`📨 Received message: ${msg.string()}`);
+        logger.info({ message: msg.string() }, '📨 Received message');
         msg.respond('Message received');
       }
     })();
-    
-    console.log('👂 Listening for messages on "oowaa.test" subject');
-    console.log('   (Configure API keys in .env file)');
-    
+
+    logger.info('👂 Listening for messages on "oowaa.test" subject');
+    logger.info('   (Configure API keys in .env file)');
+
     // Keep the process running
     process.on('SIGINT', async () => {
-      console.log('\n🛑 Shutting down gracefully...');
+      logger.info('\n🛑 Shutting down gracefully...');
       await nc.drain();
       process.exit(0);
     });
-    
-    console.log('\n✨ Backend server is running!');
-    console.log('   NATS: Ready for messaging');
-    console.log('   LangChain: Ready for AI operations');
-    
+
+    logger.info('\n✨ Backend server is running!');
+    logger.info('   NATS: Ready for messaging');
+    logger.info('   LangChain: Ready for AI operations');
+
   } catch (error) {
-    console.error('❌ Error starting backend:', error);
+    logger.error({ err: error }, '❌ Error starting backend');
     process.exit(1);
   }
 }
