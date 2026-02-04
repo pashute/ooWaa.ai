@@ -24,8 +24,8 @@ Keep them in github for development consistency.
 5. Read the link: the name parent, content and comments. 
 6. summarize the two as the commit comment (with a link to the proj item, its name and comments, and your original summary)  
 
-4. Make a prompt for me to supply my github site copilot assistant 
-- to move to done or leave open and 
+4. Supply a prompt for me to supply my github site copilot assistant. Needs to be in markdown  so that i can copy it easily from the chat's vscode interface into the github website copilot prompt. 
+- to move to done and close, or leave open
 - to add as a comment or closing comment to the item,with: 
 - a link to the commit
 - what in the projtask was accomplished
