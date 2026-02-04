@@ -9,7 +9,7 @@
     "start": "node src/index.js",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest",
     "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
-    "test:bdd": "cucumber-js",
+    "test:bdd": "cucumber-js --config cucumber.cjs",
     "clean": "rimraf dist node_modules"
   },
   "dependencies": {
@@ -19,7 +19,10 @@
     "@langchain/langgraph": "^0.0.28",
     "@langchain/core": "^0.1.0",
     "@langchain/openai": "^0.0.1",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "neo4j-driver": "^5.15.0",
+    "@supabase/supabase-js": "^2.39.0",
+    "hocon-parser": "^1.0.1"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.2.1",
