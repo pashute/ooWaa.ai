@@ -4,16 +4,6 @@
 
 This document outlines all the configuration decisions made for the ooWaa.ai project.
 
-## 🎯 Key Requirements Met
-
-✅ **Empty repository with README.md** - Initial README created and expanded  
-✅ **React Native frontend** - Expo-based React Native app  
-✅ **Node.js backend** - NATS.io + LangChain/LangGraph integration  
-✅ **Concurrent execution** - Root package.json uses `concurrently`  
-✅ **Codespace with VSCode** - Full devcontainer configuration  
-✅ **Windows environment** - Windows-compatible terminal settings  
-✅ **English locale** - All configurations set to English  
-
 ## 📁 Project Structure
 
 ### Monorepo with Workspaces
@@ -42,17 +32,8 @@ ooWaa.ai/
 
 ## 🔧 Technology Choices
 
-### Frontend (humANDai): React Native + Expo
-**Why Expo?**
-- Fastest way to get React Native running
-- No need for Xcode/Android Studio initially
-- Easy testing on physical devices via Expo Go
-- Web support out of the box
-- Good developer experience
-
-**Alternatives considered:**
-- React Native CLI (more complex setup)
-- Flutter (different language)
+### Frontend (humANDai): 
+- **React Native + Expo** (chosen over alternatives)
 
 ### Backend (humandBrain):  Node.js
 **Core Technologies:**
@@ -60,20 +41,14 @@ ooWaa.ai/
 - **LangChain** - Leading LLM application framework
 - **LangGraph** - Stateful agent workflows
 
-**Why Node.js?**
-- Fast development
-- Same language as frontend (JavaScript/TypeScript)
-- Great ecosystem for AI/ML tools
-- Excellent for microservices
-
 ### Concurrent Execution
 - **concurrently** package runs both services simultaneously
 - Single command: `npm run dev`
 - Both logs visible in same terminal
 - Auto-restart on file changes
+- Can be tested logged and run individually (see instructions section)
 
 ## 🐳 Codespace Configuration
-
 ### Devcontainer Features
 - **Base Image**: Microsoft's JavaScript-Node devcontainer
 - **Node Version**: 18 (LTS)
@@ -188,15 +163,16 @@ npm run dev          # Start everything
 ## 📝 Documentation Structure
 
 - **README.md** - Main documentation
-- **QUICKSTART.md** - Fast setup guide
-- **humANDai/README.md** - Frontend specifics
-- **humandBrain/README.md** - Backend specifics
-- **DevDocs/TechSetup.md** - This file
+- **humANDai/README.md** - Frontend functional description
+- **humandBrain/README.md** - Backend functional description 
+- **DevDocs/TechSetup.md** - (This file) Tech & Dev initial setup requirements
+
+- **DevDocs/** - Feature and devplan for front and back end.
+- **DevDocs/frontend/  
 
 ## 🔄 Next Steps
 
-After initial setup, you can:
-1. Add specific AI features (LangChain prompts)
+1. Inital Test of Front/backend running a placeholder
 2. Build React Native UI screens
 3. Set up NATS subjects/subscriptions
 4. Add state management (Redux, Zustand)
