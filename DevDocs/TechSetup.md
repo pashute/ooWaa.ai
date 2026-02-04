@@ -1,5 +1,8 @@
 # Project Configuration Overview
 
+**Version:** 1.0.0  
+**Last Updated:** 2026-02-04
+
 ## Environment: GitHub Codespaces + VSCode (Windows-Compatible)
 
 This document outlines all the configuration decisions made for the ooWaa.ai project.
@@ -40,6 +43,23 @@ ooWaa.ai/
 - **NATS.io** - Lightweight, high-performance messaging
 - **LangChain** - Leading LLM application framework
 - **LangGraph** - Stateful agent workflows
+- **Memgraph** - Real-time graph store for embeddings/KG construction
+- **Supabase** - Persistent data layer
+- **Pino** - Logging (structured JSON logger)
+- **HOCON Parser** - hocon-parser for validation/fixtures
+
+### Local LLM (Trials)
+- **Stage 1 (Local)**: Qwen GGUF (small, fast startup for local trials)
+- **Future**: TinyLlama (still tiny, slightly better quality)
+
+**Alternative (SLMs):**
+- If you want even smaller footprints, consider SLMs (sub-1B) in GGUF.
+- Tradeoff: faster + smaller, but lower reasoning quality.
+
+**Backend Setup Notes:**
+- Copy `.env.example` to `.env` and set API keys.
+- NATS default: `nats://localhost:4222` (see .env).
+- Default test subject: `oowaa.test` (update as needed).
 
 ### Concurrent Execution
 - **concurrently** package runs both services simultaneously
@@ -88,6 +108,7 @@ ooWaa.ai/
 | 8081 | Expo Metro | React Native bundler |
 | 3000 | Backend API | HTTP server (optional) |
 | 4222 | NATS | Message broker |
+| 7687 | Memgraph | Bolt protocol |
 
 All ports auto-forward in Codespaces.
 
@@ -105,6 +126,7 @@ All ports auto-forward in Codespaces.
 - Single `node_modules` for common packages
 - Workspace-specific scripts
 - Easier dependency management
+- Can develop and run separately at will
 
 ### Dependency Strategy
 - **Root**: Development tools (`concurrently`)
@@ -121,9 +143,8 @@ All ports auto-forward in Codespaces.
 - ES5 trailing commas
 
 ### Auto-formatting
-- Format on save enabled
-- Consistent style across team
-- No style debates
+- Format on save enabled (consistent)
+- Consistent 
 
 ## 🔐 Environment Variables
 
@@ -131,6 +152,11 @@ All ports auto-forward in Codespaces.
 ```
 NATS_SERVER=nats://localhost:4222
 OPENAI_API_KEY=your_key_here
+MEMGRAPH_URI=bolt://localhost:7687
+MEMGRAPH_USER=memgraph
+MEMGRAPH_PASSWORD=memgraph
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_ANON_KEY=your_anon_key_here
 ```
 
 ### Security
@@ -163,23 +189,13 @@ npm run dev          # Start everything
 ## 📝 Documentation Structure
 
 - **README.md** - Main documentation
-- **humANDai/README.md** - Frontend functional description
-- **humandBrain/README.md** - Backend functional description 
+- **humANDai/README.md** - Frontend general description
+- **humandBrain/README.md** - Backend general description 
 - **DevDocs/TechSetup.md** - (This file) Tech & Dev initial setup requirements
 
 - **DevDocs/** - Feature and devplan for front and back end.
-- **DevDocs/frontend/  
-
-## 🔄 Next Steps
-
-1. Inital Test of Front/backend running a placeholder
-2. Build React Native UI screens
-3. Set up NATS subjects/subscriptions
-4. Add state management (Redux, Zustand)
-5. Configure CI/CD pipelines
-6. Add testing (Jest, React Native Testing Library)
-7. Set up analytics
-8. Add authentication
+- **DevDocs/Frontend/ 
+- **DevDocs/Backend/ 
 
 ## 🛠️ Customization Points
 
@@ -189,25 +205,10 @@ npm run dev          # Start everything
 - **NATS Topics**: Add in backend
 - **Environment Variables**: Update `.env.example`
 
-### Requires More Work
-- Switch from Expo to bare React Native
+### Future steps
 - Add TypeScript (recommended for scaling)
-- Add database (PostgreSQL, MongoDB)
 - Add authentication service
-- Deploy to production
 
-## 📚 Learning Resources
-
-### React Native
-- [React Native Docs](https://reactnative.dev/)
-- [Expo Docs](https://docs.expo.dev/)
-
-### Backend
-- [NATS.io Docs](https://docs.nats.io/)
-- [LangChain JS Docs](https://js.langchain.com/)
-
-### Codespaces
-- [GitHub Codespaces Docs](https://docs.github.com/en/codespaces)
 
 ---
 

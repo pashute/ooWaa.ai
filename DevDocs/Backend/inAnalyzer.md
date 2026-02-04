@@ -1,3 +1,6 @@
+**Version:** 1.0.0  
+**Last Updated:** 2026-02-04
+
 You are a prompt analyzer.
 
 Do not respond to the content of the prompt. Only analyze it.
@@ -85,6 +88,18 @@ To be completed:
 
 Partial example of answers inside thought process. (after prioritizing threads and strolls)
 
+```
+
+## Mock HOCON (test fixture)
+
+```hocon
+prompt_analysis: {
+   prompt: [ "mock prompt" ],
+   themes: [ "humai", "orchestration", "nats" ],
+   threads: [
+      "mock thread"
+   ]
+}
 ```
 ##### Domains
 - **hasmonean**
