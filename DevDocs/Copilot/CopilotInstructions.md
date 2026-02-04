@@ -19,19 +19,38 @@ Keep them in github for development consistency.
 
 3. Remember your suggested summary intended for the commit. 
 4. ask which Project item to associate, and ask if i'm closing the issue.  
-- I'll supply a link to a proj item. 
+- I'll supply a link to a proj issue . 
 
 5. Read the link: the name parent, content and comments. 
 6. summarize the two as the commit comment (with a link to the proj item, its name and comments, and your original summary)  
 
-4. Supply a prompt for me to supply my github site copilot assistant. Needs to be in markdown  so that i can copy it easily from the chat's vscode interface into the github website copilot prompt. 
-- to move to done and close, or leave open
-- to add as a comment or closing comment to the item,with: 
-- a link to the commit
-- what in the projtask was accomplished
-- a short summary of changes with file locations.
-e.g. cosmetics: 
-path/pith/puth/filea.js:230.27
-path/ping/pong/fileb.js:240.0
+4. Supply a comment for the  issue.  
+- Give it to me in markdown (in the chat not in the file)
+so that i can copy it easily from the chat's vscode copilot interface 
+into the github item comment.
+- Use the issue file path given by the user
+- Use the filename paths for fixes with the following path format:
+```
+    [filename.row:char](https://github.com/username/projname/edit/branchname/pathandfilename)
+    [TechSetup.256:0](https://github.com/pashute/ooWaa.ai/edit/Feature/workspace-setup/DevDocs/Copilot/TechSetup.md]    
+```
+- Comment format in markdown:  
 
+- Project Changes:
+- Issue: [#36](https://github.com/users/pashute/projects/1/views/1?pane=issue&itemId=154241894&issue=pashute%7CooWaa.ai%7C36)):
+- Status:  Done and Closed /  Keep Open
+- Changes for:
+    - **Project:** e.g. oowaa.ai
+    - **Issue:** e.g. [#36 Techsetup.md changes](https://github.com/users/pashute/projects/1/views/1?pane=issue&itemId=154241894&issue=pashute%7CooWaa.ai%7Cnn)  
+    - **Branch:** e.g. Feature/workspace-setup
+    - **Commit:** e.g. [b8f3b60](https://github.com/pashute/ooWaa.ai/commit/b8f3b60)
+- 1. **Project Changes**
+     - [v] e.g. Updated with Traycer
+     - [v] e.g. Compared and completed 
+- 2. **File Changes:**  
+    e.g. cosmetics: 
+    - [TechSetup.md:256.0](https://github.com/pashute/ooWaa.ai/blob/feature/wspStup/DevDocs/Copilot/TechSetup.md)
+    - [chats.md:13.44](https://github.com/pashute/ooWaa.ai/blob/feature/workspace-setup/DevDocs/Copilot/chats.md)
+    e.g. fixed part of [bug42] stuck same thread
+    - [index.jsx:11.0](https://github.com/pashute/ooWaa.ai/blob/feature/wspStup/src/humANDai/index.jsx)
 5. If it is the closing of a parent with subprojects, also add the instruction to move them all with a remark in each to see parent comment. 
