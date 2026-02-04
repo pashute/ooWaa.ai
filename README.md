@@ -1,8 +1,11 @@
 # ooWaa.ai
 
+**Version:** 1.0.0  
+**Last Updated:** 2026-02-04
+
 The AI reformer. Knows what it doesn't. Teams with you to get it right.
 
-## What is hum&ai aligned discussion?
+## The hum&ai aligned discussion
 
 The AI and the human work as a team to get results through structured aligned discussions.
 
@@ -186,6 +189,6 @@ Details will be provided.
 
 More features and requirements will be added as the project evolves.
 
-See Features.md gathered from the brain and dashboard requirements.md files under the two project's src directory. 
+See DevDocs/Frontend/features.app.md and DevDocs/Backend/features.brain.md for current feature plans.
 
 **Note**: This is an initial setup. Detailed Requirements and features will be implemented in subsequent iterations. 

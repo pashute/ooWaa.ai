@@ -1,5 +1,6 @@
 # Copilot Instructions (Long Responses)
-
+**Version:** 1.0.0  
+**Last Updated:** 2026-02-04
 ## Working Context First
 - Always ask what I’m working on at the start of a new task.
 - Ask for the GitHub Project item link and the related issue/PR link (if any).
@@ -14,7 +15,7 @@
 When I ask you to commit:
 1. if I didn't also say to push, verify if I meant commit and push.
 
-2. You can use DevDocs/devflow.md for all of the following if needed. You may write and erase it at will. 
+2. You can use DevDocs/Copilot/devflow.md for all of the following if needed. You may write and erase it at will. 
 Keep them in github for development consistency. 
 
 3. Remember your suggested summary intended for the commit. 

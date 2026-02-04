@@ -12,10 +12,8 @@ It plans the conversation with you,
 
 React Native mobile application built with Expo.
 
-For development documentatin See the DevDocs/Frontend folder
-- humANDaiTech.md - technology doc
-- humANDaiFeatures.md - the features document
-- humANDaiDevplan.md - The development plan 
+For development documentation see DevDocs/TechSetup.md
+For features see DevDocs/Frontend/features.app.md
 
 ## Features
 

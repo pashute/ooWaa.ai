@@ -49,4 +49,93 @@ a tdd bdd/ddd langchain/langgraph memgraph app that does the following;
 
 Cthe program has an analysis module that analyzes each input and each output (having self awareness)  and outputs a structured report merging into the discussion kg. There is a knowledge module that looks for previous discussions about the topic and knowledge domain, and loads that. It also notes other possible modules to load and what the params for loading that module would be.  
 The response constructor adds to the conversation kg which holds the context - fields of knowledge current topic upcoming topics and already discussed topics. 
-It works with 
+It works with memgraph as the graph db and supabase as the persistent storage.
+The program is implemented in a react native frontend and a nodejs backend. The program is tested with bdd using cucumber and tdd using jest.
+
+there are three types of knowledge bases:
+1. Personas lexicon: Roles and traits, topics and emotions, sources, phrases, preferences, people, and environments. 
+2. Experience Lexicons: Long term memory of discussions and associations, by topic and domain. 
+3. Knowledge Lexicons: Shared knowledge buildup and approved or verified
+
+The "brain" backend has the following modules:
+- orchestrator: routes NATS messages and coordinates module flow
+- inAnalyzer: input analysis module
+- outAnalyzer: output analysis module 
+- strollAnalyzer: strolls analysis module
+- flowMngr: manages discussion flow/state transitions: creates discussion rounds and moves through them. (threads, strolls, sections and response parts) 
+- respondMngr: manages discussion flow, awareness and response building,  and dispatches the response
+- awareMngr: Manages contextual clarity, cohesion, comprehensiveness and appropriate terminology. detects knowledge gaps and ambiguities.
+- alignMngr: Manages probing, active listening, and parameter filling.
+- knowledgeMngr: Manages the shared knowledge buildup and retrieval.
+
+---
+The UI has a text input area for the user to enter their prompt, and a display area to show the AI's response. The UI sends the user's prompt to the backend orchestrator which initeas  NATS messaging to the components.
+---
+The main panel shows the ongoing discussion, with a sidebar of the discussion flow in a collapsible directory-tree like interface. which shows the previous, current and planned parts of the discussion.
+
+Clicking on a topic in the tree brings up the relevant part of the discussion in the main panel.but also sets the state so that when moving to the info  tab, it shows the relevant info for that topic.
+
+The info tab has two choice buttons on top: "Discussion Context" and "Knowledge".
+
+The "Discussion Context" view shows a choice of files and tables forms and documents that have been stored by the chat for this particular section of discussion. On top you can choose the topic from a dropdown which shows the current topic and the previous topics tree in the discussion.
+
+The "Knowledge" view shows a choice of knowledge bases that have been stored by the chat for this particular section of discussion. On top you can choose the topic from a dropdown which shows the current topic and the previous topics tree in the discussion. and you can also choose the knowledge base from a dropdown which shows the different knowledge bases stored for this topic.
+
+there is a choice of views with three icon buttons on top: "Graph View", "Knowledge map", and "Table view"
+
+The following is a hocon mockup of the discussion kg:
+
+```hocon
+// tbd take this from inAnalyzer.md
+```
+
+```
+prompt_analysis: {
+  prompt: [ Hasmonean brothers war example, 2024.07.26_17.25, {link: cht17.p31.6}],
+  themes: [ Brother's War history, Greek sources, Herodotus revisited ], 
+  knowledge: {
+    hasmonean: [ Roman era Jewish history, Roman law, Hasmonean brothers wars ],
+    manuscripts: [ Codecology, Philology, Ancient Greek, Roman area manuscripts, 
+                   Greek Historions, Herodotos]
+   } // ---
+   threads: [
+    1. Remark about friends health, {
+      is: [ clear, Background talk, simple, merge into next topic ],
+      topics: [ (Social Rapport) ], 
+      status: [done, trivial, {merged: cht17.p31.7}, {ignored: cht17.p31.8}] 
+    },  
+    2. Brother's War history, {
+      is: [ clear, info request, simple (ai result), answer first ],
+      topics: [ **Current research**, 
+                1.1 Background, 1.1.1 In Judea, 1.1.2 Roman law,  
+                1.2 War description, 1.3 Research dispute ] ,
+      status: [planned, simple] 
+    },
+    3. Greek sources including Herodotos, {
+      is: [ has-ambiguity, research request, complex (involves ocr),     
+                  address after primary thread ], 
+      topics: [ **Brothers war research**,  see strolls ],      
+      status: [ suggest ], // tasks: after align 
+      strolls: [
+        3.1 Sum of Greek sources, {
+                is: [ clear, info request, complex (multiple sources) ],
+                domains: Greek manuscripts
+                status: [suggest] ,
+                tasks: {
+                    flags: [Tentative list], 
+                    sequence: [ get sources,  aggregate, cleanup ]}
+         },
+         3.2 Possible dive in, {
+            is: [ clear, study, complex (ai, ocr, eternal tools), needs confirmation ],
+            domains: [ hasmonean, manuscripts ],
+            status: [ suggest ],
+            tasks: {
+                    flags: [ **BRANCH!**, Tentative list], 
+                    sequence: [
+                       Confirm tools, Confirm sources, Aggregate text. 
+                       Analyze. Get research docs, 
+                       Create thread plan, Execute thread plan]}
+         }, 
+         3.3 Herodotus revisited, {
+               is: [ has-ambiguity, analysis request, complex, needs alignment ]}
+]}]}
