@@ -4,6 +4,7 @@ import dotenv from 'dotenv';
 import logger from './logger.js';
 import { orchestrateTestMessage } from './orchestrator.js';
 import { sendTestMessage } from './natsTest.js';
+import { loadBrainConfig, loadDashboardConfig } from './config/configLoader.js';
 
 // Load environment variables
 dotenv.config();
@@ -15,6 +16,16 @@ const NATS_SERVER = process.env.NATS_SERVER || 'nats://localhost:4222';
 async function startBackend() {
   try {
     logger.info('🚀 Starting BinAI.ai Backend...');
+
+    const [brainConfig, dashboardConfig] = await Promise.all([
+      loadBrainConfig(),
+      loadDashboardConfig(),
+    ]);
+
+    logger.info({
+      brainDefaults: brainConfig.defaults,
+      dashboardDefaults: dashboardConfig.defaults,
+    }, '🧠 Loaded YAML configs');
 
     // Initialize NATS connection
     logger.info({ server: NATS_SERVER }, '📡 Connecting to NATS server');
