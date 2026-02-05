@@ -1,7 +1,7 @@
 # Project Configuration Overview
 
 **Version:** 1.0.0  
-**Last Updated:** 2026-02-04
+**Last Updated:** 2026-02-05
 
 ## Environment: GitHub Codespaces + VSCode (Windows-Compatible)
 
@@ -35,8 +35,10 @@ ooWaa.ai/
 
 ## 🔧 Technology Choices
 
-### Frontend (humANDai): 
+### Frontend (humANDai dashboard app): 
 - **React Native + Expo** (chosen over alternatives)
+- **Config files (YAML)** - [humANDai/src/config/dashboard.config.yaml](humANDai/src/config/dashboard.config.yaml)
+- **Dashboard defaults** - `defaults.kg-view: kg-nodes` (kg-map, kg-lexicon)
 
 ### Backend (humandBrain):  Node.js
 **Core Technologies:**
@@ -46,15 +48,14 @@ ooWaa.ai/
 - **Memgraph** - Real-time graph store for embeddings/KG construction
 - **Supabase** - Persistent data layer
 - **Pino** - Logging (structured JSON logger)
-- **HOCON Parser** - hocon-parser for validation/fixtures
+- **HOCON Parser** - hocon-parser for analysis reports and kg node representation
 
-### Local LLM (Trials)
-- **Stage 1 (Local)**: Qwen GGUF (small, fast startup for local trials)
-- **Future**: TinyLlama (still tiny, slightly better quality)
+- **Ollama** - Replaceable Local LLM and embedding engine  set in config
+- **Config files (YAML)** - [humandBrain/src/config/brain.config.yaml](humandBrain/src/config/brain.config.yaml)
 
-**Alternative (SLMs):**
-- If you want even smaller footprints, consider SLMs (sub-1B) in GGUF.
-- Tradeoff: faster + smaller, but lower reasoning quality.
+### Knowledge base main model and embedding engine
+- **Configured in** [humandBrain/src/config/brain.config.yaml](humandBrain/src/config/brain.config.yaml) (MLL + embedding_model)
+- **See remarks** in [humandBrain/src/config/brain.config.yaml](humandBrain/src/config/brain.config.yaml) for other options
 
 **Backend Setup Notes:**
 - Copy `.env.example` to `.env` and set API keys.
