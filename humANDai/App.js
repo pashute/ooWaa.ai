@@ -1,7 +1,30 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
+export function App({ apiBase = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:3000' }) {
+  const [status, setStatus] = useState('idle');
+  const [response, setResponse] = useState(null);
+
+  const handleSendTest = async () => {
+    setStatus('sending');
+    setResponse(null);
+
+    try {
+      const res = await fetch(`${apiBase}/test-message`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ payload: 'test message' }),
+      });
+      const data = await res.json();
+      setResponse(data);
+      setStatus('received');
+    } catch (error) {
+      setStatus('error');
+      setResponse({ error: error.message });
+    }
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.title}>🤖 ooWaa.ai</Text>
@@ -9,10 +32,26 @@ export default function App() {
       <Text style={styles.description}>
         Knows what it doesn't. Teams with you to get it right.
       </Text>
+      <Pressable
+        accessibilityRole="button"
+        onPress={handleSendTest}
+        style={styles.button}
+      >
+        <Text style={styles.buttonText}>Send Test Message</Text>
+      </Pressable>
+      <Text style={styles.status}>Status: {status}</Text>
+      {response?.type ? (
+        <Text style={styles.response}>Response: {response.type}</Text>
+      ) : null}
+      {response?.error ? (
+        <Text style={styles.error}>Error: {response.error}</Text>
+      ) : null}
       <StatusBar style="auto" />
     </View>
   );
 }
+
+export default App;
 
 const styles = StyleSheet.create({
   container: {
@@ -38,5 +77,28 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#666',
     maxWidth: 300,
+  },
+  button: {
+    marginTop: 20,
+    paddingHorizontal: 16,
+    paddingVertical: 10,
+    backgroundColor: '#111827',
+    borderRadius: 8,
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: '600',
+  },
+  status: {
+    marginTop: 12,
+    color: '#374151',
+  },
+  response: {
+    marginTop: 6,
+    color: '#2563eb',
+  },
+  error: {
+    marginTop: 6,
+    color: '#dc2626',
   },
 });
