@@ -1,4 +1,5 @@
 import { StringCodec } from 'nats';
+import { jest } from '@jest/globals';
 import { sendTestMessage } from '../src/natsTest.js';
 
 describe('sendTestMessage', () => {
