@@ -26,6 +26,15 @@ desktop.ini
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
+
+# Copilot internal notes
+DevDocs/Copilot/*
+!DevDocs/Copilot/CopilotInstructions.md
+
+# Test reports
+humANDai/cucumber-report.html
+humandBrain/cucumber-report.html
+
 !.vscode/extensions.json
 *.swp
 *.swo

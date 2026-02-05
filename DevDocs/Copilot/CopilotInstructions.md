@@ -21,6 +21,7 @@ Keep them in github for development consistency.
 3. Remember your suggested summary intended for the commit. 
 4. ask which Project item to associate, and ask if i'm closing the issue.  
 - I'll supply a link to a proj issue . 
+4.1 When asking for issue and subject, suggest the current issue and propose a commit message that includes the issue link plus your short summary.
 
 5. Read the link: the name parent, content and comments. 
 6. summarize the two as the commit comment (with a link to the proj item, its name and comments, and your original summary)  
