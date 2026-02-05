@@ -21,3 +21,19 @@ Then('the brain config default embedding model should be {string}', function (va
   }
 });
 
+Given('the dashboard config is loaded', async function () {
+  const { loadDashboardConfig } = await import('../../src/config/configLoader.js');
+  config = await loadDashboardConfig();
+});
+
+Then('the dashboard config default kg view should be {string}', function (value) {
+  if (!config?.defaults || config.defaults['kg-view'] !== value) {
+    throw new Error(`Expected kg-view ${value}, got ${config?.defaults?.['kg-view']}`);
+  }
+});
+
+Then('the dashboard config should enable {string}', function (key) {
+  if (!config?.['kg-nodes'] || config['kg-nodes'][key] !== true) {
+    throw new Error(`Expected kg-nodes.${key} to be true`);
+  }
+});
