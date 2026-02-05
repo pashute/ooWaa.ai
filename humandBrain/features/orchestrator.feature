@@ -1,7 +1,7 @@
 Feature: Orchestrator Flow
   As the backend orchestrator
   I want to route a test message through all modules
-  So that I can confirm the responding pipeline
+  So that I can confirm the analysis pipeline
 
   Scenario: Orchestrator routes test message
     Given a test message "testSent"

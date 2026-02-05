@@ -58,6 +58,3 @@ logs/
 tmp/
 temp/
 *.tmp
-
-# DevDocs temp notes
-DevDocs/chats.md

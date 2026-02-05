@@ -1,2 +1,6 @@
 defaults:
   kg-view: kg-nodes  # kg-map kg-lexicon
+
+kg-nodes:
+  kg-map: true
+  kg-lexicon: true
