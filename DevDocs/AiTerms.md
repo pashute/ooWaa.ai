@@ -1,51 +1,27 @@
 **Filename:** DevDocs/AiTerms.md  
-**Version:** 1.0.0  
-**Last Updated:** 2026-02-04
+**Version:** 2.0.0  
+**Last Updated:** 2026-02-05
 
 # **AI Buzzwords, Terms and Tools**
 
 ## **Table of Contents**
 
-1. Core Model Architectures (Transformers, MoE, CNN/RNN)  
-   * 1.1 Efficient Attention Models  
-2. Language Models (LLM, SLM, Scaling Laws, Vector)  
-   * 2.1 State of the Art Language Models  
-3. Training & Optimization (Fine-tuning, Reinforcement/Nested/Continual Learning, RLHF, HOPE)  
-   * 3.1 Continual Learning  
-   * 3.2 Self-Learning Optimizers  
-   * 3.3 Anti-Amnesia Techniques  
-4. Parameter-Efficient Methods (PEFT, LoRA, Distillation)  
-   * 4.1 Model Compression & Efficiency  
-5. Retrieval, Search & Memory (RAG, Vector DBs, Knowledge Representation)  
-   * 5.1 Retrieval & Search  
-   * 5.2 Vector Databases  
-   * 5.3 Graph Databases  
-   * 5.4 Knowledge Representation  
-6. Prompting & Agentic AI (Prompt Engineering, Tool Use, ReAct)  
-   * 6.1 Prompting Techniques  
-   * 6.2 Agentic AI & Tool Use  
-7. Text Processing & Generation (Tokenization, Sampling, Hallucination prevention)  
-   * 7.1 Text Processing  
-   * 7.2 Text Generation & Sampling  
-   * 7.3 NLP Tasks  
-8. Multimodal & Generative Models (Vision-Language, Diffusion, SORA)  
-   * 8.1 Multimodal AI  
-   * 8.2 Generative Models  
-9. Evaluation, Operations & Deployment (Metrics, MLOps, LLMOps, CI/CD)  
-   * 9.1 Evaluation & Metrics  
-   * 9.2 Operations & Deployment  
-10. Problems and Solutions (server/local resource limits, amnesia, hallucination)  
-11. Tools  
-    * 11.1 MLOps Tools  
-    * 11.2 Vector Database Tools  
-    * 11.3 Graph Database Tools  
-    * 11.4 AI Coding Assistants  
-    * 11.5 Dev Tools & Testing Frameworks  
-12. Other stuff to consider
+1. Core Model Architectures
+2. Language Models & Concepts
+3. Training & Optimization
+4. Parameter-Efficient Methods
+5. Retrieval, Search & Memory
+6. Prompting & Agentic AI
+7. Text Processing & Generation
+8. Multimodal & Generative Models
+9. Evaluation, Operations & Deployment
+10. Problems and Solutions
+11. Tools & Platforms
+12. Architecture Patterns & Models
 
 ---
 
-## **1\. Core Model Architectures**
+## **1. Core Model Architectures**
 
 **Terms:** Transformers, GPT, BERT, T5, encoder-decoder, self-attention, multi-head attention, positional encoding, CNN, RNN, LSTM, GRU, Vision Transformers (ViT), mixture of experts (MoE), KV (Key-Vector Memory)
 
@@ -65,7 +41,7 @@
 
 **Positional encoding:** Adding position information to token embeddings in transformers. Adds sinusoidal functions or learned vectors indicating token positions.
 
-**CNN (Convolutional Neural Network):** Architecture excelling at processing grid-like data (images). Applies learned filters across spatial dimensions to detect local patterns.
+**CNN (Convolutional Neural Network):** Architecture excelling at processing grid-like data (images). Applies learned filters across spatial dimensions to detect local patterns. Filters learn to detect features (edges, textures, patterns). Stacking layers builds higher-level representations. Used in ConvE for processing 2D-reshaped embeddings.
 
 **RNN (Recurrent Neural Network):** Architecture for processing sequential data with memory. Maintains hidden state that's updated as each sequential element is processed.
 
@@ -75,9 +51,11 @@
 
 **Vision Transformers (ViT):** Applying transformer architecture to image recognition. Splits images into patches and treats them as token sequences.
 
-**Mixture of Experts (MoE):** Architecture routing inputs to specialized sub-models. Gating network selects which expert networks to activate for each input.
+**Mixture of Experts (MoE):** Architecture routing inputs to specialized sub-models. Gating network selects which expert networks to activate for each input. Multiple specialist models with a router that selects which experts activate. More efficient than single large models for same capability.
 
 **KV (Key-Vector Memory):** Working memory mechanism storing key-value pairs for attention. Caches computed key and value tensors for efficient inference.
+
+**Tensor:** Multi-dimensional array: 1D = vector, 2D = matrix, 3D = cube, 4D+ = stacks (used in batched image processing).
 
 ### **1.1 Efficient Attention Models**
 
@@ -91,9 +69,13 @@
 
 **KV Cache:** Key-Value cache storing computed attention values. Traditional approach uses large memory; MLA replaces with compressed latent vectors.
 
-## **2\. Language Models**
+---
 
-**Terms:** LLM (Large Language Model), SLM (Small Language Model), foundation models, emergent abilities, scaling laws
+## **2. Language Models & Concepts**
+
+**Terms:** LLM, SLM, foundation models, emergent abilities, scaling laws, parameters, embeddings, fine-tuning, transfer learning
+
+**Parameters (B):** "Knobs" a model uses. Measured in billions. More parameters = better reasoning but slower and larger. Range: 7B to 70B for local models.
 
 **LLM (Large Language Model):** Neural networks trained on massive text corpora to understand and generate human-like text. Pre-trains transformers on billions/trillions of tokens with next-token prediction.
 
@@ -103,11 +85,17 @@
 
 **Emergent abilities:** Capabilities appearing unexpectedly in sufficiently large models. Arise when scaling model parameters beyond certain thresholds.
 
-**Scaling laws:** Mathematical relationships between model size, data, and performance. Based on empirical observation of power-law relationships in model training.
+**Scaling laws:** Mathematical relationships between model size, data, and performance. Based on empirical observation of power-law relationships in model training. Compute-optimal training balances model size and training data for efficiency.
+
+**Embeddings:** Dense vector representations capturing semantic meaning of text, images, or other data. Neural networks map inputs to fixed-size continuous vectors. Converts text into numerical vectors for retrieval. Used in RAG systems to match queries to relevant content before generating responses.
+
+**Fine-tuning:** Adapting a pre-trained model to specific tasks or domains with additional training. Continues training on task-specific data, often with lower learning rates. Training a pre-existing model on domain-specific data. Smaller models work well with this approach for specialized tasks.
+
+**Transfer learning:** Leveraging knowledge from one task to improve performance on another. Uses pre-trained weights as initialization for new task training.
+
+**Domain-Specific Model:** Model trained or fine-tuned on specialized lexicon/knowledge. "Genius physicist that doesn't know how to tie his shoes."
 
 ### **2.1 State of the Art Language Models**
-
-**Terms:** DeepSeek V1, DeepSeek V2, Google DeepMind R2, RLHF2
 
 **DeepSeek V1:** First generation DeepSeek model.
 
@@ -117,11 +105,11 @@
 
 **RLHF2:** Second generation RLHF with improved human feedback integration.
 
-## **3\. Training & Optimization**
+---
 
-**Terms:** Fine-tuning, transfer learning, meta-learning, reinforcement learning (RL), RLHF, PPO, DPO, model alignment, constitutional AI, continual learning, catastrophic forgetting, compute-optimal training, federated learning
+## **3. Training & Optimization**
 
-*— I am here\! —*
+**Terms:** Fine-tuning, transfer learning, meta-learning, reinforcement learning (RL), RLHF, PPO, DPO, model alignment, constitutional AI, continual learning, catastrophic forgetting
 
 **Fine-tuning:** Adapting a pre-trained model to specific tasks or domains with additional training. Continues training on task-specific data, often with lower learning rates.
 
@@ -145,13 +133,11 @@
 
 **Catastrophic forgetting:** Loss of previous knowledge when learning new information. Occurs when neural network weights are overwritten during new task training.
 
-**Compute-optimal training:** Balancing model size and training data for efficiency. Follows scaling laws to optimize compute budget allocation.
-
 **Federated learning:** Training models across decentralized devices while preserving privacy. Uses local training on devices with aggregated weight updates, not raw data sharing.
 
 ### **3.1 Continual Learning**
 
-**Terms:** Nested Learning (NL), Continuum Memory, Multi-Time-Scale Updates, HOPE, 3-Tier Learning (Fast/Med/Slow), Inner/Outer Loop, Consolidated Patterns
+**Terms:** Nested Learning (NL), Continuum Memory, Multi-Time-Scale Updates, HOPE, 3-Tier Learning, Inner/Outer Loop
 
 **NL (Nested Learning):** Solves amnesia with lossless re-training in new domains. Uses Multi-Time-Scale Updates (continuous feedback cycle).
 
@@ -162,10 +148,9 @@
 **HOPE (Hierarchically Organized Predictive Experts):** Google's hierarchical learning architecture using recursive summarization.
 
 **3-Tier Learning:** Architecture with Fast, Medium, and Slow learners:
-
-* **Fast learners:** Inner-loop, continuously updated  
-* **Medium learners:** Consolidated patterns  
-* **Slow learners:** Outer loop, stable stored data, rarely updated
+- **Fast learners:** Inner-loop, continuously updated  
+- **Medium learners:** Consolidated patterns  
+- **Slow learners:** Outer loop, stable stored data, rarely updated
 
 **Inner/Outer Loop:** Learning paradigm separating fast adaptation (inner) from slow consolidation (outer).
 
@@ -173,13 +158,9 @@
 
 ### **3.2 Self-Learning Optimizers**
 
-**Terms:** Self-Learning Optimizers
-
 **Self-Learning Optimizers:** Systems that automatically adjust learning parameters based on training dynamics.
 
 ### **3.3 Anti-Amnesia Techniques**
-
-**Terms:** Sliding Window, Context Augmentation (RAG-based), Recursive Summarization
 
 **Sliding Window:** Maintains recent context within a fixed window size to preserve relevant information.
 
@@ -187,7 +168,9 @@
 
 **Recursive Summarization:** Hierarchically compresses past information into summaries (used in HOPE) to retain knowledge without full context.
 
-## **4\. Parameter-Efficient Methods**
+---
+
+## **4. Parameter-Efficient Methods**
 
 **Terms:** PEFT, LoRA, adapter layers, prefix tuning, knowledge distillation, soft prompts, hard prompts
 
@@ -207,7 +190,9 @@
 
 ### **4.1 Model Compression & Efficiency**
 
-**Terms:** Model quantization, pruning, distillation, NAS (Neural Architecture Search), AutoML
+**Terms:** Model quantization, pruning, distillation, NAS, AutoML, GGUF
+
+**GGUF:** GPT-Generated Unified Format — File format for storing large language models, optimized for local inference. Compresses models through quantization (4-bit, 8-bit instead of 16-bit). Fast to load on CPUs and consumer GPUs. Enables running models like Llama, Mistral locally without high-end hardware.
 
 **Model quantization:** Reducing model size by using lower-precision numbers. Converts weights from FP32 to INT8/INT4 or other reduced precision.
 
@@ -219,15 +204,17 @@
 
 **AutoML:** Automated machine learning pipeline design and optimization. Automates feature engineering, model selection, and hyperparameter tuning.
 
-## **5\. Retrieval, Search & Memory**
+---
+
+## **5. Retrieval, Search & Memory**
 
 ### **5.1 Retrieval & Search**
 
-**Terms:** RAG (Retrieval-Augmented Generation), embeddings, semantic search, dense retrieval, sparse retrieval, BM25, TF-IDF, cross-encoder, bi-encoder, reranking, retrieval-enhanced models, RRF, SPLADE
+**Terms:** RAG, embeddings, semantic search, dense retrieval, sparse retrieval, BM25, TF-IDF, cross-encoder, bi-encoder, reranking, retrieval-enhanced models, RRF, SPLADE
 
-**RAG (Retrieval-Augmented Generation):** Technique combining information retrieval with text generation to produce factually grounded responses. Retrieves relevant documents and inserts them into the prompt context.
+**RAG (Retrieval-Augmented Generation):** Technique combining information retrieval with text generation to produce factually grounded responses. Retrieves relevant documents and inserts them into the prompt context. Combines embeddings of a knowledge base with an LLM. Model retrieves relevant context first, then generates grounded answers. Minimizes hallucination.
 
-**Embeddings:** Dense vector representations capturing semantic meaning of text, images, or other data. Neural networks map inputs to fixed-size continuous vectors.
+**Embeddings:** Dense vector representations capturing semantic meaning of text, images, or other data. Neural networks map inputs to fixed-size continuous vectors. Converts text into numerical vectors for retrieval. Used in RAG systems to match queries to relevant content before generating responses.
 
 **Semantic search:** Finding information based on meaning rather than keyword matching. Computes similarity between query and document embeddings.
 
@@ -247,9 +234,11 @@
 
 **Reranking:** Reordering initial retrieval results using more sophisticated models. Applies cross-encoders or complex models to top-k initial results.
 
-**RRF (Reciprocal Rank Fusion):** Method to merge results from multiple retrieval systems (e.g., dense \+ sparse). Takes both results and merges by reciprocal rank scores.
+**RRF (Reciprocal Rank Fusion):** Method to merge results from multiple retrieval systems (e.g., dense + sparse). Takes both results and merges by reciprocal rank scores.
 
 **Retrieval-enhanced models:** Models augmented with retrieval mechanisms for better factuality. Incorporates retrieval results into generation process via RAG or similar.
+
+**Source-Grounding:** Responses tied directly to uploaded materials with citations. Reduces hallucination by constraining answers to known sources.
 
 ### **5.2 Vector Databases**
 
@@ -257,11 +246,11 @@
 
 **Vector databases:** Specialized storage systems optimized for similarity search on embedded data. Index high-dimensional vectors with approximate nearest neighbor algorithms.
 
-**Pinecone:** Managed vector database supporting dense \+ sparse hybrid search. Uses cross-encoder and RRF under the hood for optimal results.
+**Pinecone:** Managed vector database supporting dense + sparse hybrid search. Uses cross-encoder and RRF under the hood for optimal results.
 
 **Weaviate:** Modular vector database with hybrid search built-in. Available as self-hosted (free) or cloud ($25/mo).
 
-**Supabase:** Everything-in-one platform combining SQL \+ Vectors. Has built-in AI Assistant that writes your SQL.
+**Supabase:** Everything-in-one platform combining SQL + Vectors. Has built-in AI Assistant that writes your SQL.
 
 **FAISS (Facebook AI Similarity Search):** Open-source library efficient in dense vectors (meaning, semantic). Optimized for similarity search and clustering of dense vectors.
 
@@ -270,16 +259,6 @@
 **Sparse vectors:** High-dimensional vectors with mostly zero values, used for lexical/keyword matching ("librarian" approach). BM25, SPLADE generate sparse representations.
 
 **Hybrid search:** Combining dense and sparse retrieval for best results. Takes both dense (semantic) and sparse (lexical) results and merges with RRF.
-
-#### **Vector Database Comparison (Long-term Hybrid Storage for KGs)**
-
-| Feature | Pinecone | Weaviate | Supabase |
-| ----- | ----- | ----- | ----- |
-| **Philosophy** | "Pure Speed." Managed cloud only. | "Modular." Hybrid search built-in. | "Everything-in-one." SQL \+ Vectors. |
-| **Cost** | Usage-based ($50/mo min). Can get expensive fast. | Free (self-host) or $25/mo (cloud). | Free tier is great; Pro starts at $25/mo. |
-| **AI Assistant** | Has basic query help. | Excellent documentation and "Weaviate-GPT." | Built-in "AI Assistant" that writes your SQL. |
-
-**OSS Pinecone Alternatives:** Weaviate, Milvus, Qdrant, Chroma
 
 ### **5.3 Graph Databases**
 
@@ -293,34 +272,57 @@
 
 **Cypher:** Declarative graph query language used by Neo4j and Memgraph. Pattern-matching syntax for traversing and manipulating graph data.
 
-#### **Graph Database Comparison**
+### **5.4 Knowledge Representation & Graph Neural Networks**
 
-| Feature | Memgraph | Neo4j |
-| ----- | ----- | ----- |
-| **Use Case** | Real-time, in-memory KG operations | Persistent, large-scale KG storage |
-| **Philosophy** | "Speed first." In-memory for real-time queries. | "Scale first." Disk-based for durability. |
-| **Best For** | Local working copy of KGs, real-time updates | Searching & updating persistent KGs |
-| **Performance** | Blazing fast (RAM-speed) | Fast (SSD-speed) |
-| **Storage** | In-memory (with persistence options) | Disk-based with caching |
-| **Query Language** | Cypher-compatible | Cypher |
-| **Algorithms** | MAGE library | GDS (Graph Data Science) library |
-| **Cost** | Free (self-host) or Enterprise | Free Community or Enterprise |
+**Terms:** Knowledge graphs, KG, graph neural networks (GNN/GCN/RGCN), knowledge base completion, entity linking, memory networks, triples
 
-### **5.4 Knowledge Representation**
+**Knowledge graphs (KG):** Structured representations of entities and their relationships in a domain. Stores entities as nodes and relationships as edges in graph databases. Unified web; the total collection of nodes, edges, and properties.
 
-**Terms:** Knowledge graphs, graph neural networks (GNN), knowledge base completion, entity linking, memory networks
+**Label:** Entity category; used to classify nodes, such as Person or Pet.
 
-**Knowledge graphs:** Structured representations of entities and their relationships in a domain. Stores entities as nodes and relationships as edges in graph databases.
+**Property:** Internal data; key-value pairs stored inside a node or edge.
 
-**Graph Neural Networks (GNN):** Networks processing graph-structured data. Uses message passing between nodes to aggregate neighborhood information.
+**Schema:** Blueprint of logic; defines which labels can connect to which edges.
 
-**Knowledge base completion:** Predicting missing facts in structured knowledge bases. Uses link prediction using embeddings or neural models on knowledge graphs.
+**Triple:** Fundamental unit of knowledge graphs: (entity1, relation, entity2). Example: (Jane, knows, Dick). Used for link prediction: given (entity, relation, ?), predict missing entity.
+
+**Knowledge Extraction:** Construction phase; identifying entities and relationships from raw text.
 
 **Entity linking:** Connecting text mentions to knowledge base entities. Uses candidate generation followed by disambiguation using context.
 
+**Graph Traversal:** Pathfinding; hopping from node to node to find connections.
+
+**Symbolic Reasoning:** Logical inference; using the explicit rules of the graph's structure.
+
+**Sub-graph:** Data neighborhood; a smaller cluster of nodes pulled from the whole.
+
+**Transitive Inference:** Chain reaction; if A=B and B=C, then A=C.
+
+**Deductive Reasoning:** Top-down logic; reaching a specific conclusion from general rules.
+
+**Traceability:** The breadcrumb trail; the ability to see every step the AI took to get the answer.
+
+**Graph Neural Networks (GNN):** Networks processing graph-structured data. Uses message passing between nodes to aggregate neighborhood information.
+
+**GCN (Graph Convolutional Network):** Learns node embeddings by aggregating information from neighbors across multiple layers. Each node averages neighbor embeddings (message passing). Combines neighbor info with own embedding via learned weights. Single edge type (treats all edges the same).
+
+**RGCN (Relational Graph Convolutional Network):** Extension of GCN for graphs with **multiple relation types**. Each relation type has separate weight matrix. Aggregates neighbor info separately per relation, then combines. Node updates incorporate different relation types independently. Key difference from GCN: Relation-specific parameters allow different interaction patterns for different edge types.
+
+**Knowledge base completion:** Predicting missing facts in structured knowledge bases. Uses link prediction using embeddings or neural models on knowledge graphs.
+
 **Memory networks:** Architectures with explicit external memory components. Uses attention mechanisms over memory slots to read/write information.
 
-## **6\. Prompting & Agentic AI**
+**Knowledge Graph Models:**
+
+**DistMult (Distant Multiplication):** Scores knowledge graph triples using bilinear product: `score = entity1_embedding · relation_embedding · entity2_embedding`. Fast and simple. Works well for symmetric relations. Use: link prediction in KGs.
+
+**ComplEx (Complex Embeddings):** Extension of DistMult using complex-valued embeddings (real + imaginary parts). Handles asymmetric relations better than DistMult. Use: link prediction, more expressive than DistMult.
+
+**ConvE (Convolutional 2D Knowledge Graph Embeddings):** Reshapes embeddings into 2D tensors, applies 2D convolutions (CNN) before scoring. More expressive than DistMult/ComplEx. Captures complex interaction patterns. Generally higher accuracy on link prediction.
+
+---
+
+## **6. Prompting & Agentic AI**
 
 ### **6.1 Prompting Techniques**
 
@@ -348,7 +350,7 @@
 
 ### **6.2 Agentic AI & Tool Use**
 
-**Terms:** Agentic AI, tool use, function calling, plan-and-execute, Vibe coding (AI computer dev)
+**Terms:** Agentic AI, tool use, function calling, plan-and-execute, vibe coding
 
 **Agentic AI:** AI systems that can plan, use tools, and take actions autonomously. Combines LLMs with planning algorithms and tool-calling capabilities.
 
@@ -358,9 +360,11 @@
 
 **Plan-and-execute:** Agent paradigm separating planning from action execution. First generates action plan, then executes steps sequentially.
 
-**Vibe coding:** AI-assisted computer development workflow. Uses AI agents to write, test, and iterate on code with minimal human intervention.
+**Vibe coding:** AI-assisted computer development workflow. Uses AI agents to write, test, and iterate on code with minimal human intervention. Agentic coding capabilities with integrated AI chat and code generation.
 
-## **7\. Text Processing & Generation**
+---
+
+## **7. Text Processing & Generation**
 
 ### **7.1 Text Processing**
 
@@ -368,9 +372,11 @@
 
 **Tokenization:** Breaking text into discrete units (tokens) for model processing. Applies learned or rule-based algorithms to split text into subwords/words.
 
+**Token:** Semantic fragment; the basic unit for measuring processing cost.
+
 **BPE (Byte Pair Encoding):** Common tokenization method merging frequent character sequences. Iteratively merges most frequent adjacent byte/character pairs.
 
-**Context window:** Maximum amount of text a model can process at once. Fixed-size limit on input sequence length due to architecture constraints.
+**Context window:** Maximum amount of text a model can process at once. Fixed-size limit on input sequence length due to architecture constraints. Context window - Active memory; the total space available for LLM processing.
 
 **Coreference resolution:** Identifying when different expressions refer to the same entity. Clusters mentions using neural models trained on annotated data.
 
@@ -380,7 +386,7 @@
 
 **Terms:** Temperature, top-k sampling, top-p sampling, nucleus sampling, beam search, greedy decoding, hallucination mitigation, grounding
 
-**Temperature:** Parameter controlling randomness in model output generation. Scales logits before softmax (higher \= more random, lower \= more deterministic).
+**Temperature:** Parameter controlling randomness in model output generation. Scales logits before softmax (higher = more random, lower = more deterministic).
 
 **Top-k sampling:** Selecting next token from k most likely options. Filters to top-k tokens by probability, then samples from that subset.
 
@@ -414,11 +420,13 @@
 
 **Code completion:** Suggesting code continuations while programming. Uses language models trained on code predicting next tokens in context.
 
-## **8\. Multimodal & Generative Models**
+---
+
+## **8. Multimodal & Generative Models**
 
 ### **8.1 Multimodal AI**
 
-**Terms:** Multimodal models, vision-language models, CLIP, text-to-image, image-to-text, diffusion models, SORA, audio generation, video generation, 3D generation, speech recognition (ASR), text-to-speech (TTS)
+**Terms:** Multimodal models, vision-language models, CLIP, text-to-image, image-to-text, diffusion models, SORA, audio generation, video generation, 3D generation, speech recognition, text-to-speech
 
 **Multimodal models:** AI systems processing multiple data types (text, image, audio, etc.). Uses shared embedding spaces or cross-attention between modality-specific encoders.
 
@@ -440,9 +448,9 @@
 
 **3D generation:** Creating three-dimensional models and scenes from descriptions. Uses neural radiance fields, diffusion models, or GAN-based 3D synthesis.
 
-**Speech recognition (ASR):** Converting spoken language to text. Uses encoder models (CNN, transformer) trained on audio-transcript pairs.
+**ASR (Automatic Speech Recognition):** Converting spoken language to text. Uses encoder models (CNN, transformer) trained on audio-transcript pairs.
 
-**Text-to-speech (TTS):** Converting written text to spoken audio. Uses neural vocoders and mel-spectrogram prediction from text.
+**TTS (Text-to-Speech):** Converting written text to spoken audio. Uses neural vocoders and mel-spectrogram prediction from text.
 
 ### **8.2 Generative Models**
 
@@ -452,9 +460,9 @@
 
 **VAE (Variational Autoencoder):** Generative model learning compressed data representations. Encoder maps to latent distribution, decoder reconstructs from samples.
 
-**Diffusion models:** See Multimodal AI section above.
+---
 
-## **9\. Evaluation, Operations & Deployment**
+## **9. Evaluation, Operations & Deployment**
 
 ### **9.1 Evaluation & Metrics**
 
@@ -476,15 +484,17 @@
 
 ### **9.2 Operations & Deployment**
 
-**Terms:** MLOps, LLMOps, CI/CD, MLFlow, DVC, W\&B
+**Terms:** MLOps, LLMOps, CI/CD, MLFlow, DVC, W&B
 
-**MLOps (Machine Learning Operations):** Practices for deploying and maintaining machine learning systems in production. Uses CI/CD pipelines, monitoring, versioning, and infrastructure automation. See Tools section: MLFlow, DVC, and W\&B (the "Big 3" of MLOps).
+**MLOps (Machine Learning Operations):** Practices for deploying and maintaining machine learning systems in production. Uses CI/CD pipelines, monitoring, versioning, and infrastructure automation.
 
 **LLMOps:** MLOps specifically for large language model applications. Uses specialized tooling for prompt management, evaluation, and LLM orchestration.
 
 **CI/CD (Continuous Integration & Continuous Delivery/Deployment):** DevOps practice for automated testing and deployment. Automates pipelines that build, test, and deploy code changes.
 
-## **10\. Problems and Solutions**
+---
+
+## **10. Problems and Solutions**
 
 | Problem | Solution |
 | ----- | ----- |
@@ -496,53 +506,45 @@
 | Real-time KG access | Memgraph (in-memory) |
 | Persistent KG storage | Neo4j (disk-based) |
 
-## **11\. Tools**
+---
+
+## **11. Tools & Platforms**
 
 ### **11.1 MLOps Tools**
 
-**Terms:** MLFlow, DVC, W\&B
+**MLFlow:** Tracks versions, usage (params and results) and performance of models. mlflow-js webhooks for node.
 
-**MLFlow:** Tracks versions, usage (params and results) and performance of models.
+**DVC (Data Version Control):** OSS Digital Version Control - configuration tracking of large data: GB of json/images. dvc.js used to trigger data sync of js-heavy data pipelines like in Vibe.
 
-* mlflow-js webhooks for node
-
-**DVC (Data Version Control):** OSS Digital Version Control \- configuration tracking of large data: GB of json/images.
-
-* dvc.js used to trigger data sync of js-heavy data pipelines like in Vibe
-
-**W\&B (Weights and Biases):** Model visualization dashboard.
-
-* wandb webhooks
+**W&B (Weights and Biases):** Model visualization dashboard. wandb webhooks.
 
 ### **11.2 Vector Database Tools**
 
-**Terms:** Pinecone, FAISS, Weaviate, Supabase, Milvus, Qdrant, Chroma
+**Pinecone:** Managed. Production hybrid search, enterprise.
 
-| Tool | Type | Best For |
-| ----- | ----- | ----- |
-| **Pinecone** | Managed | Production hybrid search, enterprise |
-| **FAISS** | OSS Library | Dense vector similarity, research |
-| **Weaviate** | OSS/Cloud | Modular hybrid search |
-| **Supabase** | Managed | SQL \+ Vectors, full-stack apps |
-| **Milvus** | OSS | Large-scale vector search |
-| **Qdrant** | OSS | High-performance filtering |
-| **Chroma** | OSS | LLM applications, simple setup |
+**FAISS:** OSS Library. Dense vector similarity, research.
+
+**Weaviate:** OSS/Cloud. Modular hybrid search.
+
+**Supabase:** Managed. SQL + Vectors, full-stack apps.
+
+**Milvus:** OSS. Large-scale vector search.
+
+**Qdrant:** OSS. High-performance filtering.
+
+**Chroma:** OSS. LLM applications, simple setup.
 
 ### **11.3 Graph Database Tools**
 
-**Terms:** Neo4j, Memgraph, MAGE
+**Neo4j:** OSS/Enterprise. Persistent KG storage, complex queries.
 
-| Tool | Type | Best For |
-| ----- | ----- | ----- |
-| **Neo4j** | OSS/Enterprise | Persistent KG storage, complex queries |
-| **Memgraph** | OSS/Enterprise | Real-time in-memory KG operations |
-| **MAGE** | OSS Library | Graph algorithms for Memgraph |
+**Memgraph:** OSS/Enterprise. Real-time in-memory KG operations.
+
+**MAGE:** OSS Library. Graph algorithms for Memgraph.
 
 ### **11.4 AI Coding Assistants**
 
-**Terms:** TRAE, Traycer, Roo Code, Cline, Cursor, GitHub Copilot
-
-**TRAE:** ByteDance's AI coding assistant IDE. Provides agentic coding capabilities with integrated AI chat and code generation.
+**TRAE:** ByteDance's AI coding assistant IDE. Agentic coding capabilities with integrated AI chat and code generation.
 
 **Traycer:** AI debugging and code tracing tool. Helps trace code execution and identify bugs using AI analysis.
 
@@ -554,7 +556,201 @@
 
 **GitHub Copilot:** GitHub's AI pair programmer. Suggests code completions and entire functions based on context.
 
-#### **AI Coding Assistant Comparison**
+### **11.5 Dev Tools & Testing Frameworks**
+
+**TDD (Test-Driven Development):** Development methodology writing tests before code. Red-green-refactor cycle ensures code meets requirements.
+
+**Jest:** Facebook's testing framework with built-in mocking and assertions. React apps, general JS/TS.
+
+**Mocha:** Flexible test framework, pairs with assertion libraries (Chai). Node.js, customizable setups.
+
+**Vitest:** Vite-native testing framework, Jest-compatible API. Vite projects, fast execution.
+
+**Jasmine:** Behavior-driven testing framework, no dependencies. Angular, standalone testing.
+
+**BDD (Behavior-Driven Development):** Extension of TDD using natural language specifications. Writes tests in Given-When-Then format for stakeholder readability.
+
+**Cucumber.js:** Gherkin syntax for human-readable tests. Cross-team collaboration, acceptance tests.
+
+**DDD (Domain-Driven Design):** Software design approach focusing on core domain logic. Architectural pattern emphasizing bounded contexts and ubiquitous language.
+
+**Puppeteer:** Google's headless Chrome automation. Controls Chrome/Chromium via DevTools Protocol. Web (Chrome).
+
+**Playwright:** Microsoft's cross-browser automation. Supports Chrome, Firefox, Safari, and Edge. Web (Cross-browser).
+
+**Cypress:** Developer-friendly E2E testing. Real-time reloading and time-travel debugging. Web.
+
+**Appium:** Cross-platform mobile automation. Uses WebDriver protocol for native and hybrid apps. Mobile (Android/iOS).
+
+**nut.js:** Desktop automation library. Controls mouse, keyboard, and screen for desktop apps. Desktop (Windows/Mac/Linux).
+
+---
+
+## **12. Architecture Patterns & Models**
+
+### **12.1 Architecture Patterns**
+
+**Local + Cloud Hybrid:** Run small local model for validation/checking against domain KG. Escalate to cloud LLM for novel problems or topic changes.
+
+**Multi-Agent:** Several specialized small models collaborating. Each handles domain-specific subset of task.
+
+**Embeddings + Local Model:** Use embeddings to retrieve from knowledge base, feed context to local SLM for grounded answers. Minimal hallucination.
+
+### **12.2 Knowledge Graph & Retrieval Workflow**
+
+**Guided exploration:** Global and local search through structured data.
+
+**Ingestion Stage:** Initial stage; loading document into KG and embedding nodes.
+
+**Property Graph:** Node-text pairs; usually entered when node created in KG.
+
+**Embedding Model:** External translator; converts human text into high-dimensional math.
+
+**Vectorization:** Numerical transformation; the act of producing a vector array.
+
+**Vector Property:** Numerical coordinate; stored inside the node for semantic search.
+
+**Cosine Similarity:** Distance calculation; measuring how close two meanings are mathematically.
+
+**Semantic Search:** Meaning-based retrieval; finding data without needing exact keywords.
+
+**Retrieved Text:** Reconstructed context; the human words pulled from the node.
+
+**RAG Payload:** Contextual bundle; the combined data sent to the LLM.
+
+**Structured Query:** Using Cypher to traverse defined relationships.
+
+### **12.3 The BidiLayerSwap Model**
+
+A relational graph architecture combining bidirectional message passing with dynamic connection parametrization and expert selection.
+
+### Components
+
+**Term-Base Layer (Entity Layer)**
+- Stores entity embeddings 
+- Selected/gated by MoE mechanism (different experts activate for different entities)
+- Receives and sends information via connection layer
+- "Everything connected to everything"
+
+**Connection Layer (Relation Layer)**
+- Parametrized to allow sequential routing through different relation types
+- A sequence of passes can start with one relation type, transition to another, then use results from other relations
+- Each relation type has distinct learned parameters (like RGCN)
+
+**Message Passing (Bidirectional contextual)**
+- Forward pass: entities aggregate information from connections
+- Backward pass: connections aggregate information from entities
+- Multiple sequential passes allow iterative refinement
+- Each pass can route through different relation types based on context
+
+### Contextual Behavior Examples
+
+The model handles conditional outputs based on a shopping list state and context:
+
+**Example 1: List-dependent output**
+- Input: list contains: [milk, cheese, return the can]
+- Through connection sequence: identify milk & cheese → apply relation transformations
+- Output: predict tuna (inverse relation, compositional)
+
+**Example 2: Narrative with conditional action**
+- "The boy drove the car to the supermarket holding a tuna can"
+- Context from list determines action: bought or returned 
+- Context determines object bought: cheese, milk, or both
+- Single entity/action structure, context-parametrized output
+- Output: [boy, sequence: [droveto(supermarket), planned(buy, return), bought(milk, cheese), returned(tuna)]
+- Result: B droveto S, B planned buy, B planned return, B bought milk, B bought cheese, B returned tuna
+
+**Example 3: Context-dependent entity type**
+- "This is a chair or a small table"
+- Same entity embedding
+- Classification depends on: location (near table/bed), environment (other chairs/trays), usage (sitting human/objects)
+- Connection layer routes through different relation contexts to determine type
+
+### Why BidiLayerSwap Works
+
+1. **Bidirectional flow** enables complex dependencies (entities influence connections, connections influence entities)
+2. **MoE on term-base** scales efficiently — only relevant experts activate
+3. **Parametrized connection sequences** allow modular reasoning through different relation types
+4. **Context routing** naturally handles conditional outputs without separate models
+5. **Sequential learning** along with the static resolutions
+6. **Everything connects to Everything**
+7. **Multi-pass architecture** iteratively refines representations based on accumulated highly contextualized testing
+
+### **12.4 The "Genius Physicist" Setup**
+
+A domain-specific model that's expert in one area but limited in others.
+
+**Components:**
+- **Local Model:** Mixtral 7B or Mistral 7B
+- **Domain Knowledge:** Lexicon KG (string manipulation, text processing, gematria, RTL/LTR languages, basic CS concepts)
+- **Validation Layer:** Embeddings of lexicon for coherence/validity checks
+- **Escalation:** Cloud LLM (Gemini/Claude) for novel topic branches
+- **Storage:** Local in-session, cloud KG for persistent reference
+
+---
+
+## **13. Cloud & Local Language Models**
+
+### **13.1 Large Language Models (Cloud-based)**
+
+**OpenAI GPT-4o mini:** Proprietary. Estimated 8B-20B parameters. General purpose. Excellent reasoning across domains.
+
+**Anthropic Claude Haiku:** Proprietary. Estimated ~8B parameters. Fast, focused on clarity. Smallest in Claude family.
+
+**Google Gemini 3:** Latest version, improved reasoning and multimodal understanding. Proprietary sizing, cloud-only.
+
+**Google Gemini 2.0 Flash:** Optimized variant used by NotebookLM, lighter than standard Gemini.
+
+### **13.2 Small Language Models (Locally-runnable, Open-source)**
+
+**Mistral 7B:** 7B parameters. ~4-15GB on disk. Good speed/quality balance. General purpose.
+
+**Llama 2 7B:** 7B parameters. ~4-15GB on disk. Meta's open-source standard. Good foundation model.
+
+**CodeLlama 7B:** 7B parameters. ~4-15GB on disk. Specialized for code generation and manipulation.
+
+**Mixtral (by Mistral):** 7-8B effective, uses MoE architecture (8 experts, 2 active). Better reasoning than single 7B. Similar footprint, faster inference.
+
+**Qwen 7B:** 7B parameters. Competitive with Mistral. Good quality, open-source.
+
+**TinyLlama:** 1.1B parameters. Extremely lightweight. Fast everywhere. Limited reasoning capability. Good for simple classification/regex tasks only.
+
+### **13.3 Tools & Platforms**
+
+**NotebookLM:** Google's document-centric AI assistant. Powered by Gemini 3. Upload sources (PDFs, Docs, URLs, transcripts). Generates grounded Q&A, Audio Overviews, Video Overviews, Mind Maps, Reports, Flashcards, Quizzes, Infographics, Slide Decks, Data Tables.
+
+**Gemini:** Google's flagship conversational LLM. Multimodal (text, code, audio, images). Real-time search integration. Full general knowledge.
+
+**Claude (Anthropic):** LLM available via web chat, API, or Claude Code (CLI tool for agentic coding). Haiku, Sonnet, Opus variants.
+
+**Google Codespaces:** Cloud-based development environment. Code lives in cloud, must push to GitHub to persist.
+
+---
+
+## **Quick Reference Tables**
+
+### **Vector Database Comparison (Long-term Hybrid Storage for KGs)**
+
+| Feature | Pinecone | Weaviate | Supabase |
+| ----- | ----- | ----- | ----- |
+| **Philosophy** | "Pure Speed." Managed cloud only. | "Modular." Hybrid search built-in. | "Everything-in-one." SQL + Vectors. |
+| **Cost** | Usage-based ($50/mo min). Can get expensive fast. | Free (self-host) or $25/mo (cloud). | Free tier is great; Pro starts at $25/mo. |
+| **AI Assistant** | Has basic query help. | Excellent documentation and "Weaviate-GPT." | Built-in "AI Assistant" that writes your SQL. |
+
+### **Graph Database Comparison**
+
+| Feature | Memgraph | Neo4j |
+| ----- | ----- | ----- |
+| **Use Case** | Real-time, in-memory KG operations | Persistent, large-scale KG storage |
+| **Philosophy** | "Speed first." In-memory for real-time queries. | "Scale first." Disk-based for durability. |
+| **Best For** | Local working copy of KGs, real-time updates | Searching & updating persistent KGs |
+| **Performance** | Blazing fast (RAM-speed) | Fast (SSD-speed) |
+| **Storage** | In-memory (with persistence options) | Disk-based with caching |
+| **Query Language** | Cypher-compatible | Cypher |
+| **Algorithms** | MAGE library | GDS (Graph Data Science) library |
+| **Cost** | Free (self-host) or Enterprise | Free Community or Enterprise |
+
+### **AI Coding Assistant Comparison**
 
 | Feature | TRAE | Cline | Roo Code | Cursor |
 | ----- | ----- | ----- | ----- | ----- |
@@ -563,15 +759,19 @@
 | **Multi-model** | Limited | Yes | Yes | Yes |
 | **File Editing** | Yes | Yes | Yes | Yes |
 | **Terminal Access** | Yes | Yes | Yes | Yes |
-| **Cost** | Free | Free (BYO API key) | Free (BYO API key) | Free tier \+ $20/mo Pro |
+| **Cost** | Free | Free (BYO API key) | Free (BYO API key) | Free tier + $20/mo Pro |
 
-### **11.5 Dev Tools & Testing Frameworks**
+### **E2E Testing Tools**
 
-**Terms:** TDD, BDD, DDD, Jest, Mocha, Vitest, Jasmine, Cucumber.js, Puppeteer, Playwright, Cypress, Appium, nut.js
+| Tool | Platform | Description |
+| ----- | ----- | ----- |
+| **Puppeteer** | Web (Chrome) | Google's headless Chrome automation. Controls Chrome/Chromium via DevTools Protocol. |
+| **Playwright** | Web (Cross-browser) | Microsoft's cross-browser automation. Supports Chrome, Firefox, Safari, and Edge. |
+| **Cypress** | Web | Developer-friendly E2E testing. Real-time reloading and time-travel debugging. |
+| **Appium** | Mobile (Android/iOS) | Cross-platform mobile automation. Uses WebDriver protocol for native and hybrid apps. |
+| **nut.js** | Desktop (Windows/Mac/Linux) | Desktop automation library. Controls mouse, keyboard, and screen for desktop apps. |
 
-#### **TDD (Test-Driven Development) Frameworks for JS**
-
-**TDD (Test-Driven Development):** Development methodology writing tests before code. Red-green-refactor cycle ensures code meets requirements.
+### **TDD Frameworks for JS**
 
 | Framework | Description | Best For |
 | ----- | ----- | ----- |
@@ -580,168 +780,15 @@
 | **Vitest** | Vite-native testing framework, Jest-compatible API | Vite projects, fast execution |
 | **Jasmine** | Behavior-driven testing framework, no dependencies | Angular, standalone testing |
 
-####        **BDD Frameworks for JS:**
-
-**BDD (Behavior-Driven Development):** Extension of TDD using natural language specifications. Writes tests in Given-When-Then format for stakeholder readability.
+### **BDD Frameworks for JS**
 
 | Framework | Description | Best For |
 | ----- | ----- | ----- |
 | **Cucumber.js** | Gherkin syntax for human-readable tests | Cross-team collaboration, acceptance tests |
-| **Jest \+ jest-cucumber** | Jest with Cucumber-style syntax | Jest projects needing BDD |
-| **Mocha \+ Chai** | Mocha with Chai's expect/should assertions | Expressive BDD-style assertions |
+| **Jest + jest-cucumber** | Jest with Cucumber-style syntax | Jest projects needing BDD |
+| **Mocha + Chai** | Mocha with Chai's expect/should assertions | Expressive BDD-style assertions |
 
-**DDD (Domain-Driven Design):** Software design approach focusing on core domain logic. Not a testing framework but an architectural pattern emphasizing bounded contexts and ubiquitous language.
-
-#### **E2E Testing Tools**
-
-**E2E Testing:** Testing complete application flows from user perspective. Simulates real user interactions across the full stack.
-
-| Tool | Platform | Description |
-| ----- | ----- | ----- |
-| **Puppeteer** | **Web (Chrome)** | Google's headless Chrome automation. Controls Chrome/Chromium via DevTools Protocol. |
-| **Playwright** | Web (Cross-browser) | Microsoft's cross-browser automation. Supports Chrome, Firefox, Safari, and Edge. |
-| **Cypress** | **Web** | Developer-friendly E2E testing. Real-time reloading and time-travel debugging. |
-| **Appium** | **Mobile (Android/iOS)** | Cross-platform mobile automation. Uses WebDriver protocol for native and hybrid apps. |
-| **nut.js** | **Desktop (Windows/Mac/Linux)** | Desktop automation library. Controls mouse, keyboard, and screen for desktop apps. |
-
-
-
-## **12\. Other stuff to consider**
-
-*(To be expanded)*
-
-Guided exploration  
-global and local search  
-embedding model      
-**Structured Query:** Using Cypher to traverse defined relationships.  
-**Graph Traversal:** Moving from node to node via edges.  
-**Symbolic Reasoning:** Using the explicit logic of the graph.  
-**Sub-graph Retrieval:** Pulling a specific neighborhood of connected data.
-
-**Ingestion Stage** – Initial stage; loading document into KG and embedding nodes.  
-**Property Graph** – Node-text pairs; usually entered when node created in KG.  
-**Embedding Model** – External translator; converts human text into high-dimensional math.  
-**Vectorization** – Numerical transformation; the act of producing a vector array.  
-**Token** – Semantic fragment; the basic unit for measuring processing cost.  
-**Vector Property** – Numerical coordinate; stored inside the node for semantic search.  
-**Cosine Similarity** – Distance calculation; measuring how close two meanings are mathematically.  
-**Semantic Search** – Meaning-based retrieval; finding data without needing exact keywords.  
-**Retrieved Text** – Reconstructed context; the human words pulled from the node.  
-**RAG Payload** – Contextual bundle; the combined data sent to the LLM.  
-**Context Window** – Active memory; the total space available for LLM processing.
-
-**KG**  
-**Label –** Entity category; used to classify nodes, such as Person or Pet.  
-**Property –** Internal data; key-value pairs stored inside a node or edge**.**  
-**Schema –** Blueprint of logic; defines which labels can connect to which edges.  
-**Knowledge Extraction –** Construction phase; identifying entities and relationships from raw text.  
-**Cypher –** Query language; the formal syntax used to "probe" the graph.  
-**Graph Traversal –** Pathfinding; hopping from node to node to find connections.  
-**Symbolic Reasoning –** Logical inference; using the explicit rules of the graph's structure.  
-**Sub-graph –** Data neighborhood; a smaller cluster of nodes pulled from the whole**.**  
-**Knowledge Graph (KG) –** Unified web; the total collection of nodes, edges, and properties.
-
-**Transitive Inference** – Chain reaction; if A=B and B=C, then A=C.  
-**Deductive Reasoning** – Top-down logic; reaching a specific conclusion from general rules.  
-**Traceability** – The breadcrumb trail; the ability to see every step the AI took to get the answer.  
-
-# AI Terms & Concepts Summary
-
-## Key Concepts
-
-### Parameters (B)
-"Knobs" a model uses. Measured in billions. More parameters = better reasoning but slower and larger. Range: 7B to 70B for local models.
-
-### Embeddings
-Converts text into numerical vectors for retrieval. Used in RAG systems to match queries to relevant content before generating responses.
-
-### Knowledge Graph (KG)
-Structured representation of domain knowledge. Can be embedded into models or used with RAG for grounding.
-
-### Fine-tuning
-Training a pre-existing model on domain-specific data. Smaller models work well with this approach for specialized tasks.
-
-### Mixture of Experts (MoE)
-Multiple specialist models with a router that selects which experts activate. More efficient than single large models for same capability.
-
-### Retrieval-Augmented Generation (RAG)
-Combines embeddings of a knowledge base with an LLM. Model retrieves relevant context first, then generates grounded answers. Minimizes hallucination.
-
-### Source-Grounding
-Responses tied directly to uploaded materials with citations. Reduces hallucination by constraining answers to known sources.
-
-### Domain-Specific Model
-Model trained or fine-tuned on specialized lexicon/knowledge. "Genius physicist that doesn't know how to tie his shoes."
-
----
-
-## Large Language Models (Cloud-based)
-
-### OpenAI GPT-4o mini
-Proprietary. Estimated 8B-20B parameters. General purpose. Excellent reasoning across domains.
-
-### Anthropic Claude Haiku
-Proprietary. Estimated ~8B parameters. Fast, focused on clarity. Smallest in Claude family.
-
-### Google Gemini (various versions)
-- **Gemini 3** - Latest version, improved reasoning and multimodal understanding
-- **Gemini 2.0 Flash** - Optimized variant used by NotebookLM, lighter than standard Gemini
-- Proprietary sizing, cloud-only
-
----
-
-## Small Language Models (Locally-runnable, Open-source)
-
-### Mistral 7B
-7B parameters. ~4-15GB on disk. Good speed/quality balance. General purpose.
-
-### Llama 2 7B
-7B parameters. ~4-15GB on disk. Meta's open-source standard. Good foundation model.
-
-### CodeLlama 7B
-7B parameters. ~4-15GB on disk. Specialized for code generation and manipulation.
-
-### Mixtral (by Mistral)
-7-8B effective, uses MoE architecture (8 experts, 2 active). Better reasoning than single 7B. Similar footprint, faster inference.
-
-### Qwen 7B
-7B parameters. Competitive with Mistral. Good quality, open-source.
-
-### TinyLlama
-1.1B parameters. Extremely lightweight. Fast everywhere. Limited reasoning capability. Good for simple classification/regex tasks only.
-
----
-
-## Tools & Platforms
-
-### NotebookLM
-Google's document-centric AI assistant. Powered by Gemini (currently Gemini 3). Upload sources (PDFs, Docs, URLs, transcripts). Generates grounded Q&A, Audio Overviews, Video Overviews, Mind Maps, Reports, Flashcards, Quizzes, Infographics, Slide Decks, Data Tables.
-
-### Gemini
-Google's flagship conversational LLM. Multimodal (text, code, audio, images). Real-time search integration. Full general knowledge.
-
-### Claude (Anthropic)
-LLM available via web chat, API, or Claude Code (CLI tool for agentic coding). Haiku, Sonnet, Opus variants.
-
-### Google Codespaces
-Cloud-based development environment. Code lives in cloud, must push to GitHub to persist.
-
----
-
-## Architecture Patterns
-
-### Local + Cloud Hybrid
-Run small local model for validation/checking against domain KG. Escalate to cloud LLM for novel problems or topic changes.
-
-### Multi-Agent
-Several specialized small models collaborating. Each handles domain-specific subset of task.
-
-### Embeddings + Local Model
-Use embeddings to retrieve from knowledge base, feed context to local SLM for grounded answers. Minimal hallucination.
-
----
-
-## Model Comparison Table
+### **Model Comparison Table**
 
 | Model | Type | Size | Parameters | Local? | Best For |
 |-------|------|------|-----------|--------|----------|
@@ -756,13 +803,14 @@ Use embeddings to retrieve from knowledge base, feed context to local SLM for gr
 | Gemini 2.0 Flash | Cloud | Proprietary | Unknown | ❌ | NotebookLM, source grounding |
 | Gemini 3 | Cloud | Proprietary | Unknown | ❌ | Advanced reasoning, multimodal |
 
----
+### **Vector Database Tools**
 
-## The "Genius Physicist" Setup
-A genious who doesn't know how to tie his shoe
-
-- **Local Model**: Mixtral 7B or Mistral 7B
-- **Domain Knowledge**: Lexicon KG (string manipulation, text processing, gematria, RTL/LTR languages, basic CS concepts)
-- **Validation Layer**: Embeddings of lexicon for coherence/validity checks
-- **Escalation**: Cloud LLM (Gemini/Claude) for novel topic branches
-- **Storage**: Local in-session, cloud KG for persistent reference
+| Tool | Type | Best For |
+| ----- | ----- | ----- |
+| **Pinecone** | Managed | Production hybrid search, enterprise |
+| **FAISS** | OSS Library | Dense vector similarity, research |
+| **Weaviate** | OSS/Cloud | Modular hybrid search |
+| **Supabase** | Managed | SQL + Vectors, full-stack apps |
+| **Milvus** | OSS | Large-scale vector search |
+| **Qdrant** | OSS | High-performance filtering |
+| **Chroma** | OSS | LLM applications, simple setup |
