@@ -819,20 +819,36 @@ A domain-specific model that's expert in one area but limited in others.
 
 # 13. Reasoning, Semantic and Logical Tools
 ## 13.1  current technologies
-1. Symbolic NLP - ???  
-2. Formal Logic - ???  
-3. DRT (Discourse Representation Theory):  mental models (a man, is walking)  
-4. Combinatory Categorial Grammar (CCG): function word map  
-5. DCG  Definite Clause Grammar   
+1. Symbolic and logic
+1.1 Symbolic NLP - ???  
+1.2 Formal Logic - ???  
+1.3 3 DRT (Discourse Representation Theory):  mental models (a man, is walking)  
+1.4 Combinatory Categorial Grammar (CCG): function word map  
+1.5 DCG  Definite Clause Grammar - ??? 
 
 DSPy  Declerative Self Relying Python - language to control AI. 
 
+## 13.2  Grammar
+- HEBREW.AI / YAP (Yet Another Parser) — Israeli academic project, Tel Aviv University.
+- YAP - A 5-gram language model designed to predict the next word from user input.
+- Gram model - number of words for next word prediction. Used in early autocorrect and autocomplete
 
-## 13.2 Old obsolete technologies: 
-- OpenCOG  (patents, Ben Goerzel): 
-- SOAR?
-- AOR-T?
-- CyC?  40 years. Works on specific knowledge. Early assistant bots with alternative terms for guessing.  
+### Note: Hebrew LM AI grammar tools
+- compromise.js  - english only rule based with lexicon/thesaurus grammar and syntax analyzer. 
+- spaCy — fast, production-grade. Gives you POS tags, dependency trees, noun chunks out of the box. Python.
+- HebSpacy 
+- AlephBert - Hebrew grammar AI
+- DictaBert
+- Stanza - Stanford Python Syntax / Grammar  parser.   
+    - Older version:  Stanford CoreNLP  (Stanford is in 
+
+## 13.3 Old obsolete technologies: 
+- OpenCOG  (patents, Ben Goerzel): - Unceartain truths, in "AtomSpace" 
+  - PLN - Probabilistic Logic Networks.
+  - Cognitive Schematics  (uncertain truth values)
+- SOAR - University of Michigan human-like cognition model. Boolean production tools  
+- AOR-t - Anatomical Ontology-Guided Reasoning. ??mistake??
+- CyC  40 years. Works on specific knowledge. Early assistant bots with alternative terms for guessing.  
 - [Intelligate](https://patents.google.com/patent/US20080154581A1/en?q=(intelligate)&oq=intelligate) Idea I checked and apoproved for buying by MLL. 
 - NeuroSymbolic AI - DeepProbLog  NTSO,
 - HTM Numenta - Hierarchical Temporal Memory handles sparse temporal representations in a biologically-inspired way. 
