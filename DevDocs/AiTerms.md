@@ -18,7 +18,7 @@
 10. Problems and Solutions
 11. Tools & Platforms
 12. Architecture Patterns & Models
-
+13. Semantic and Logical reasoning tools
 ---
 
 ## **1. Core Model Architectures**
@@ -814,3 +814,27 @@ A domain-specific model that's expert in one area but limited in others.
 | **Milvus** | OSS | Large-scale vector search |
 | **Qdrant** | OSS | High-performance filtering |
 | **Chroma** | OSS | LLM applications, simple setup |
+
+---
+
+# 13. Reasoning, Semantic and Logical Tools
+## 13.1  current technologies
+1. Symbolic NLP - ???  
+2. Formal Logic - ???  
+3. DRT (Discourse Representation Theory):  mental models (a man, is walking)  
+4. Combinatory Categorial Grammar (CCG): function word map  
+5. DCG  Definite Clause Grammar   
+
+DSPy  Declerative Self Relying Python - language to control AI. 
+
+
+## 13.2 Old obsolete technologies: 
+- OpenCOG  (patents, Ben Goerzel): 
+- SOAR?
+- AOR-T?
+- CyC?  40 years. Works on specific knowledge. Early assistant bots with alternative terms for guessing.  
+- [Intelligate](https://patents.google.com/patent/US20080154581A1/en?q=(intelligate)&oq=intelligate) Idea I checked and apoproved for buying by MLL. 
+- NeuroSymbolic AI - DeepProbLog  NTSO,
+- HTM Numenta - Hierarchical Temporal Memory handles sparse temporal representations in a biologically-inspired way. 
+
+
