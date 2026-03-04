@@ -15,7 +15,9 @@
 The following are instructions for the AI when assisting in building this document
 
 1. 🤖 AI generates only what The User has approved so far — never jumps ahead
-2. 💾 Saves The User's entire draft between sessions (persistent storage)
+2. 💾 The draft is stored in Overstand.patent.md 
+currently in the feature/workspace-setup branch of oowaa.ai
+
 3. 🔔 Reminder badge shows The User where they left off
 4. 📋 Live document preview builds as The User progresses
 5. 📤 Export full patent draft at the end
@@ -33,49 +35,48 @@ Note there has been extensive discussions. This will be filed as a provisional t
 0.4.0 The patent overview section.
 The overview will have a General overview and then 4 sub overviews:    
 
-Dedictate  - the ai that knows what it doesn't, and teams up with you to find out.  
+Headline: 
+Dedictait - The Revolution of Dedicated AI
+
+Sub headline: 
+The AI that knows what it doesn't, and teams up with you to find out.  
 
 
 ***Paradigm change: HumandAI - Human and attentive AI Team:***  
 - The AI that knows how to ask.   
 The AI works as a team member alongside the Human user, to align intents goals and plans, 
-to receive the human's help in gaining access to thoughts, methods and sources that the AI cannot access alone. 
+and to achieve them together, with each other's assistence. 
 
-The AI knows how to ask for approval rather than guessing, knows how detect possible checkpoints, 
-disambiguities and sections where reliability is essential, or where user intervention is necessary. 
 
-The AI has the tools to assist in suggesting and in specific cases deciding itself 
-on complex sequences and distributed proceedures, manage their execution, and resolving failure points, 
-in response to different stages and states of the discussion. 
+The AI knows how to ask for approval rather than guessing, knows how to detect ambiguities and sections where reliability is essential, and can transparently and safely determine where user intervention is necessary. 
 
-***Paradigm change: Discussion threads, not request response iterations***  
-The attentive AI knows to follow the branching discussion flow, to subtly use active listening, 
-topic alignment, future conversation planning, and braking long parts of the discussion onto 
-short planned sectrions.  
+The context aware AI has the tools to go through complex sequences and distributed proceedures, manage their execution, and resolve failure points. 
 
-The attentive AI learns and aligns itself with the user, on the parameters to follow orattain 
+***Paradigm shift: Discussion threads, not request response iterations***  
+The attentive AI follows the branching of the discussion flow, using subtle active listening for 
+topic alignment, future conversation planning, and braking long parts of the discussion into 
+short planned sections.  
+
+***Paradigm shift: Attentive flow, with long and short term context retrieval***
+The attentive AI learns and aligns itself with the user determining together which parameters to obtain or follow
 during a conversation thread. 
 
+The attentive AI stores the goals, plans, discussed topics, terms, key phrases, and parameters, in a set of hierarchical modular lexicon/thesaurus knowledge graphs for fast context loading and retrieval. These lexicon/thesauruce KGs have separate layers per user or team, topic, domain, and discussion setting.
 
-***Paradigm change: Attentive flow***
-
-
-***Paradigmchange:  
+***Paradigm shift: Legal personality adoption***  The stored long term personal knowledge base, with mandatory alignment, and a safe anti-deception transparency base, can be used to allow a properly authenticated session to legally and transparently act on the human's behalf, with the human taking responsibility for consequences.
 
 ***Foundation: Grounded Analysis and Response Planning:***  The technological foundation  for all of this,  
-is a section of code before going to the LLM, 
-which analyzes the request and orchestrates the response  before going to the LLM, 
+is a section of code before going to the LLM, which analyzes the request and orchestrates the response  before going to the LLM, 
 deciding who should respond and how, according to the criticality and requested reliablitity of the response, 
 and in ceartain cases adding early clarifications with the user before responding. 
 
 This layer is critical for a reliable verifiable, coherent and comprehensive result, 
-and therefor is built most likely with rule based or logical instructions at its base, 
-Language models, fuzzy logic and other non deterministic methods can be used in an assistive way. 
+and therefor is built most likely with rule based or logical instructions at its base.
 
-A strongly grounded AI with methods of reliable verification may serve as this foundation layer. 
+Language models, fuzzy logic and other non deterministic methods can be used to assist, but would most likely be secondary in the process, although a strongly grounded AI, or some other non-deterministic tool may be used for this foundation layer, as long as it has a reliable method of verification and can respond responsibly and reasonably. 
 
-The foundation decides throughout the conversations which sequences and procedures are needed for the response, 
-using which AI tools and how, or bypaqssing the LLM altogether. 
+The foundation decides throughout the conversations which tasks sequences or procedures are needed for the response, 
+using which AI tools and how. It may bypass the LLM altogether. 
 
 
 ### 1. Modular Logic-First AI Control
@@ -135,6 +136,8 @@ LLM Alternative:  A new method of knowledge graph buildup with no LLM
   - Taisker Dynamait Runner - task orchestration runner. also written in dynamait. 
       See halfbakery dynamait.
 - Dynamait - Structured natural language computer sequence and procedural instructing for AI.
+
+
 
 ---
 
