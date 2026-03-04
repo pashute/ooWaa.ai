@@ -8,18 +8,14 @@
 
 ### Background
 
-
 ### Summary
-
 
 ### Detailed Description
 
-
-
 ## Claims
 
-## Prior Art 
-Note: In the actual patent submitals these will be in separate Information Disclosure Statement documents. 
+## Prior Art
+Note: In the actual patent submittals these will be in separate Information Disclosure Statement documents.
 
 ---
 
@@ -30,12 +26,12 @@ Note: In the actual patent submitals these will be in separate Information Discl
 - Overstand (The future company name)
 - Dedictate (this patent scope, with all sub projects)
 - ```humandai``` (hum&ai) - human and AI team - smart chat: collaborative discussion.
-- ```oowaa.ai``` reliable chat with verifyable results
+- ```oowaa.ai``` reliable chat with verifiable results
 - `taisker` - State machine and orchestrator for complex task managing. Written in, and runs `dynamait` code.
   - `taisker` builder UAI: Shows human the tasks and process configuration. Created in a dedicated humandai chat.
   - `taisker` `dynamait` Runner - task orchestration runner. Also written in `dynamait`. See halfbakery `dynamait`.
 - `dynamait` - Structured natural language computer sequence and procedural instructing for AI.
-- `iamWim` - Dynamic modular knowledge base mimicing human learning. Emerges from basic knowledge "stems" with replaceable layers and entity sets, by domain, topic, experience, expertise, and other grounding parameters. Possibly a LLM replacement.
+- `iamWim` - Dynamic modular knowledge base mimicking human learning. Emerges from basic knowledge "stems" with replaceable layers and entity sets, by domain, topic, experience, expertise, and other grounding parameters. Possibly a LLM replacement.
 
 #### 0.1 Patent Document Workflow
 
@@ -78,7 +74,7 @@ The following are instructions for the AI when assisting in building this docume
 ## 0.4 Claim Details
 
 ### 1. Context-Aware Request Analysis and Response Orchestration Layer
-Take from foundation. 
+Take from foundation.
 
 ### 2. Smart Chat (humandAI team)
 Take from paradigm shifts
@@ -86,32 +82,42 @@ Take from paradigm shifts
 #### 2.1 Long Run - Thread Accumulation
 Take from paradigm shifts
 
+#### 1a. Smart Discussion Flow
+
+**Topic components and visibility:**
+* External context storage
+* Resulting lexicon/thesaurus
+* Current subject with branch breadcrumb: current topic section and part, future topics and reminders
+
+**Request-topic analysis:**
+* Detect topics, while trying to keep current topics
+* Check if within future or past topics
+* Topic change needs topic alignment with user
+* Topic parameters, key phrases, domains of knowledge
+* Suspected ambiguities needing guess — deferred to further section
+* Criticality of result and importance of tasks — deferred to further section
+* Redundancy tasks — deferred to further section
+
+#### 1b. Smart Alignment
+
+#### 1c. Subtle questions for ambiguity
+
 Continue...
 
-* 2.1.1 Lexicon of terms and situations (contexts):
-
+* 2.1.1 Lexicon of terms and situations (contexts)
 * 2.1.2 Parameters, Variables, Constants, Knowledge Gaps, Validity assessment
-
 * 2.1.3 Goal, Topic and branch management
-
 * 2.1.4 Subject(s), domains, intents, associations, links
-
 * 2.1.5 Tasks (sequences and procedures), states
-
 * 2.1.6 Tags: Extra data
-
 * 2.1.7 Scenarios
-
 * 2.1.8 Familiarity - personal acquaintance
-
 * 2.1.9 Legality - empowerment enabling
 
 #### 2.2 Aligned Steering
 
 * 2.2.1 HumandAI - Helping each other as team
-
 * 2.2.2 Topic alignment
-
 * 2.2.3 Discussion plan
 * 2.2.4 Gap analysis, grounding
 * 2.2.5 Discussion Style: Active listening, Subtle questioning
@@ -183,11 +189,24 @@ By traversing the connections, a semantic equivalent can be found for any term i
 
 #### 0.5 Todo List
 
-- [ ] todo fill todo list
+- [ ] Find resulting report example from oowaa.ai devdocs backend files and add here
 
-      
+**Coverage checklist:**
+
+- [ ] 1. Smart Chat
+  - [ ] 1a. Smart discussion flow
+  - [ ] 1b. Smart alignment
+- [ ] 2. Dynamic Task
+  - [ ] 2a. Planning (`taisker`/`dynamait` config) — auto/manual
+  - [ ] 2b. Dynamic task running (`taisker`/`dynamait`)
+  - [ ] 2c. General chat interface
+- [ ] 3. Knowledge Base
+  - [ ] 3a. Dynamic modular knowledge base storage
+  - [ ] 3b. The continuous emerging knowledge base
+- [ ] 4. The legal entity
+
 ---
 
-*Document Version: 0.027*
+*Document Version: 0.031*
 *Date: 2026-03-02*
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
