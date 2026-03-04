@@ -1,8 +1,19 @@
 # Dedictait - The Revolution of Dedicated AI
 
 ### 0. Document Plan
+#### 0.0 Terminology Lexicon
 
-#### 0.1 Workflow
+- Overstand (The future company name),
+- Dedictate (this patent scope, with all sub projects)
+- oowa.ai - 
+  - hum&ai (humandai) - 
+- Taisker - State machine and orchestrator for complext task managing. Written in, and runs Dynamait code. 
+  - Taisker builder UAI:  Shows human the tasks and process configuration. Created in a dedicated humandai chat. 
+  - Taisker Dynamait Runner - task orchestration runner. also written in dynamait. 
+      See halfbakery dynamait.
+- Dynamait - Structured natural language computer sequence and procedural instructing for AI.
+
+#### 0.1 Patent Document Workflow
 
 0. Document Plan — Capture your invention idea, core problem it solves, and key technical features
 1. Title & Abstract — Draft a precise, USPTO-style title and abstract based on your plan
@@ -16,20 +27,24 @@ The following are instructions for the AI when assisting in building this docume
 
 1. 🤖 AI generates only what The User has approved so far — never jumps ahead
 2. 💾 The draft is stored in Overstand.patent.md 
-currently in the feature/workspace-setup branch of oowaa.ai
-
+currently in the [feature/workspace-setup branch of oowaa.ai on Github](https://github.com/pashute/ooWaa.ai/blob/feature/workspace-setup/DevDocs/overstand.patent.md)
+Since the 
 3. 🔔 Reminder badge shows The User where they left off
 4. 📋 Live document preview builds as The User progresses
-5. 📤 Export full patent draft at the end
+5. 📤 User updates and presents result to user. AI checks version number was updated properly
+6. See Todo list at end of this doc. 
 
 #### 0.3 About the plan section 
 
 1. ***Plan section of document*** This document plan will be stored before erased in a separate file on Github. 
-2. ***Version ctrl*** The bottom of the document has date and version number. Starting with this version at 0.001
+2. **Version ctrl** The bottom of the document has date and version number. Starting with this version at 0.001
+3. **Todo list** at bottom of doc
 
-Note there has been extensive discussions. This will be filed as a provisional then four of five patents will be created within the year. Part of the patent is on GitHub, other parts are on Halfbakery. I have till Feb 10, 2027 to file. I want to file by the end of this week. (March 1-7 2026)
+**Notes**
+1. there have been extensive discussions before this doc was written.
+2. This patent will be filed as a provisional. Later, within the year permitted,  four of five patents will be created. Part of the patent is on GitHub, other parts are on Halfbakery. I have till Feb 10, 2027 to file. I want to file by the end of this week. (March 1-7 2026)
 
-#### 0.4 Section Details
+#### 0.4 Header Section Details
 
 *(Discussion and alignment notes for each section — to be completed before drafting)*
 0.4.0 The patent overview section.
@@ -88,12 +103,12 @@ using which AI tools and how. It may bypass the LLM altogether.
 
 ### 1. Modular Logic-First AI Control
 
-### 2. Smart Chat (CHAIT - Computer-Human AI Team)
+### 2. Smart Chat (humandAI team)
 
 #### 2.1 Long Run - Thread Accumulation
 
 * 2.1.1 Lexicon of terms and situations (contexts):  
-Overstand (The future company), Dedictate (this patent scope) oowa.ai  hum&ai (humandai), CHAIT, Taisker, 
+Overstand (The future company), Dedictate (this patent scope) oowa.ai  hum&ai (humandai), Taisker, 
 Dynamait (structured natural language computer sequence and procedural instructing for AI)
 * 2.1.2 Parameters, Variables, Constants, Knowledge Gaps, Validity assessment
 * 2.1.3 Goal, Topic and branch management
@@ -130,20 +145,14 @@ LLM Alternative:  A new method of knowledge graph buildup with no LLM
 * 4.2 Personal expert based modular KGs
 * 4.3 Continuously evolving learning layers
 
-
-#### 0.4.2.1.1 2.1.1 Lexicon of terms and situations (contexts):  
-- 
-- Overstand (The future company name),
-- Dedictate (this patent scope, with all sub projects)
-- oowa.ai - 
-  - hum&ai (humandai) - 
-  - CHAIT - 
-- Taisker - State machine and orchestrator for complext task managing. Written in, and runs Dynamait code. 
-  - Taisker builder UAI:  Shows human the tasks and process configuration. Created in a dedicated humandai chat. 
-  - Taisker Dynamait Runner - task orchestration runner. also written in dynamait. 
-      See halfbakery dynamait.
-- Dynamait - Structured natural language computer sequence and procedural instructing for AI.
-
+#### 0.5 Todo List
+- [ ] ask: Does filing provisional within a year since publication give more time for actual patent, or must i patent the actual patent within a year of publicaiton. 
+- [ ] ask ai to check doc for newlines missing.
+- [ ] topics 1 by 1 b4 going into actual sections, which are also paragraph by paragraph.
+- [ ]  Whaddya say about headline and sub headline (what's that called in english)
+- [ ] whaddya say about paradigm shifts
+- [ ] each section we discuss (1 by 1 with my ok to proceed b4 moving to next)  
+- [ ] for starters in each section we begin to discuss, tell me in one VERY short paragraph what you understand. 
 
 
 ---
