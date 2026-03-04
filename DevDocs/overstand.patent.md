@@ -6,7 +6,7 @@
 
 A system and method for reliable and verifiable attentive AI collaboration.
 
-In embodiments of this invention, the system teams up with the user by asking the right questions instead of guessing, gets the user's assistance to access knowledge it cannot reach independently, and determines the user's intent before responding — at the user's pace, allowing the user to steer the conversation, and verifying the user's acceptance and understanding of each response before proceeding.
+In embodiments of this invention, the system teams up with the user by asking the right questions instead of guessing, gets the user's assistance to access knowledge it cannot reach independently, and determines the user's intent before responding — at the user's pace, allowing the user to steer the conversation, and verifying the user's acceptance and understanding of each response before proceeding. This is achieved through iterative threaded discussion, addressing details one at a time, with continuous active listening and disambiguation through subtle, indirect questioning.
 
 The system is self-aware of its responses, seeing the conversation as a whole and storing context as processed understood content: topics, threads, discussion branches, summaries, associations, decisions, tags, key phrases, sources, domains of knowledge, and links to related discussions.
 
@@ -15,6 +15,8 @@ In other embodiments of this invention, the system persists and retrieves contex
 In other embodiments of this invention, complex tasks are planned and executed through a structured natural language task framework, enabling the system to create rule-based tools on the fly, transparently and safely, in order to retrieve reliable data and respond to requests requiring complex procedures or deeper logic, that may even span outside the realm of text.
 
 In other embodiments of this invention, legally bound authenticated users may employ the system as an automated legal entity for executing binding actions, such as automated signing in equity management.
+
+In an embodiment of this invention, the system may serve as a natural language application runner, effectively creating text or voice control over any program or application, in addition to its visual user interface.
 
 ## Specification
 
@@ -238,6 +240,6 @@ By traversing the connections, a semantic equivalent can be found for any term i
 
 ---
 
-*Document Version: 0.036*
+*Document Version: 0.040*
 *Date: 2026-03-02*
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
