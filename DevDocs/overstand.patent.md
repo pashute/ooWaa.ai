@@ -6,8 +6,8 @@
 
 - Overstand (The future company name)
 - Dedictate (this patent scope, with all sub projects)
-- oowa.ai
-- hum&ai (humandai)
+- ```humandai``` (hum&ai) - human and AI team - smart chat: collaborative discussion.
+- ```oowaa.ai``` reliable chat with verifyable results
 - `taisker` - State machine and orchestrator for complex task managing. Written in, and runs `dynamait` code.
   - `taisker` builder UAI: Shows human the tasks and process configuration. Created in a dedicated humandai chat.
   - `taisker` `dynamait` Runner - task orchestration runner. Also written in `dynamait`. See halfbakery `dynamait`.
@@ -115,7 +115,7 @@ The foundation decides throughout the conversations which tasks sequences or pro
 #### 2.1 Long Run - Thread Accumulation
 
 * 2.1.1 Lexicon of terms and situations (contexts):
-Overstand (The future company), Dedictate (this patent scope) oowa.ai hum&ai (humandai), `taisker`,
+Overstand (The future company), Dedictate (this patent scope) oowaa.ai hum&ai (humandai), `taisker`,
 `dynamait` (structured natural language computer sequence and procedural instructing for AI)
 * 2.1.2 Parameters, Variables, Constants, Knowledge Gaps, Validity assessment
 * 2.1.3 Goal, Topic and branch management
@@ -162,9 +162,9 @@ LLM Alternative: A new method of knowledge graph buildup with no LLM
 - [ ] Is it correct to have them in the patent doc header?  
 - [ ] Whaddya say about the paradigm shifts.  Lets look at them and discuss them 1 by 1. How should they be in the patent paper?  Or are they only a guideline for us later on?  And everything will be in the claims?
 
-
+     
 ---
-
-*Document Version: 0.010*
-*Date: 2026-03-02*
+    
+*Document Version: 0.010*    
+*Date: 2026-03-02*     
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
