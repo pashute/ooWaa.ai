@@ -4,6 +4,18 @@
 
 ## Abstract
 
+A system and method for reliable and verifiable attentive AI collaboration.
+
+In embodiments of this invention, the system teams up with the user by asking the right questions instead of guessing, gets the user's assistance to access knowledge it cannot reach independently, and determines the user's intent before responding — at the user's pace, allowing the user to steer the conversation, and verifying the user's acceptance and understanding of each response before proceeding.
+
+The system is self-aware of its responses, seeing the conversation as a whole and storing context as processed understood content: topics, threads, discussion branches, summaries, associations, decisions, tags, key phrases, sources, domains of knowledge, and links to related discussions.
+
+In other embodiments of this invention, the system persists and retrieves context through modular knowledge units with entities and weighted named connection layers — mimicking the human learning process, wherein new knowledge is acquired by connecting new terms and logic to existing ones, tracing sources throughout. New domains are learned collaboratively with the user. These units are loaded dynamically by a knowledge base module manager, and may reduce or replace LLM interaction entirely.
+
+In other embodiments of this invention, complex tasks are planned and executed through a structured natural language task framework, enabling the system to create rule-based tools on the fly, transparently and safely, in order to retrieve reliable data and respond to requests requiring complex procedures or deeper logic, that may even span outside the realm of text.
+
+In other embodiments of this invention, legally bound authenticated users may employ the system as an automated legal entity for executing binding actions, such as automated signing in equity management.
+
 ## Specification
 
 ### Background
@@ -97,6 +109,25 @@ Take from paradigm shifts
 * Suspected ambiguities needing guess — deferred to further section
 * Criticality of result and importance of tasks — deferred to further section
 * Redundancy tasks — deferred to further section
+
+**Claims:**
+
+2. The system of claim 1 with one or more conversation-flow control software components, which detect and follow where the conversation is currently at, where it came from, and where it might be going or planned to go.
+3. The sc of cl 2 wherein the elements being traced may be threads, topics, intents, goals, subjects, terms, phrases, conversation meta-data like timestamps, ids and votes, human or automatically assigned tags such as grammar markers, importance scores or verification sources.
+4. The sc of cl 2 wherein topics and other elements are maintained, accumulated and modified during each thread.
+5. The sc of cl 2 wherein the current topics are detected and analyzed against past and future topics.
+6. The sc of cl 2 wherein alignment with the user is determined for any topic change or new topic.
+7. The sc of cl 2 wherein a response is given separately for each topic in the thread's requests.
+8. The sc of cl 2 wherein any a report, and/or a message, and/or a computerized event is sent.
+9. The sc of cl 2 wherein conversation context is stored externally to the model and loaded dynamically per conversation state.
+10. The sc of cl 2 wherein a structured lexicon and thesaurus is built and continuously updated from the conversation thread.
+11. The sc of cl 2 wherein a navigable branch breadcrumb tracks the path through the conversation tree.
+12. The sc of cl 2 wherein discussion elements and their surrounding data are persisted across sessions.
+13. The sc of cl 2 wherein the user is shown or read the trace, or part of it, upon request or continuously, explicitly or implicitly during the conversation.
+ZZ1. The sc of cl 2 wherein the user may propose a change to a topic name or enumeration, and the system engages the user in alignment before accepting the change.
+ZZ2. The method of claim ZZ1 wherein changes to a topic name or enumeration will not cause loss of the tracked element and its surrounding data.
+
+- [ ] TODO: check if 1a claims are complete
 
 #### 1b. Smart Alignment
 
@@ -207,6 +238,6 @@ By traversing the connections, a semantic equivalent can be found for any term i
 
 ---
 
-*Document Version: 0.031*
+*Document Version: 0.036*
 *Date: 2026-03-02*
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
