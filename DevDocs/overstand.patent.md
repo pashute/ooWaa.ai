@@ -1,12 +1,4 @@
-# Dedictait - Dedicated AI Revolution
-
----
-
-*Document Version: 0.001*
-*Date: 2026-03-02*
-*Note: Parts of this patent have been made public since Feb 07, 2026.*
-
----
+# Dedictait - The Revolution of Dedicated AI
 
 ### 0. Document Plan
 
@@ -133,17 +125,20 @@ LLM Alternative:  A new method of knowledge graph buildup with no LLM
 
 #### 0.4.2.1.1 2.1.1 Lexicon of terms and situations (contexts):  
 - 
-- Overstand (The future company),
-- Dedictate (this patent scope)
-- oowa.ai
-- hum&ai (humandai) - 
-- CHAIT - 
-- Taisker - State machine and orchestrator for complext task managing
+- Overstand (The future company name),
+- Dedictate (this patent scope, with all sub projects)
+- oowa.ai - 
+  - hum&ai (humandai) - 
+  - CHAIT - 
+- Taisker - State machine and orchestrator for complext task managing. Written in, and runs Dynamait code. 
   - Taisker builder UAI:  Shows human the tasks and process configuration. Created in a dedicated humandai chat. 
-  Its parts were written in primitive Dynamait
-  - Taisker Dynamait task orchestration runner. also written in dynamait. 
+  - Taisker Dynamait Runner - task orchestration runner. also written in dynamait. 
       See halfbakery dynamait.
 - Dynamait - Structured natural language computer sequence and procedural instructing for AI.
 
+---
 
-
+*Document Version: 0.001*
+*Date: 2026-03-02*
+*Note: Parts of this patent have been made public since Feb 07, 2026.*
+        
