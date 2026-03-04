@@ -829,18 +829,36 @@ A domain-specific model that's expert in one area but limited in others.
 DSPy  Declerative Self Relying Python - language to control AI. 
 
 ## 13.2  Grammar
+13.2.1 LM AI tools
 - HEBREW.AI / YAP (Yet Another Parser) — Israeli academic project, Tel Aviv University.
 - YAP - A 5-gram language model designed to predict the next word from user input.
 - Gram model - number of words for next word prediction. Used in early autocorrect and autocomplete
 
-### Note: Hebrew LM AI grammar tools
-- compromise.js  - english only rule based with lexicon/thesaurus grammar and syntax analyzer. 
+13.2.2  Rule based Grammar analyzers
+- **NER** - Named Entity Recognition
+- **AMR** parsers (Abstract Meaning Representation) — deeper semantic graphs. (often skipping tense,number,article)
+- Flair - Strong NER (rule based?)
+- Amrlib - Python. Translates NL texts to AMR graph and back. 
+- 
+- WordNet (via NLTK) — lexical relations, synonyms, hypernyms.
+- spaCy + sense2vec — word sense disambiguation.
+
+- **compromise.js**  - english only rule based with lexicon/thesaurus grammar and syntax analyzer. 
+- **natural.js** - node js 
 - spaCy — fast, production-grade. Gives you POS tags, dependency trees, noun chunks out of the box. Python.
 - HebSpacy 
 - AlephBert - Hebrew grammar AI
 - DictaBert
 - Stanza - Stanford Python Syntax / Grammar  parser.   
-    - Older version:  Stanford CoreNLP  (Stanford is in 
+    - Older version:  Stanford CoreNLP  (Stanford is in California)
+- PEIRCE - github.com/neuro-symbolic-ai/peirce
+- Isabelle - Solver framework and language (Interactive Theorem Prover ITP)
+  - Uses languages defining recursive logic functions:
+  - Haskell, SML (Standard Meta Language), OCAML (OO Catigorical Abstract-Machine Language)
+
+13.2.3 Hebrew grammar analysis
+- See [Hebrew NLP resources on Github](https://github.com/AdamKaabyia/Resources)
+- 
 
 ## 13.3 Old obsolete technologies: 
 - OpenCOG  (patents, Ben Goerzel): - Unceartain truths, in "AtomSpace" 
