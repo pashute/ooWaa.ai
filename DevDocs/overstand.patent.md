@@ -52,20 +52,27 @@ The AI knows how to ask for approval rather than guessing, knows how to detect a
 
 The context aware AI has the tools to go through complex sequences and distributed proceedures, manage their execution, and resolve failure points. 
 
-***Paradigm shift: Discussion threads, not request response iterations***  
+**Paradigm shift: Discussion threads, not request response iterations**
 The attentive AI follows the branching of the discussion flow, using subtle active listening for 
 topic alignment, future conversation planning, and braking long parts of the discussion into 
 short planned sections.  
 
-***Paradigm shift: Attentive flow, with long and short term context retrieval***
+**Paradigm shift: Attentive flow, with long and short term context retrieval**  
 The attentive AI learns and aligns itself with the user determining together which parameters to obtain or follow
 during a conversation thread. 
 
 The attentive AI stores the goals, plans, discussed topics, terms, key phrases, and parameters, in a set of hierarchical modular lexicon/thesaurus knowledge graphs for fast context loading and retrieval. These lexicon/thesauruce KGs have separate layers per user or team, topic, domain, and discussion setting.
 
-***Paradigm shift: Legal personality adoption***  The stored long term personal knowledge base, with mandatory alignment, and a safe anti-deception transparency base, can be used to allow a properly authenticated session to legally and transparently act on the human's behalf, with the human taking responsibility for consequences.
+**Paradigm shift: Legal personality adoption**  
+The stored long term personal knowledge base, with mandatory alignment, 
+and a safe anti-deception transparency base, can be used to allow a properly authenticated session to legally and transparently act on the human's behalf, with the human taking responsibility for consequences.
 
-***Foundation: Grounded Analysis and Response Planning:***  The technological foundation  for all of this,  
+**Possible Paradigm shift:  Emergent knowledge base:  Mimicking human knowledge acquiral**  
+Among the proposed embodiments of this invention, the technology base used for creating a natural language response
+will be a replacement to Language Models and LLMs in particular, setting the dynamic modular Knowledge base, to emerge from some basic knowledge "stems" and continuasly grow to a network of knowledge modules with replaceable layers and entity sets, by domain, topic, experience (as recorded in actual discussions), expertise (from authorized sources), and other parameters such as situation, "vibe", restrictions, validation rules, and many other ways, that "ground" the discussion, from the knowledge side, and add logic and other restrictive steering inside the source itself. 
+
+**Foundation: Grounded Analysis and Response Planning:**  
+The technological foundation  for all of this,  
 is a section of code before going to the LLM, which analyzes the request and orchestrates the response  before going to the LLM, 
 deciding who should respond and how, according to the criticality and requested reliablitity of the response, 
 and in ceartain cases adding early clarifications with the user before responding. 
