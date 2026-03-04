@@ -1,4 +1,27 @@
-# Dedictait - The Revolution of Dedicated AI
+# System and Method for Reliable Attentive AI Collaboration
+
+---
+
+## Abstract
+
+## Specification
+
+### Background
+
+
+### Summary
+
+
+### Detailed Description
+
+
+
+## Claims
+
+## Prior Art 
+Note: In the actual patent submitals these will be in separate Information Disclosure Statement documents. 
+
+---
 
 ### 0. Document Plan
 
@@ -12,7 +35,7 @@
   - `taisker` builder UAI: Shows human the tasks and process configuration. Created in a dedicated humandai chat.
   - `taisker` `dynamait` Runner - task orchestration runner. Also written in `dynamait`. See halfbakery `dynamait`.
 - `dynamait` - Structured natural language computer sequence and procedural instructing for AI.
-- `iamWim` - Dynamic modular knowledge base mimicing human learning. Emerges from basic knowledge "stems" with replaceable layers and entity sets, by domain, topic, experience, expertise, and other grounding parameters. Possibly a LLM replacement. 
+- `iamWim` - Dynamic modular knowledge base mimicing human learning. Emerges from basic knowledge "stems" with replaceable layers and entity sets, by domain, topic, experience, expertise, and other grounding parameters. Possibly a LLM replacement.
 
 #### 0.1 Patent Document Workflow
 
@@ -34,11 +57,11 @@ The following are instructions for the AI when assisting in building this docume
 6. Each section we discuss (1 by 1 with my ok to proceed b4 moving to next)
 7. For starters in each section we begin to discuss, tell me in one VERY short paragraph what you understand.
 8. We go over plan topics 1 by 1 b4 going into actual patent sections, which are also paragraph by paragraph.
-9. Parallel patents:  Before moving to another section in the actual patent: 
-9a. You give me the following only upon my request. 
-9b. I need to discuss with you (not in the doc), some similar patents and your summary of how they works. Priority for patents from the two or 3 big companies in ai. 
-9c. If we move on and i forgot remind me as a question. 
-10. No info dumping on me. If you have a long answer break it down into shorter sections. 
+9. Parallel patents: Before moving to another section in the actual patent:
+   - 9a. You give me the following only upon my request.
+   - 9b. I need to discuss with you (not in the doc), some similar patents and your summary of how they work. Priority for patents from the two or 3 big companies in AI.
+   - 9c. If we move on and I forgot, remind me as a question.
+10. No info dumping on me. If you have a long answer break it down into shorter sections.
 11. See Todo list at end of this doc.
 
 #### 0.3 About the Plan Section
@@ -52,84 +75,43 @@ The following are instructions for the AI when assisting in building this docume
 1. There have been extensive discussions before this doc was written.
 2. This patent will be filed as a provisional. Later, within the year permitted, four of five patents will be created. Part of the patent is on GitHub, other parts are on Halfbakery. I have till Feb 10, 2027 to file. I want to file by the end of this week. (March 1-7 2026)
 
-#### 0.4 Header Section Details
+## 0.4 Claim Details
 
-*(Discussion and alignment notes for each section — to be completed before drafting)*
-
-0.4.0 The patent overview section.
-
-The overview will have a General overview and then 4 sub overviews:
-
-Headline:
-
-Dedictait - The Revolution of Dedicated AI
-
-Sub headline:
-
-The AI that knows what it doesn't, and teams up with you to find out.
-
-**Paradigm shift: HumandAI - Human and attentive AI Team:**
-
-- The AI that knows how to ask.
-
-The AI works as a team member alongside the Human user, to align intents goals and plans, and to achieve them together, with each other's assistance.
-
-The AI knows how to ask for approval rather than guessing, knows how to detect ambiguities and sections where reliability is essential, and can transparently and safely determine where user intervention is necessary.
-
-The context aware AI has the tools to go through complex sequences and distributed procedures, manage their execution, and resolve failure points.
-
-**Paradigm shift: Discussion threads, not request response iterations**
-
-The attentive AI follows the branching of the discussion flow, using subtle active listening for topic alignment, future conversation planning, and breaking long parts of the discussion into short planned sections.
-
-**Paradigm shift: Attentive flow, with long and short term context retrieval**
-
-The attentive AI learns and aligns itself with the user determining together which parameters to obtain or follow during a conversation thread.
-
-The attentive AI stores the goals, plans, discussed topics, terms, key phrases, and parameters, in a set of hierarchical modular lexicon/thesaurus knowledge graphs for fast context loading and retrieval. These lexicon/thesaurus KGs have separate layers per user or team, topic, domain, and discussion setting.
-
-**Paradigm shift: Legal personality adoption**
-
-The stored long term personal knowledge base, with mandatory alignment, and a safe anti-deception transparency base, can be used to allow a properly authenticated session to legally and transparently act on the human's behalf, with the human taking responsibility for consequences.
-
-**Possible Paradigm shift: Emergent knowledge base: Mimicking human knowledge acquiral**
-
-Among the proposed embodiments of this invention, the technology base used for creating a natural language response will be a replacement to Language Models and LLMs in particular, setting the dynamic modular Knowledge base, to emerge from some basic knowledge "stems" and continuously grow to a network of knowledge modules with replaceable layers and entity sets, by domain, topic, experience (as recorded in actual discussions), expertise (from authorized sources), and other parameters such as situation, "vibe", restrictions, validation rules, and many other ways, that "ground" the discussion, from the knowledge side, and add logic and other restrictive steering inside the source itself.
-
-**Foundation: Grounded Analysis and Response Planning:**
-
-The technological foundation for all of this, is a section of code before going to the LLM, which analyzes the request and orchestrates the response before going to the LLM, deciding who should respond and how, according to the criticality and requested reliability of the response, and in certain cases adding early clarifications with the user before responding.
-
-This layer is critical for a reliable verifiable, coherent and comprehensive result, and therefore is built most likely with rule based or logical instructions at its base.
-
-Language models, fuzzy logic and other non deterministic methods can be used to assist, but would most likely be secondary in the process, although a strongly grounded AI, or some other non-deterministic tool may be used for this foundation layer, as long as it has a reliable method of verification and can respond responsibly and reasonably.
-
-The foundation decides throughout the conversations which tasks sequences or procedures are needed for the response, using which AI tools and how. It may bypass the LLM altogether.
-
----
-
-### 1. Modular Logic-First AI Control
+### 1. Context-Aware Request Analysis and Response Orchestration Layer
+Take from foundation. 
 
 ### 2. Smart Chat (humandAI team)
+Take from paradigm shifts
 
 #### 2.1 Long Run - Thread Accumulation
+Take from paradigm shifts
+
+Continue...
 
 * 2.1.1 Lexicon of terms and situations (contexts):
-Overstand (The future company), Dedictate (this patent scope) oowaa.ai hum&ai (humandai), `taisker`,
-`dynamait` (structured natural language computer sequence and procedural instructing for AI)
+
 * 2.1.2 Parameters, Variables, Constants, Knowledge Gaps, Validity assessment
+
 * 2.1.3 Goal, Topic and branch management
+
 * 2.1.4 Subject(s), domains, intents, associations, links
+
 * 2.1.5 Tasks (sequences and procedures), states
+
 * 2.1.6 Tags: Extra data
+
 * 2.1.7 Scenarios
+
 * 2.1.8 Familiarity - personal acquaintance
+
 * 2.1.9 Legality - empowerment enabling
 
 #### 2.2 Aligned Steering
 
 * 2.2.1 HumandAI - Helping each other as team
+
 * 2.2.2 Topic alignment
+
 * 2.2.3 Discussion plan
 * 2.2.4 Gap analysis, grounding
 * 2.2.5 Discussion Style: Active listening, Subtle questioning
@@ -156,15 +138,56 @@ LLM Alternative: A new method of knowledge graph buildup with no LLM
 
 ---
 
+### For Project Documentation
+
+*(Important context for the project — not part of the patent)*
+
+**Title:** Dedictait - The Revolution of Dedicated AI
+
+**Subtitle:** The AI that knows what it doesn't, and teams up with you to find out.
+
+**Foundation: Grounded Analysis and Response Planning**
+
+The basic component of this system is a continuously operating orchestration layer that analyzes each request and determines how to respond — which task sequences or procedures are needed, which tools to use, and whether early clarification with the user is required — according to the expected criticality of the response and the need for reliability, possibly bypassing the LLM call altogether, or deferring it to a later stage.
+
+This layer is built primarily with rule-based or logical instructions, but can use AI, fuzzy logic or other non-deterministic methods as secondary tools. It can also itself be built with non-deterministic methods — as long as a reliable verification method is in place.
+
+**Differentiator from prior art:**
+Closest patent: [US20230351118A1](https://patents.google.com/patent/US20230351118A1/en) (Google) — a pre-LLM transformation and orchestration layer for AI characters with intent recognition and goal tracking. Their layer is domain-specific (gaming) and always feeds into the LLM. Ours is a general-purpose, reliability-driven orchestration layer that can bypass or defer the LLM entirely based on criticality, governed by human-AI alignment rather than pre-programmed rules.
+
+**Paradigm shift: From AI that just answers correctly, to AI that collaborates with you.**
+
+HumandAI: an AI that identifies its own limitations and actively engages the user to overcome them together, verifying intent before acting, and proceeding at the user's pace.
+
+**Paradigm shift: From stateless request-response, to a living structured conversation state.**
+
+The AI maintains a dynamic critical summary — topics, key phrases, decisions, goals, tasks, parameters and their values, active branches and retrievable context — updating it continuously, giving and expecting feedback at each step. Original text is stored but only fetched when needed — achieving the user's goals by creating an aligned, aware and attentive discussion at the user's pace.
+
+**Paradigm shift: From static context to a living modular knowledge state.**
+
+Context is stored in fast-loading dynamic knowledge base modules, keeping it current and focused. The entities and connections can be dynamically replaced with previously studied domains and expert knowledge acquired on the fly for precise and verified responses, or with previous discussions and user preferences for a deeply personalized conversation, as determined in the discussion alignment session.
+
+**Paradigm shift: From AI as a tool, to AI as a legally empowered agent.**
+
+A fully transparent, scrutinized and verifiable AI, aligned through active listening, with auditable processes that reliably execute the user's demands with no ability to act deceptively or fraudulently — enables, under a properly authenticated setting, the AI-human collaborative software to act as a legal agent — potentially opening multi-trillion dollar fields such as actuarial services where computers today cannot sign or act on a person's behalf.
+
+**Possible Paradigm shift: From static trained language models, to an emergent modular knowledge base.**
+
+Mimicking human learning, which constantly acquires new knowledge by comparing it with existing knowledge and creating new paradigms (i.e. "building knowledge is like laying bricks to build a structure"), we use small focused units that link new information to existing knowledge units through association, function, grammar or any other type of connection.
+
+These sourced knowledge units, continuously learning new fields and verified by the user, by experts, and eventually by automatic verifiers, move in and out of focus by calling each other or using an orchestrator with a master knowledge-unit directory.
+
+By traversing the connections, a semantic equivalent can be found for any term in a similar manner that an LLM solves semantic queries — with the potential of replacing LLMs altogether, or leaving them as a last resort when new frontiers are being accessed.
+
+---
+
 #### 0.5 Todo List
 
-- [ ] Whaddya say about headline and sub headline (what's that called in english)
-- [ ] Is it correct to have them in the patent doc header?  
-- [ ] Whaddya say about the paradigm shifts.  Lets look at them and discuss them 1 by 1. How should they be in the patent paper?  Or are they only a guideline for us later on?  And everything will be in the claims?
+- [ ] todo fill todo list
 
-     
+      
 ---
-    
-*Document Version: 0.010*    
-*Date: 2026-03-02*     
+
+*Document Version: 0.027*
+*Date: 2026-03-02*
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
