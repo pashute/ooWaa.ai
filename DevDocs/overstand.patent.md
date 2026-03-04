@@ -1,26 +1,33 @@
 # System and Method for Reliable Attentive AI Collaboration
 
----
-
 ## Abstract
 
-A system and method for reliable and verifiable attentive AI collaboration.
+A system and method for reliable and verifiable attentive AI collaboration (Herein "This invention").
 
-In embodiments of this invention, the system teams up with the user by asking the right questions instead of guessing, gets the user's assistance to access knowledge it cannot reach independently, and determines the user's intent before responding — at the user's pace, allowing the user to steer the conversation, and verifying the user's acceptance and understanding of each response before proceeding. This is achieved through iterative threaded discussion, addressing details one at a time, with continuous active listening and disambiguation through subtle, indirect questioning.
+In embodiments of this invention, the system teams up with the user by asking the right questions instead of guessing, gets the user's assistance to access knowledge it cannot reach independently, and determines the user's intent before responding — at the user's pace, allowing the user to steer the conversation, verifying the user's acceptance and understanding of each response before proceeding. This is achieved through iterative threaded discussion, addressing details one at a time, with continuous active listening and disambiguation through subtle, indirect questioning.
 
-The system is self-aware of its responses, seeing the conversation as a whole and storing context as processed understood content: topics, threads, discussion branches, summaries, associations, decisions, tags, key phrases, sources, domains of knowledge, and links to related discussions.
+The system of this invention strives to be an attentive listener rather than a condenscending know-all. It colaboratively studies with the users, rather than dumping unnecessary information on them.
 
-In other embodiments of this invention, the system persists and retrieves context through modular knowledge units with entities and weighted named connection layers — mimicking the human learning process, wherein new knowledge is acquired by connecting new terms and logic to existing ones, tracing sources throughout. New domains are learned collaboratively with the user. These units are loaded dynamically by a knowledge base module manager, and may reduce or replace LLM interaction entirely.
+The system is self-aware of its responses, seeing the conversation as a whole and storing context as processed understood content: topics, threads, discussion branches, summaries, associations, decisions, tags, key phrases, sources, domains of knowledge, and links to related discussions. Using this stored context the system can keep the user on track, suggesting the return to incomplete branches and entering new topics with better background of where the user stands and what is at "the back of the the user's mind". 
+
+In other embodiments of this invention, the system persists and retrieves context through modular comprehension units, each with layers of entities in a perspective, and modular weighted and named connection-layers. 
+
+When encountering new information or new terminology a new comprehension unit is created and linked through its connecton layers to existing previously aquired knowledge, mimicking the human learning process, wherein new knowledge is acquired by connecting new terms and logic to previously aquired terms and logic, creating a paradigm or a metaphore (i.e. "constructing a new thought is like stacking up bricks in a structure").
+
+The comprehension units include links and descriptions to the source of the information. These units are loaded dynamically by a comprehension base module manager, reducing the need for LLM interaction, and in some cases entirely eliminating the use of LLMs for a conversation.
 
 In other embodiments of this invention, complex tasks are planned and executed through a structured natural language task framework, enabling the system to create rule-based tools on the fly, transparently and safely, in order to retrieve reliable data and respond to requests requiring complex procedures or deeper logic, that may even span outside the realm of text.
 
-In other embodiments of this invention, legally bound authenticated users may employ the system as an automated legal entity for executing binding actions, such as automated signing in equity management.
+In further embodiments of this invention, legally bound authenticated users may employ the system as an automated legal entity for executing binding actions, such as automated signing in equity management.
 
 In an embodiment of this invention, the system may serve as a natural language application runner, effectively creating text or voice control over any program or application, in addition to its visual user interface.
 
 ## Specification
 
 ### Background
+
+Current AI systems are searching for a way to eliminate the flaws plaguing LLM systems, such as hallucination, bad guesses, loss of context, misunderstandings, incomprehensive or incohesive replies...
+
 
 ### Summary
 
@@ -108,19 +115,19 @@ In an embodiment of this invention, the system may serve as a natural language a
 
 38. The system of claim 1, wherein the system serves as a natural language application runner, effectively creating text or voice control over any program or application, in addition to its visual user interface.
 
-39. The system of claim 1, wherein context and knowledge are persisted and retrieved through modular knowledge units, each comprising entities and one or more weighted, tagged and named connection layers, loaded and unloaded dynamically by a knowledge base module loading manager.
+39. The system of claim 1, wherein context and knowledge are persisted and retrieved through modular comprehension units, each comprising entities and one or more weighted, tagged and named connection layers, loaded and unloaded dynamically by a knowledge base module loading manager.
 
 40. The system of claim 38, wherein connection layers may represent grammar, semantic meaning, logical associations, emotional associations, or external links.
 
-41. The system of claim 38, wherein knowledge units are interconnected via a master directory, and move in and out of focus by calling each other or through an orchestrator.
+41. The system of claim 38, wherein comprehension units are interconnected via a master directory, and move in and out of focus by calling each other or through an orchestrator.
 
-42. The system of claim 38, wherein new knowledge is acquired by comparing it with existing knowledge units and creating new paradigms, connecting new terms and logic to existing entities and connections, mimicking the human learning process.
+42. The system of claim 38, wherein new knowledge is acquired by comparing it with existing comprehension units and creating new paradigms, connecting new terms and logic to existing entities and connections, mimicking the human learning process.
 
-43. The system of claim 38, wherein knowledge units are sourced and continuously updated, with a confidence and approval score, verified by the user, by domain experts, or by automatic verifiers.
+43. The system of claim 38, wherein comprehension units are sourced and continuously updated, with a confidence and approval score, verified by the user, by domain experts, or by automatic verifiers.
 
 44. The system of claim 38, wherein expert domain knowledge is created and updated continuously, independently of user conversations, and also collaboratively with the user on the fly.
 
-45. The system of claim 38, wherein by traversing the connections between knowledge units, a semantic equivalent can be found for any term, in a manner analogous to how a language model resolves semantic queries, with the potential to reduce or replace language model invocation entirely.
+45. The system of claim 38, wherein by traversing the connections between comprehension units, a semantic equivalent can be found for any term, in a manner analogous to how a language model resolves semantic queries, with the potential to reduce or replace language model invocation entirely.
 
 46. The system of claims 1, wherein legally bound authenticated users who accept responsibility for their use of the system may employ it as an automated legal entity, authorized to execute binding actions on the user's behalf.
 
@@ -223,9 +230,9 @@ A fully transparent, scrutinized and verifiable AI, aligned through active liste
 
 **Possible Paradigm shift: From static trained language models, to an emergent modular knowledge base.**
 
-Mimicking human learning, which constantly acquires new knowledge by comparing it with existing knowledge and creating new paradigms (i.e. "building knowledge is like laying bricks to build a structure"), we use small focused units that link new information to existing knowledge units through association, function, grammar or any other type of connection.
+Mimicking human learning, which constantly acquires new knowledge by comparing it with existing knowledge and creating new paradigms (i.e. "building knowledge is like laying bricks to build a structure"), we use small focused units that link new information to existing comprehension units through association, function, grammar or any other type of connection.
 
-These sourced knowledge units, continuously learning new fields and verified by the user, by experts, and eventually by automatic verifiers, move in and out of focus by calling each other or using an orchestrator with a master knowledge-unit directory.
+These sourced comprehension units, continuously learning new fields and verified by the user, by experts, and eventually by automatic verifiers, move in and out of focus by calling each other or using an orchestrator with a master knowledge-unit directory.
 
 By traversing the connections, a semantic equivalent can be found for any term in a similar manner that an LLM solves semantic queries — with the potential of replacing LLMs altogether, or leaving them as a last resort when new frontiers are being accessed.
 
