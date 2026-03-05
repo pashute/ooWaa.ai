@@ -2,25 +2,51 @@
 
 ## Abstract
 
-A system and method for reliable and verifiable attentive AI collaboration (Herein "This invention").
+**Reliable Attentive AI Collaboration** is achieved with a four legged solution, Moving the language models aside, leaving them to assist us, but not to rule the discussion. 
 
-In embodiments of this invention, the system teams up with the user by asking the right questions instead of guessing, gets the user's assistance to access knowledge it cannot reach independently, and determines the user's intent before responding — at the user's pace, allowing the user to steer the conversation, verifying the user's acceptance and understanding of each response before proceeding. This is achieved through iterative threaded discussion, addressing details one at a time, with continuous active listening and disambiguation through subtle, indirect questioning.
+Each of the legs can stand on its own, but together they create a stable and powerful solution for reliable and powerful trully deep AI, which can reliabley do extremley complex multi step long term tasks. 
 
-The system of this invention strives to be an attentive listener rather than a condenscending know-all. It colaboratively studies with the users, rather than dumping unnecessary information on them.
+Instead of the crappy AI results, surprising us with failures at the most critical moment, the proposed system brings attentive listening with reliable logical coherent cohesive and responsible steerable slow-pace responses, created through a transparent and clear process.
 
-The system is self-aware of its responses, seeing the conversation as a whole and storing context as processed understood content: topics, threads, discussion branches, summaries, associations, decisions, tags, key phrases, sources, domains of knowledge, described or implied scenarios, and links to related discussions. Using this stored context the system can keep the user on track, suggesting the return to incomplete branches and entering new topics with better background of where the user stands and what is at "the back of the the user's mind". 
+1. The first leg:  **Logic behind the conversation:**  
 
-In other embodiments of this invention, the system persists and retrieves context through modular comprehension units, each with layers of entities in a perspective, and modular weighted and named connection-layers. 
+The results of this system are coherent and cohesive because they are logical. 
 
-When encountering new information or new terminology a new comprehension unit is created and linked through its connecton layers to existing previously aquired knowledge, mimicking the human learning process, wherein new knowledge is acquired by connecting new terms and logic to previously aquired terms and logic, creating a paradigm or a metaphore (i.e. "constructing a new thought is like stacking up bricks in a structure").
+They are logical due to a foundational pullout from AI controlling the conversation, to a rule-based or grounded external discussion managing component, which aligns with the user, interprets the questions and results into clear instructions, before reaching out to the AI, if at all.
 
-The comprehension units include links and descriptions to the source of the information. These units are loaded dynamically by a comprehension base module manager, reducing the need for LLM interaction, and in some cases entirely eliminating the use of LLMs for a conversation.
 
-In other embodiments of this invention, complex tasks are planned and executed through a structured natural language task framework, enabling the system to create rule-based tools on the fly, transparently and safely, in order to retrieve reliable data and respond to requests requiring complex procedures or deeper logic, that may even span outside the realm of text.
+2. The second leg: **Attentive alignment:**  
 
-In further embodiments of this invention, legally bound authenticated users may employ the system as an automated legal entity for executing binding actions, such as automated signing in equity management.
+They are responsible and steerable because they are coherent and cohesive - due to a change in the direction of information flow, putting the focus on the Humand-and-AI team  having the AI "care" about the human's requests and responses(!) Not just about fetching gigantic amounts of (many times) irrelevant information. 
 
-In an embodiment of this invention, the system may serve as a natural language application runner, effectively creating text or voice control over any program or application, in addition to its visual user interface.
+The proposed smart chat system's goal is to listen attentively to the users and align with them.  Instead of guessing and jumping off the cliff, only to discover there is a rocky beach below,  out attentive system asks the right questions. The smart chat **follows the conversation,** understanding it deeply, not just throwing in all the words statistically. It knows whtat the current topic is, what the general discussion is about, remembering a summary of previous discussions, and knowing what's planned ahaead after discussing it with the user.    The conversation is held in threads, not single iterations of request response. The responses from the AI are given only after a conversation with enough parameters is accumulated so that a large language model would be good at solving it.    Till then other methods are used. When critical information is needed other tools are chosen. When the AI is given its chance it will usually be with some sort of parallel verification. Guesses and knowledge gaps are reported, and worked around with the user, as a **human and AI team.** 
+
+The smart chat doesn't let the conversaton drown the user in information. it moves at a slow pace, getting feedback for each iteration, and with its long term contextual capabilities 
+
+
+3. The third leg: **Comprehension base:**
+
+An attempt is being made to use the current AIs and online information, to create a self learning comprehension base with logic and associations. This will not become a large knowing all model. Instead, we use a "tied in" strategy, mimicking the human learning process of connecting new data to old previously aquired data and creating metaphores or paradigmes to understand one new field of knowledge with another, previously studied field. 
+
+The resulting modular inter connected domain network units (which we knicknamed comprehension units)  load only small sections of knowledge relevant to the field of knowledge, its domain and even specific topic.  
+Still it will find  semantic and pragmatic connections, by traversing the different comprehension bases and loading different connections linking everything to everything. By anticipating the next coming up questions, 
+data can be loaded in advance, quick parital answers can be given on time, and slower more accurate results can come in later. This time with traceable logical and verifiable conclusions.
+
+The same comprehension base of lexicon-thesaurus "textbooks" for any field of discussion, are used also for storing the personal choices and preferences, and the chat's themselves with along with their analysis and breakdown, meaning the smart chat can suggest going back to an abandoned branch, and giving a comfortable familiar feeling securely without information leaking out to advertisers or thieves. 
+
+4. The fourth and last leg: **Dynamic tooling:**   The proposed system offers the AI an opportunity to "program" its own sequences and procedures to access and manipulate the information and follow long comnplex tasks modular tasks. 
+These tasks are controlled primarily through voice and natural languege text controls. This opens up a whole new sleuth of AI capabilities effectively changing the AI application lockin and even general "application lockin" where you need a certain application to accomplish things in software.  
+
+Each leg stands on its own, and brings with it a small revolution: 
+
+1. Smart chat helps give reliable answeres and stay on track.  Continuing from where you reached, and exploring where you prevously left off. 
+
+2. Aligning AI knows what it doesn't know, and helps you change that. It studies new fields with you, and discovers interesting things. 
+
+3. Dynamic code and complex task execution allows the AI to program anything.  But in a slow and careful process. It could follow your own tasks and get your day moving. It can build new types of OCR and text to speech out of existing code. Just for example. 
+
+4. Comprehension base modules (Comprehension units) will eventually lead to the replacement of raw trained neural networks, and issue in the use of directed models.  
+
 
 ## Specification
 
@@ -28,8 +54,18 @@ In an embodiment of this invention, the system may serve as a natural language a
 
 Current AI systems are searching for a way to eliminate the flaws plaguing LLM systems, such as hallucination, bad guesses, loss of context, misunderstandings, incomprehensive or incohesive replies...
 
+The software in this invention takes a different approach. Use LLMs for what they are good at. Understand most of the chat with a language model which is logical at its base. You'll always have the chance to try the LLM at your leasure. 
+
+We have tried using AI itself to achieve some of the stepos such as flow. This has many disadvantages, the least of them that AI is not good at it. It often mixes up instructions and requested content. Gemini for example had no context of where it was being used, and began tellimg everyone what the topic was when we just called hey google. 
 
 ### Summary
+
+Reliable Attentive AI Collaboration is achieved by moving the LLM into second place, instead having a hybrid rule-based and local SLM **Smart chat** program. 
+
+It reads the prompts and interact with the user before ever meeting the LLM, collaborating with the user to determine what has been requested, it follows the discussion with its changing topics and branching threads, it plans the anticipated topics and pre-fetches the "comprehension base" for anticipated fields of knowledge, and notifies the user about unreliable data, and can follow extremely complex sequences and procedures to reliably retrieve data, manipulate it and present it. 
+
+This four in one solution, in fact 
+
 
 ### Detailed Description
 
@@ -271,6 +307,30 @@ Mimicking human learning, which constantly acquires new knowledge by comparing i
 These sourced comprehension units, continuously learning new fields and verified by the user, by experts, and eventually by automatic verifiers, move in and out of focus by calling each other or using an orchestrator with a master knowledge-unit directory.
 
 By traversing the connections, a semantic equivalent can be found for any term in a similar manner that an LLM solves semantic queries — with the potential of replacing LLMs altogether, or leaving them as a last resort when new frontiers are being accessed.
+
+------------------
+Old abstract
+
+A system and method for reliable and verifiable attentive AI collaboration (Herein "This invention").
+
+In embodiments of this invention, the system teams up with the user by asking the right questions instead of guessing, gets the user's assistance to access knowledge it cannot reach independently, and determines the user's intent before responding — at the user's pace, allowing the user to steer the conversation, verifying the user's acceptance and understanding of each response before proceeding. This is achieved through iterative threaded discussion, addressing details one at a time, with continuous active listening and disambiguation through subtle, indirect questioning.
+
+The system of this invention strives to be an attentive listener rather than a condenscending know-all. It colaboratively studies with the users, rather than dumping unnecessary information on them.
+
+The system is self-aware of its responses, seeing the conversation as a whole and storing context as processed understood content: topics, threads, discussion branches, summaries, associations, decisions, tags, key phrases, sources, domains of knowledge, described or implied scenarios, and links to related discussions. Using this stored context the system can keep the user on track, suggesting the return to incomplete branches and entering new topics with better background of where the user stands and what is at "the back of the the user's mind". 
+
+In other embodiments of this invention, the system persists and retrieves context through modular comprehension units, each with layers of entities in a perspective, and modular weighted and named connection-layers. 
+
+When encountering new information or new terminology a new comprehension unit is created and linked through its connecton layers to existing previously aquired knowledge, mimicking the human learning process, wherein new knowledge is acquired by connecting new terms and logic to previously aquired terms and logic, creating a paradigm or a metaphore (i.e. "constructing a new thought is like stacking up bricks in a structure").
+
+The comprehension units include links and descriptions to the source of the information. These units are loaded dynamically by a comprehension base module manager, reducing the need for LLM interaction, and in some cases entirely eliminating the use of LLMs for a conversation.
+
+In other embodiments of this invention, complex tasks are planned and executed through a structured natural language task framework, enabling the system to create rule-based tools on the fly, transparently and safely, in order to retrieve reliable data and respond to requests requiring complex procedures or deeper logic, that may even span outside the realm of text.
+
+In further embodiments of this invention, legally bound authenticated users may employ the system as an automated legal entity for executing binding actions, such as automated signing in equity management.
+
+In an embodiment of this invention, the system may serve as a natural language application runner, effectively creating text or voice control over any program or application, in addition to its visual user interface.
+
 
 ---
 
