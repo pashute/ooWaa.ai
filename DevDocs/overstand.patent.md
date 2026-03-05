@@ -217,10 +217,36 @@ This four in one solution, in fact
 ## Prior Art
 Note: In the actual patent submittals these will be in separate Information Disclosure Statement documents.
 
+**Claim 1 — Reliable attentive AI collaboration (general):**
+
+[Patent US20230351118](https://patents.google.com/patent/US20230351118A1/en) — AI character orchestration layer. 2023. Google. Pre-LLM layer with intent/goal tracking for gaming AI. Very different — domain-specific, always feeds LLM, no user alignment.
+
+**Claims 2–6 — Orchestration layer:**
+
+[Patent US11056107](https://patents.google.com/patent/US11056107B2/en) — Conversational framework with workflow orchestration. 2021. IBM. Conversation + application orchestration with dialog context. Similar but theirs routes to microservices, not a reliability-first pre-LLM layer. No bypass of LLM.
+
+**Claims 7–18 — Conversation flow control, thread/topic tracking:**
+
+[Patent US20080172462](https://patents.google.com/patent/US20080172462) — Thread-based conversation management. 2008. Microsoft. Thread storage with topic/context metadata, lifecycle management. Similar structure — but pre-AI, no alignment with user, no topic change detection or dynamic loading.
+
+[Patent US8001126](https://patents.google.com/patent/US8001126B2/en) — Conversation persistence, threads, topics, breakpoints. 2011. No major company. Similar thread/topic/breakpoint model. Very different — no AI, no alignment, no knowledge gap detection.
+
+**Claims 7–18 — Topic tracking with AI:**
+
+[Patent US10990421](https://patents.google.com/patent/US10990421B2/fr) — AI-driven topic association for activities. 2021. Microsoft (Bill Gates listed). Topics linked to user content via activity graph. Similar topic abstraction — but for content organization, not conversation alignment. No user-paced discussion, no knowledge gap.
+
+**Claims 19–22 — Alignment and knowledge gaps:**
 
 
----
 
-*Document Version: 0.050*   
+**Claims 23–29 — Context storage (lexicon/thesaurus):**
+
+
+
+**Claims 30–37 — Comprehension base:**
+
+
+
+*Document Version: 0.051*   
 *Date: 2026-03-02*    
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
