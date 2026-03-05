@@ -47,6 +47,13 @@ Each leg stands on its own, and brings with it a small revolution:
 
 4. Comprehension base modules (Comprehension units) will eventually lead to the replacement of raw trained neural networks, and issue in the use of directed models.  
 
+the applications have been mentioned at the end of the claims. 
+
+1. Comprehensioon base - replacing LLM usage. - Yet to see how successful this is, and how practical.
+
+2.  Voice and Text control UI runner for any app.  The ability to control any app from a chat with proper permissions of course. 
+
+3. Reliable robotic legal representation. - of course only if the claims for reliability with this theoretical method are met. In theory there is no difference between theory and the real world. 
 
 ## Specification
 
