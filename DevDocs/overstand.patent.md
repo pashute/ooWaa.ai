@@ -2,15 +2,17 @@
 
 ## Abstract
 
-**Reliable Attentive AI Collaboration** is achieved with a four legged solution, Moving the language models aside, leaving them to assist us, but not to rule the discussion. 
+A computer-implemented system and method for providing reliable, attentive AI assistance through active, context-aware collaboration with a user.
 
-Each of the legs can stand on its own, but together they create a stable and powerful solution for reliable and powerful trully deep AI, which can reliabley do extremley complex multi step long term tasks. 
+These traits are achieved through a four-legged framework designed to move language models to the periphery, allowing them to assist as supportive collaborators without dominating the logic of the discussion.
 
-Instead of the crappy AI results, surprising us with failures at the most critical moment, the proposed system brings attentive listening with reliable logical coherent cohesive and responsible steerable slow-pace responses, created through a transparent and clear process.
+While each leg is designed to stand on its own, their collective strength provides a robust foundation for truly deep AI, capable of executing intricate, highly-complex, multi-stage tasks, and long term operations, aligned to the original intent.
+
+Instead of unpredictable outputs that drift off-course — surprising us with failed understandings at the most critical moments — the proposed system ensures logically cohesive responses, achieved through a transparent, attentive steering process that prioritizes reliability over unvetted immediacy, allowing the system to progress stage-by-stage at the user’s deliberate pace.
 
 1. The first leg:  **Logic behind the conversation:**  
 
-The results of this system are coherent and cohesive because they are logical. 
+The results of this system are coherent and cohesive because they are constructed logically. 
 
 They are logical due to a foundational pullout from AI controlling the conversation, to a rule-based or grounded external discussion managing component, which aligns with the user, interprets the questions and results into clear instructions, before reaching out to the AI, if at all.
 
@@ -24,13 +26,32 @@ The proposed smart chat system's goal is to listen attentively to the users and 
 The smart chat doesn't let the conversaton drown the user in information. it moves at a slow pace, getting feedback for each iteration, and with its long term contextual capabilities 
 
 
-3. The third leg: **Comprehension base:**
+3. The third leg: The **Comprehension base:**
 
-An attempt is being made to use the current AIs and online information, to create a self learning comprehension base with logic and associations. This will not become a large knowing all model. Instead, we use a "tied in" strategy, mimicking the human learning process of connecting new data to old previously aquired data and creating metaphores or paradigmes to understand one new field of knowledge with another, previously studied field. 
+The comprehension base is a large set of small specialized knowledge graphs (called "comprehension units") tied into each other, with swapable node entitiy bases (called "aspects") and swapable connection link sets (called "perspectives") representing small ontologies (each being a lexicons with a thesaurus) with the terms and phrases needed for a certain type of discussion on a certain topic or area. Links to nodes outside the aspect are listed as external links in the node's info section. 
+
+Each thread of discussion needs only a small set of these comprehensiuon units for the imediate response, while  a deeper, fully thought out response, can search its  memory, or learn the topic on the fly. This mimics the two stages of human cognition, described in Daniel Kahneman's book Thinking Fast and Slow. 
+
+Each added bit of knowledge is connected to existing knowledge, assimilating the information if possible, or accomodating for it, by widening the current aspect, or creating a new one and cnnsolidating . (See Jean Peaget The Construction of knowledge in Children, 1937) Thus Everything is tied to everything. 
+
+The process of creating new comprehension units, if there is none for that domain is to tie in to existing knowledge, creating "paradigms" with more "basic" aspects of knowledge already existing in the knowledge base. This mimics the human 
+
+
+An attempt is being made to use the current AIs and online information, to create a self learning comprehension base with logic and associations. This will not become a large knowing all model. Instead, we use a "tied in" strategy, mimicking the human learning process. When humans learn something new they tie it into the old knowledge and create a metaphore or a paradigm. (For example we say "to construct" or "to build" a "computer program", and talk about software components as "building blocks", using the paradigm of setting bricks one on the other to build a construction.)  Another property of human thought is the rapid fast answer, and the slow updated thougt-out one.  Both of these are part of the Comprehension base paradigm.
+
+
+
+The comprehension base described in this invention, is started with a simple network of terms with named and weighted connections between these terms, enough to create a limited understanding of some simple concepts with a limited vocabulary. But it will have in its core the traits of attentiveness and teamwork. 
+
+From here we advance creating modular networks that  build new perspectives and aspects, and widen the scope and range with new fields of knowledge, each tying in to the previous knowledge and building on it. 
+
+The overstand company will be guiding and directing its autonomously study and self testing activities, but it will also be advancing during its activity with the users. Thus a user who is asking something about sports, health, or some ancient language, will have the system preparing for 
 
 The resulting modular inter connected domain network units (which we knicknamed comprehension units)  load only small sections of knowledge relevant to the field of knowledge, its domain and even specific topic.  
 Still it will find  semantic and pragmatic connections, by traversing the different comprehension bases and loading different connections linking everything to everything. By anticipating the next coming up questions, 
-data can be loaded in advance, quick parital answers can be given on time, and slower more accurate results can come in later. This time with traceable logical and verifiable conclusions.
+data can be loaded in advance, quick parital answers can be given on time, and slower more accurate results can 
+
+come in later. This time with traceable logical and verifiable conclusions.
 
 The same comprehension base of lexicon-thesaurus "textbooks" for any field of discussion, are used also for storing the personal choices and preferences, and the chat's themselves with along with their analysis and breakdown, meaning the smart chat can suggest going back to an abandoned branch, and giving a comfortable familiar feeling securely without information leaking out to advertisers or thieves. 
 
@@ -223,6 +244,8 @@ Note: In the actual patent submittals these will be in separate Information Disc
 
 **Claims 2–6 — Orchestration layer:**
 
+[Thoughts on external memory for LLMs](https://medium.com/@chipiga86/thoughts-on-external-memory-for-llms-e2ee21be3292)
+
 [Patent US11056107](https://patents.google.com/patent/US11056107B2/en) — Conversational framework with workflow orchestration. 2021. IBM. Conversation + application orchestration with dialog context. Similar but theirs routes to microservices, not a reliability-first pre-LLM layer. No bypass of LLM.
 
 **Claims 7–18 — Conversation flow control, thread/topic tracking:**
@@ -245,8 +268,24 @@ Note: In the actual patent submittals these will be in separate Information Disc
 
 **Claims 30–37 — Comprehension base:**
 
+# To be completed
 
+Need to think through about comprehension base
+
+There is a master kg of kgs (or at least a cloud of interlinked master kgs) that have the links (the paths) to perspectives (entity layers) and to the categories and types of edges in the different kgs. (domain kgs, experience kgs (saving personal preferences and knowledge) and topic kgs (saving discussion flows) and there is the chat history (raw text with timestamp id and topic markers)
+
+
+
+The kgs are eather loaded (in memgraph for quick retrieaval) or stored (in supabase for long term persistance) 
+
+
+
+each edge has a category a type  a target perspective and extra info. 
+
+(cat: archaeological, type:found-at, pers: ancient-city-names, info: coords:  125744n 156232w, country: iraq., current: museum: louvre loc: paris.)  
+
+the master kg helps link the info entries into a kg and perspective  (geographic kg perspectives: museums,  libraries, countries, cities)
 
 *Document Version: 0.051*   
 *Date: 2026-03-02*    
-*Note: Parts of this patent have been made public since Feb 07, 2026.*
+                                    *Note: Parts of this patent have been made public since Feb 07, 2026.*
