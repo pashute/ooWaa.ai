@@ -17,6 +17,8 @@ Planned threads: The remainder of topics not discussed yet, in this and other th
 
 You are creating or updating a brief and concise HOCON report, for supporting the hum&ai discussion.
 
+> **Note:** The HOCON report will be replaced with a comprehension-base knowledge graph query/update when that feature is implemented.
+
 # Your query
 
 Questions you ask for creating the report:
