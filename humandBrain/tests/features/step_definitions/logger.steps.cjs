@@ -3,7 +3,7 @@ const { Given, Then } = require('@cucumber/cucumber');
 let logger;
 
 Given('the logger is initialized', async function () {
-  const imported = await import('../../src/logger.js');
+  const imported = await import('../../../src/logger.js');
   logger = imported.default;
 });
 

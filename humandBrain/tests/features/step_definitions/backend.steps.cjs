@@ -10,14 +10,14 @@ Given('a test message {string}', function (payload) {
 
 When('I run module {string}', async function (moduleName) {
   const moduleMap = {
-    inAnalyzer: '../../src/modules/inAnalyzer.js',
-    outAnalyzer: '../../src/modules/outAnalyzer.js',
-    flowMngr: '../../src/modules/flowMngr.js',
-    strollAnalyzer: '../../src/modules/strollAnalyzer.js',
-    respondMngr: '../../src/modules/respondMngr.js',
-    awareMngr: '../../src/modules/awareMngr.js',
-    alignMngr: '../../src/modules/alignMngr.js',
-    knowledgeMngr: '../../src/modules/knowledgeMngr.js',
+    inAnalyzer: '../../../src/modules/inAnalyzer.js',
+    outAnalyzer: '../../../src/modules/outAnalyzer.js',
+    flowMngr: '../../../src/modules/flowMngr.js',
+    strollAnalyzer: '../../../src/modules/strollAnalyzer.js',
+    respondMngr: '../../../src/modules/respondMngr.js',
+    awareMngr: '../../../src/modules/awareMngr.js',
+    alignMngr: '../../../src/modules/alignMngr.js',
+    knowledgeMngr: '../../../src/modules/knowledgeMngr.js',
   };
 
   const modulePath = moduleMap[moduleName];
@@ -42,7 +42,7 @@ Then('the module name should be {string}', function (moduleName) {
 });
 
 When('I run the orchestrator', async function () {
-  const { orchestrateTestMessage } = await import('../../src/orchestrator.js');
+  const { orchestrateTestMessage } = await import('../../../src/orchestrator.js');
   orchestratorResult = orchestrateTestMessage(message);
 });
 
