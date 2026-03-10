@@ -1,6 +1,6 @@
 import { jest } from '@jest/globals';
 import { StringCodec } from 'nats';
-import { sendTestMessage } from '../src/natsTest.js';
+import { sendTestMessage } from '../../src/natsTest.js';
 
 describe('sendTestMessage', () => {
   it('sends testSent and returns testReceived without UI', async () => {

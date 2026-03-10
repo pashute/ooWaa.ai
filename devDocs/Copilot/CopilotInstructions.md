@@ -7,7 +7,7 @@
 - If I provide a Project item or issue link, treat it as the source of truth for scope.
 
 ## Long Discussions
-- Use [DevDocs/Copilot/chats.md](DevDocs/Copilot/chats.md) to keep a running summary of long discussions.
+- Use [devDocs/Copilot/chats.md](devDocs/Copilot/chats.md) to keep a running summary of long discussions.
 - When a discussion gets long or complex, summarize decisions, open questions, and next steps there.
 - Keep summaries concise and actionable.
 
@@ -15,7 +15,7 @@
 When I ask you to commit:
 1. if I didn't also say to push, verify if I meant commit and push.
 
-2. You can use DevDocs/Copilot/devflow.md for all of the following if needed. You may write and erase it at will. 
+2. You can use devDocs/Copilot/devflow.md for all of the following if needed. You may write and erase it at will. 
 Keep them in github for development consistency. 
 
 3. Remember your suggested summary intended for the commit. 
@@ -34,7 +34,7 @@ into the github item comment.
 - Use the filename paths for fixes with the following path format:
 ```
     [filename.row:char](https://github.com/username/projname/edit/branchname/pathandfilename)
-    [TechSetup.256:0](https://github.com/pashute/ooWaa.ai/edit/Feature/workspace-setup/DevDocs/Copilot/TechSetup.md]    
+    [TechSetup.256:0](https://github.com/pashute/ooWaa.ai/edit/Feature/workspace-setup/devDocs/Copilot/TechSetup.md]    
 ```
 - Comment format in markdown:  
 
@@ -51,8 +51,8 @@ into the github item comment.
      - [v] e.g. Compared and completed 
 - 2. **File Changes:**  
     e.g. cosmetics: 
-    - [TechSetup.md:256.0](https://github.com/pashute/ooWaa.ai/blob/feature/wspStup/DevDocs/Copilot/TechSetup.md)
-    - [chats.md:13.44](https://github.com/pashute/ooWaa.ai/blob/feature/workspace-setup/DevDocs/Copilot/chats.md)
+    - [TechSetup.md:256.0](https://github.com/pashute/ooWaa.ai/blob/feature/wspStup/devDocs/Copilot/TechSetup.md)
+    - [chats.md:13.44](https://github.com/pashute/ooWaa.ai/blob/feature/workspace-setup/devDocs/Copilot/chats.md)
     e.g. fixed part of [bug42] stuck same thread
     - [index.jsx:11.0](https://github.com/pashute/ooWaa.ai/blob/feature/wspStup/src/humANDai/index.jsx)
 5. If it is the closing of a parent with subprojects, also add the instruction to move them all with a remark in each to see parent comment. 

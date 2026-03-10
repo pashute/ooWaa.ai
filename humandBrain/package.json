@@ -36,6 +36,7 @@
     "node": ">=18.0.0"
   },
   "jest": {
+    "testMatch": ["**/tests/units/**/*.test.js"],
     "transform": {}
   }
 }

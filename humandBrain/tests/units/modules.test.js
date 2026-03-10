@@ -1,6 +1,6 @@
-import { strollAnalyzer } from '../src/modules/strollAnalyzer.js';
-import { alignMngr } from '../src/modules/alignMngr.js';
-import { knowledgeMngr } from '../src/modules/knowledgeMngr.js';
+import { strollAnalyzer } from '../../src/modules/strollAnalyzer.js';
+import { alignMngr } from '../../src/modules/alignMngr.js';
+import { knowledgeMngr } from '../../src/modules/knowledgeMngr.js';
 
 describe('module handlers', () => {
   const message = { type: 'testSent', payload: 'test message' };

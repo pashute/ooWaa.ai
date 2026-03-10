@@ -1,11 +1,11 @@
-import { extractHoconFromMarkdown, parseHocon, loadMockHoconFromInAnalyzer } from '../src/kg/hoconMock.js';
+import { extractHoconFromMarkdown, parseHocon, loadMockHoconFromInAnalyzer } from '../../src/kg/hoconMock.js';
 import fs from 'fs';
 import path from 'path';
 
 describe('HOCON mock parser', () => {
   it('extracts HOCON block from inAnalyzer.md', () => {
     const markdown = fs.readFileSync(
-      path.resolve(process.cwd(), '..', 'DevDocs', 'Backend', 'inAnalyzer.md'),
+      path.resolve(process.cwd(), '..', 'devDocs', 'Backend', 'inAnalyzer.md'),
       'utf-8'
     );
     const hoconText = extractHoconFromMarkdown(markdown);

@@ -1,4 +1,4 @@
-import { orchestrateTestMessage } from '../src/orchestrator.js';
+import { orchestrateTestMessage } from '../../src/orchestrator.js';
 
 describe('orchestrateTestMessage', () => {
   it('returns testReceived with module results', () => {
