@@ -15,6 +15,16 @@ services:
     networks:
       - oowaa-network
 
+  memgraph:
+    image: memgraph/memgraph:latest
+    container_name: oowaa-memgraph
+    ports:
+      - "7687:7687"   # Bolt protocol
+      - "7444:7444"   # HTTP monitoring
+    restart: unless-stopped
+    networks:
+      - oowaa-network
+
 networks:
   oowaa-network:
     driver: bridge
