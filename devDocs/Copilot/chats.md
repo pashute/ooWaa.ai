@@ -70,6 +70,8 @@ Date: 2026-02-04
 - 2026-02-04: Added e2e test -> app -> nats -> (msg1) be: orch, fans out to [inAnalyzer, outAnalyzer, flowMngr, respondMngr, awareMngr] and comes back (placeholder test).
 - 2026-02-04: Added backend logger BDD (Cucumber) + Jest tests.
 - 2026-02-04: Added HOCON parser + mock KG (Neo4j/Cypher) with BDD + Jest tests.
+- 2026-03-10: Added e2e-testing-works BDD feature (humANDai): New Chat button → /api/newChat → orchestrator.newChat() throws "Not implemented yet" → 501. All 4 humANDai Cucumber scenarios pass.
+- 2026-03-10: Updated comment on newChat stub in App.js, server.js, orchestrator.js: "For testing only. The actual new chat will be defined in the dashboard features."
 
 ### Current status
 - #1: done
@@ -84,7 +86,9 @@ Date: 2026-02-04
 - #4: done (4.1 done; 4.2 clean; 4.3/4.4 Memgraph/Supabase configured)
 - #5.1: done (placeholder UI with BDD/TDD tests)
 - #5.2: done (NATS roundtrip test implemented)
+- #5.2b1/b2: done (newChat stub in orchestrator + /api/newChat endpoint in server.js)
 - #5.3: done (HOCON -> Neo4j/Cypher mock KG)
+- #5.4: done (e2e-testing-works: New Chat button → /api/newChat → orchestrator.newChat() → 501 "Not implemented yet"; proves full e2e chain is wired)
 - #6/#8/#9: pending
 
 

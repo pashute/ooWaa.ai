@@ -13,6 +13,7 @@
 
 
 ## Functional modules
+- **api/server**: thin Express HTTP gateway (`POST /api/message`) — receives frontend requests and dispatches to orchestrator
 - **orchestrator**: routes NATS messages and coordinates module flow
 
 - **inAnalyzer**: input analysis module
@@ -36,5 +37,6 @@ detects knowledge gaps and ambiguities.
 ## Test Remarks
 1. Logger initial test: (placeholder): This is the first test to be run. 
 
-2. NATS initial test: (placeholder)
-UI sends `testSent` to orchestrator; orchestrator forwards to `inAnalyzer`, `outAnalyzer`, `flowMngr`, `respondMngr`, `awareMngr`; responses aggregated into `testReceived` back to UI.
+2. NATS initial test: UI sends `testSent` via `POST /api/message`; gateway calls orchestrator which forwards to all modules; responses aggregated into `testReceived` back to UI.
+3. API gateway test (`tests/api/`): Supertest hits `POST /api/message`, verifies 200 + `testReceived` type.
+4. NATS messaging test (`tests/messages/`): mocked NATS roundtrip via `sendTestMessage`; live roundtrip skipped unless `NATS_SERVER` env is set.

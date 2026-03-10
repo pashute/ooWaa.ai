@@ -37,7 +37,8 @@ ooWaa.ai/
 │   ├── src/              # backend source code
 │   └── tests/            # all tests
 │       ├── units/        # Jest unit tests
-│       ├── api/          # NATS API integration tests
+│       ├── api/          # HTTP API integration tests (Supertest)
+│       ├── messages/     # NATS messaging tests
 │       ├── mocks/        # shared test mocks
 │       ├── pending/      # unfinished/deferred tests
 │       └── features/     # Cucumber BDD
@@ -84,7 +85,9 @@ See [devDocs/](devDocs/) for full project documentation.
 - Environment variables template: [devDocs/Backend/.env.example](devDocs/Backend/.env.example) — copy to `humandBrain/.env` and fill in API keys.
 - NATS default: `nats://localhost:4222` (see .env).
 - Default test subject: `oowaa.test` (update as needed).
-- **API Testing** (humandBrain/tests/api/): uses Jest with NATS test client (`natsTest.js`). No HTTP server; tests communicate via NATS subjects.
+- **HTTP API Gateway** (`src/api/server.js`): thin Express server exposing `POST /api/message` → orchestrator → NATS modules. Start port: 3000.
+- **API Testing** (`tests/api/`): Supertest integration tests against the Express gateway.
+- **NATS Messaging Tests** (`tests/messages/`): Jest tests for NATS roundtrip via mock and (optionally) live server.
 
 ### Concurrent Execution
 - **concurrently** package runs both services simultaneously

@@ -3,7 +3,7 @@ const { Given, Then } = require('@cucumber/cucumber');
 let config;
 
 Given('the brain config is loaded', async function () {
-  const { loadBrainConfig } = await import('../../src/config/configLoader.js');
+  const { loadBrainConfig } = await import('../../../src/config/configLoader.js');
   config = await loadBrainConfig();
 });
 

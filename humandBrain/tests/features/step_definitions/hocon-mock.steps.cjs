@@ -4,12 +4,12 @@ let parsed;
 let statements;
 
 Given('the mock HOCON fixture is loaded', async function () {
-  const { loadMockHoconFromInAnalyzer } = await import('../../src/kg/hoconMock.js');
+  const { loadMockHoconFromInAnalyzer } = await import('../../../src/kg/hoconMock.js');
   parsed = loadMockHoconFromInAnalyzer();
 });
 
 When('I build Cypher from the mock HOCON', async function () {
-  const { buildMockCypher } = await import('../../src/kg/neo4jMock.js');
+  const { buildMockCypher } = await import('../../../src/kg/neo4jMock.js');
   statements = buildMockCypher(parsed);
 });
 
