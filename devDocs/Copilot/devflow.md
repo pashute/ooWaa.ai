@@ -17,8 +17,8 @@ Checklist:
 
 **Previous commit:** e2a1a20 - Added Copilot folder structure
 **Files changed (this commit):**
-- DevDocs/Copilot/CopilotInstructions.md (updated prompt output format)
-- DevDocs/Copilot/github_copilot_prompt.md (created as temp file, will be removed)
+- devDocs/Copilot/CopilotInstructions.md (updated prompt output format)
+- devDocs/Copilot/github_copilot_prompt.md (created as temp file, will be removed)
 
 **Commit Message:**
 ```

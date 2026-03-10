@@ -1,4 +1,4 @@
-import { buildMockCypher } from '../src/kg/neo4jMock.js';
+import { buildMockCypher } from '../../src/kg/neo4jMock.js';
 
 describe('Neo4j mock builder', () => {
   it('creates cypher statements for themes', () => {

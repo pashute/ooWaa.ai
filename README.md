@@ -21,7 +21,7 @@ The discussion produces (or updates) a brief and concise HOCON report to support
 
 ## 🏗️ Project Structure
 
-See [DevDocs/TechSetup.md](DevDocs/TechSetup.md) for the full directory layout and tech stack details.
+See [devDocs/TechSetup.md](devDocs/TechSetup.md) for the full directory layout and tech stack details.
 
 ## 🚀 Tech Stack
 

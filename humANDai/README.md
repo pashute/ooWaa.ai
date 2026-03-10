@@ -12,8 +12,8 @@ It plans the conversation with you,
 
 React Native mobile application built with Expo.
 
-For development documentation see DevDocs/TechSetup.md
-For features see DevDocs/Frontend/features.app.md
+For development documentation see [devDocs/TechSetup.md](../devDocs/TechSetup.md).
+For features see [devDocs/Frontend/features.app.md](../devDocs/Frontend/features.app.md).
 
 ## Features
 

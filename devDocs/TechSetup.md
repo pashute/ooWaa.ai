@@ -19,7 +19,7 @@ This document outlines all the configuration decisions made for the ooWaa.ai pro
 ooWaa.ai/
 ├── .devcontainer/        # Codespace configuration
 ├── .vscode/              # VSCode settings
-├── DevDocs/              # Project documentation
+├── devDocs/              # Project documentation
 ├── humANDai/             # React Native (Expo) workspace
 │   ├── App.js            # main (expo)
 │   ├── app.json          # data (expo)
@@ -28,15 +28,24 @@ ooWaa.ai/
 │   ├── src/              # app source code
 │   └── tests/            # all tests
 │       ├── units/        # Jest unit tests
+│       ├── e2e/          # Playwright end-to-end tests
+│       ├── mocks/        # shared test mocks
+│       ├── pending/      # unfinished/deferred tests
 │       └── features/     # Cucumber BDD
 │           └── done/     # implemented features
 ├── humandBrain/          # Node.js server workspace
 │   ├── src/              # backend source code
-│   └── tests/            # all tests (TBD)
+│   └── tests/            # all tests
+│       ├── units/        # Jest unit tests
+│       ├── api/          # NATS API integration tests
+│       ├── mocks/        # shared test mocks
+│       ├── pending/      # unfinished/deferred tests
+│       └── features/     # Cucumber BDD
+│           └── done/     # implemented features
 └── package.json          # Root with concurrently scripts
 ```
 
-See [DevDocs/](DevDocs/) for full project documentation.
+See [devDocs/](devDocs/) for full project documentation.
 
 ## Development Stack and Methodologies
 - js code throughout. 
@@ -72,9 +81,10 @@ See [DevDocs/](DevDocs/) for full project documentation.
 - **See remarks** in [humandBrain/src/config/settings.yaml](humandBrain/src/config/settings.yaml) for other options
 
 **Backend Setup Notes:**
-- Copy `.env.example` to `.env` and set API keys.
+- Environment variables template: [devDocs/Backend/.env.example](devDocs/Backend/.env.example) — copy to `humandBrain/.env` and fill in API keys.
 - NATS default: `nats://localhost:4222` (see .env).
 - Default test subject: `oowaa.test` (update as needed).
+- **API Testing** (humandBrain/tests/api/): uses Jest with NATS test client (`natsTest.js`). No HTTP server; tests communicate via NATS subjects.
 
 ### Concurrent Execution
 - **concurrently** package runs both services simultaneously
@@ -206,11 +216,11 @@ npm run dev          # Start everything
 - **README.md** - Main documentation
 - **humANDai/README.md** - Frontend general description
 - **humandBrain/README.md** - Backend general description 
-- **DevDocs/TechSetup.md** - (This file) Tech & Dev initial setup requirements
+- **devDocs/TechSetup.md** - (This file) Tech & Dev initial setup requirements
 
-- **DevDocs/** - Feature and devplan for front and back end.
-- **DevDocs/Frontend/ 
-- **DevDocs/Backend/ 
+- **devDocs/** - Feature and devplan for front and back end.
+- **devDocs/Frontend/ 
+- **devDocs/Backend/ 
 
 ## 🛠️ Customization Points
 

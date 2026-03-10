@@ -13,9 +13,9 @@ Date: 2026-02-04
 1.2 Copy instructions into this file and track progress here.
 2. TechSetup and other setups:
 2.1 Delete “Next Steps” section from TechSetup.
-2.2 Compare DevDocs/PromptAnalyzer.md with DevDocs/Backend/archived/PromptAnalyzer.md; update archive, delete DevDocs file.
-2.3 Same for QPromptAnalyzer in DevDocs and DevDocs/Frontend; update Frontend, then delete DevDocs file. Then delete all .md files from DevDocs/ except TechSetup (don’t touch subdirectories yet).
-2.4 Compare TechSetup with setup files in DevDocs/Frontend and DevDocs/Backend; merge into TechSetup.
+2.2 Compare devDocs/PromptAnalyzer.md with devDocs/Backend/archived/PromptAnalyzer.md; update archive, delete DevDocs file.
+2.3 Same for QPromptAnalyzer in DevDocs and devDocs/Frontend; update Frontend, then delete DevDocs file. Then delete all .md files from devDocs/ except TechSetup (don’t touch subdirectories yet).
+2.4 Compare TechSetup with setup files in devDocs/Frontend and devDocs/Backend; merge into TechSetup.
 2.5 Confirm sections now in TechSetup; delete the two front/backend setup .md files.
 3. Add version control to all remaining .md files so PRs auto-increment document versions (e.g., 1.3.1 → 1.3.2).
 4. DB updates:
@@ -29,7 +29,7 @@ Date: 2026-02-04
 5.2b1 Add orchestrator roundtrip test remark (testSent/testReceived).
 5.2b2 Implement backend orchestration test message routing.
 5.3 Define mock KG (from QPromptAnalyzer example HOCON), retrieve from Memgraph with LangChain; TDD.
-2b3.1 Add components list to DevDocs/Backend/features.brain.md.
+2b3.1 Add components list to devDocs/Backend/features.brain.md.
 2b3.2 Add version headers to frontend/backend feature docs.
 6. LangGraph state loop: requested → merged → analyzed → responded → requested.
 8. Establish CI/CD pipelines using GitHub Actions.
@@ -46,16 +46,16 @@ Date: 2026-02-04
 ### Attendance / permission notes
 - PERMISSION NEEDED! For #3: GitHub Action to auto-bump doc versions
 - PERMISSION NEEDED! For #4.2/#4.4: Keep "postg" references for Supabase?
-- Missing: DevDocs/PromptAnalyzer.md, DevDocs/Frontend/QPromptAnalyzer.md
+- Missing: devDocs/PromptAnalyzer.md, devDocs/Frontend/QPromptAnalyzer.md
 - No frontend setup file found
 
 ### Progress log
 - 2026-02-04: Read issue #20 and captured instructions here.
-- 2026-02-04: Identified missing DevDocs/PromptAnalyzer.md and missing DevDocs/Frontend/QPromptAnalyzer.md.
+- 2026-02-04: Identified missing devDocs/PromptAnalyzer.md and missing devDocs/Frontend/QPromptAnalyzer.md.
 - 2026-02-04: Prepared to update TechSetup, remove Next Steps, and clean DB mentions.
 - 2026-02-04: Updated TechSetup with Memgraph/Supabase, removed Next Steps, removed PostgreSQL/MongoDB mention.
-- 2026-02-04: Marked DevDocs/QUICKSTART.md and DevDocs/chats.md as deprecated (pending deletion).
-- 2026-02-04: Marked DevDocs/Backend/humandBrainTech.md as deprecated (pending deletion).
+- 2026-02-04: Marked devDocs/QUICKSTART.md and devDocs/chats.md as deprecated (pending deletion).
+- 2026-02-04: Marked devDocs/Backend/humandBrainTech.md as deprecated (pending deletion).
 - 2026-02-04: Added version headers (1.0.0) to all key .md files.
 - 2026-02-04: Created GitHub Action workflow for auto-bumping doc versions on PR updates.
 - 2026-02-04: Added neo4j-driver and @supabase/supabase-js to humandBrain dependencies.

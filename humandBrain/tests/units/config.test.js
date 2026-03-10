@@ -1,4 +1,4 @@
-import { loadBrainConfig } from '../src/config/configLoader.js';
+import { loadBrainConfig } from '../../src/config/configLoader.js';
 
 test('loads brain config defaults', async () => {
   const config = await loadBrainConfig();

@@ -4,9 +4,9 @@ The AI reformer. Knows what it doesn't. Teams with you to get it right.
 
 
 
-For setup see DevDocs/TechSetup.md
+For setup see [devDocs/TechSetup.md](../devDocs/TechSetup.md).
 
-For features see DevDocs/Backend/features.brain.md
+For features see [devDocs/Backend/features.brain.md](../devDocs/Backend/features.brain.md).
 
 
 

@@ -18,7 +18,7 @@ export function loadMockHoconFromInAnalyzer() {
   const filePath = path.resolve(
     process.cwd(),
     '..',
-    'DevDocs',
+    'devDocs',
     'Backend',
     'inAnalyzer.md'
   );
