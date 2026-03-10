@@ -6,7 +6,7 @@ A computer-implemented system and method for providing reliable, attentive AI as
 
 These traits are achieved through a four-legged framework designed to move language models to the periphery, allowing them to assist as supportive collaborators without dominating the logic of the discussion.
 
-While each leg is designed to stand on its own, their collective strength provides a robust foundation for truly deep AI, capable of executing intricate, highly-complex, multi-stage tasks, and long term operations, aligned to the original intent.
+While each leg is designed to stand on its own, their collective strength provides a robust foundation for truly deep AI, capable of executing intricate, highly complex, multi-stage tasks, and long-term operations, aligned to the original intent.
 
 Instead of unpredictable outputs that drift off-course — surprising us with failed understandings at the most critical moments — the proposed system ensures logically cohesive responses, achieved through a transparent, attentive steering process that prioritizes reliability over unvetted immediacy, allowing the system to progress stage-by-stage at the user’s deliberate pace.
 
@@ -14,67 +14,76 @@ Instead of unpredictable outputs that drift off-course — surprising us with fa
 
 The results of this system are coherent and cohesive because they are constructed logically. 
 
-They are logical due to a foundational pullout from AI controlling the conversation, to a rule-based or grounded external discussion managing component, which aligns with the user, interprets the questions and results into clear instructions, before reaching out to the AI, if at all.
+They are logical due to a foundational pullout from AI controlling the conversation, to a rule-based or grounded external discussion-managing component, that aligns with the user, interprets the questions and results into clear instructions, before reaching out to the AI, if at all.
 
 
-2. The second leg: **Attentive alignment:**  
+2. The second leg: A **smart chat** with **attentive alignment** - asking the right questions. 
 
-They are responsible and steerable because they are coherent and cohesive - due to a change in the direction of information flow, putting the focus on the Humand-and-AI team  having the AI "care" about the human's requests and responses(!) Not just about fetching gigantic amounts of (many times) irrelevant information. 
+The system supplies responsible and steerable results because these results are coherent and cohesive. This is achieved by reversing the direction of information flow, instead of answering the users questions, it is focused on asking the user the right questions. 
 
-The proposed smart chat system's goal is to listen attentively to the users and align with them.  Instead of guessing and jumping off the cliff, only to discover there is a rocky beach below,  out attentive system asks the right questions. The smart chat **follows the conversation,** understanding it deeply, not just throwing in all the words statistically. It knows whtat the current topic is, what the general discussion is about, remembering a summary of previous discussions, and knowing what's planned ahaead after discussing it with the user.    The conversation is held in threads, not single iterations of request response. The responses from the AI are given only after a conversation with enough parameters is accumulated so that a large language model would be good at solving it.    Till then other methods are used. When critical information is needed other tools are chosen. When the AI is given its chance it will usually be with some sort of parallel verification. Guesses and knowledge gaps are reported, and worked around with the user, as a **human and AI team.** 
+The focus is on a Human-and-AI team, with the AI "caring" about the human's responses, slowly and attentively aligning itself with the user through discussions, while recursively assessing its own responses, rather than fetching huge amounts of possibly irrelevant information, and instead of missing and skipping over the typical shifts in focus and understanding during a conversation. 
 
-The smart chat doesn't let the conversaton drown the user in information. it moves at a slow pace, getting feedback for each iteration, and with its long term contextual capabilities 
+The smart chat **follows the conversation,** deeply understands it. It knows whtat the current topic is, what the general discussion is and was about, remembers a summary of previous discussions, and knows what's planned ahead after discussing it with the user.    
 
+The conversation is held in threads, not single iterations of request response. The responses from the AI are given only after a conversation with enough accumulated parameters so that a large language model would be good at solving it.  Until then other methods are used. 
 
-3. The third leg: The **Comprehension base:**
+When critical information is needed other tools are chosen. When the AI is given its chance it will usually be with some sort of parallel verification. Guesses and knowledge gaps are reported, and worked around with the user, as a **human and AI team.** 
 
-The comprehension base is a large set of small specialized knowledge graphs (called "comprehension units") tied into each other, with swapable node entitiy bases (called "aspects") and swapable connection link sets (called "perspectives") representing small ontologies (each being a lexicons with a thesaurus) with the terms and phrases needed for a certain type of discussion on a certain topic or area. Links to nodes outside the aspect are listed as external links in the node's info section. 
-
-Each thread of discussion needs only a small set of these comprehensiuon units for the imediate response, while  a deeper, fully thought out response, can search its  memory, or learn the topic on the fly. This mimics the two stages of human cognition, described in Daniel Kahneman's book Thinking Fast and Slow. 
-
-Each added bit of knowledge is connected to existing knowledge, assimilating the information if possible, or accomodating for it, by widening the current aspect, or creating a new one and cnnsolidating . (See Jean Peaget The Construction of knowledge in Children, 1937) Thus Everything is tied to everything. 
-
-The process of creating new comprehension units, if there is none for that domain is to tie in to existing knowledge, creating "paradigms" with more "basic" aspects of knowledge already existing in the knowledge base. This mimics the human 
+The smart chat doesn't let the conversaton drown the user in information. it moves at a slow pace, getting feedback for each iteration, and with its long term smart-contextual capabilities can bring the user back on track, while allowing for in depth drill-downs, dealing with distractions of any kind. 
 
 
-An attempt is being made to use the current AIs and online information, to create a self learning comprehension base with logic and associations. This will not become a large knowing all model. Instead, we use a "tied in" strategy, mimicking the human learning process. When humans learn something new they tie it into the old knowledge and create a metaphore or a paradigm. (For example we say "to construct" or "to build" a "computer program", and talk about software components as "building blocks", using the paradigm of setting bricks one on the other to build a construction.)  Another property of human thought is the rapid fast answer, and the slow updated thougt-out one.  Both of these are part of the Comprehension base paradigm.
+3. The third leg is the **Comprehension base** and using it for **Smart context.** The basis for all the knowledge in the system is logic and comprehension. 
+
+3a. Structure:  
+
+The comprehension base is a large set of small specialized knowledge graphs (herein "comprehension units") tied into each other, with swapable node entitiy-base layers (herein "aspects") and swapable connection link sets (herein "perspectives") representing small ontologies, each being a lexicon with a thesaurus. 
+
+A comprehension unit stores the terms, concepts,  phrases, sequences and rules needed for a certain type of discussion on a certain topic or area. 
+
+Entities in an aspect layer may point to other entities within or outside the aspect using specific or general links. 
+
+The resulting small, tightly interconnected modular inter-domain network units relevant to the anticipated field of knowledge domain or specific topic can be prepared dynamically for rapid availability or loaded into memory for immediate access.
+
+Semantic, pragmatic, and logical connections are found by traversing the different comprehension bases and loading different connections linking everything to everything. 
+
+Quick parital answers can be given immediately, and slower more accurate results can come in later,  this time with traceable logical and verifiable conclusions mimicking human cognition as described in Daniel Kahneman's book Thinking Fast and Slow (2011)
+
+3b. Smart context
 
 
+The same comprehension base of lexicon-thesaurus "textbooks" for any field of discussion, are used for storing the personal choices and preferences, the chat's themselves along with their analysis and breakdown. 
 
-The comprehension base described in this invention, is started with a simple network of terms with named and weighted connections between these terms, enough to create a limited understanding of some simple concepts with a limited vocabulary. But it will have in its core the traits of attentiveness and teamwork. 
+Thus the smart chat can be familiar with the user’s preferences and knowledge, and keep the chat on track, and follow up on abandoned branches of the discussion.
 
-From here we advance creating modular networks that  build new perspectives and aspects, and widen the scope and range with new fields of knowledge, each tying in to the previous knowledge and building on it. 
-
-The overstand company will be guiding and directing its autonomously study and self testing activities, but it will also be advancing during its activity with the users. Thus a user who is asking something about sports, health, or some ancient language, will have the system preparing for 
-
-The resulting modular inter connected domain network units (which we knicknamed comprehension units)  load only small sections of knowledge relevant to the field of knowledge, its domain and even specific topic.  
-Still it will find  semantic and pragmatic connections, by traversing the different comprehension bases and loading different connections linking everything to everything. By anticipating the next coming up questions, 
-data can be loaded in advance, quick parital answers can be given on time, and slower more accurate results can 
-
-come in later. This time with traceable logical and verifiable conclusions.
-
-The same comprehension base of lexicon-thesaurus "textbooks" for any field of discussion, are used also for storing the personal choices and preferences, and the chat's themselves with along with their analysis and breakdown, meaning the smart chat can suggest going back to an abandoned branch, and giving a comfortable familiar feeling securely without information leaking out to advertisers or thieves. 
 
 4. The fourth and last leg: **Dynamic tooling:**   The proposed system offers the AI an opportunity to "program" its own sequences and procedures to access and manipulate the information and follow long comnplex tasks modular tasks. 
 These tasks are controlled primarily through voice and natural languege text controls. This opens up a whole new sleuth of AI capabilities effectively changing the AI application lockin and even general "application lockin" where you need a certain application to accomplish things in software.  
 
 Each leg stands on its own, and brings with it a small revolution: 
 
-1. Smart chat helps give reliable answeres and stay on track.  Continuing from where you reached, and exploring where you prevously left off. 
+1. Smart chat with discussion flow control helps give reliable answeres and stay on track.  Continuing from where you reached, and exploring where you prevously left off. 
 
-2. Aligning AI knows what it doesn't know, and helps you change that. It studies new fields with you, and discovers interesting things. 
+2. The aligning AI knows what it doesn't know, and helps you change that. It studies new fields with you, and discovers interesting things through collaboration. 
 
-3. Dynamic code and complex task execution allows the AI to program anything.  But in a slow and careful process. It could follow your own tasks and get your day moving. It can build new types of OCR and text to speech out of existing code. Just for example. 
+3. Dynamic code and complex task execution allows the AI to program anything.  It also allows the AI to share its coding with human non-professional users. 
+Just three examples of what could be accomplished by this:  
 
-4. Comprehension base modules (Comprehension units) will eventually lead to the replacement of raw trained neural networks, and issue in the use of directed models.  
+- A new type of chat, that remembers your calendar and tasks, or follows your health, subtly or explicitely reminding you how long you’ve been at the computer, or what needs to be done.
 
-the applications have been mentioned at the end of the claims. 
+- New types of OCR and text to speech out of existing code, that create a mid layer of phonetic or visual edge translation, and then consolidate it with context, known sources, and statistical models, while having better collaboration with the user. 
+
+4. Comprehension base modules (Comprehension units) will eventually lead to the replacement of raw trained neural networks, and issue in the use of human explainable and verifiable directed logic models instead.  
+
+5. The legal procedures that may be implemented with a transparent system like this, are discussed briefly at the end of the claims section. The exact details are yet to be determined but a tightly protected legal binding can allow the automatic system to serve on behalf of a user, trusted by both the user and the institutions being accessed in the user’s name. 
+
+
+The self standing applications are mentioned at the end of the claims. 
 
 1. Comprehensioon base - replacing LLM usage. - Yet to see how successful this is, and how practical.
 
-2.  Voice and Text control UI runner for any app.  The ability to control any app from a chat with proper permissions of course. 
+2.  Voice and Text control as new type of general app UI.  The ability to control any app with or without an API from a chat.
 
-3. Reliable robotic legal representation. - of course only if the claims for reliability with this theoretical method are met. In theory there is no difference between theory and the real world. 
+3. Reliable robotic legal representation. - this depends on two things. (1) That the claims for reliability with this theoretical method are met in the real world. In theory, there is no difference between theory and the real world. (2) That a legal system is set in place, 
 
 ## Specification
 
@@ -118,33 +127,35 @@ This four in one solution, in fact
 
 7. The system of claim 1, with one or more **conversation-flow control** software components, which detect and follow where the conversation is currently at, where it came from, and where it might be going or planned to go. 
 
-8. The software component of claim 7 implemented in the method described in claim 2, possibly along with one or any group of its subsequent claims (3-6).
+8. The conversation-flow control component of claim 7 implemented with an orchestration module, as described in the method of claim 2, possibly along with one or any group of its subsequent claims (3-6).
 
-9. The software component of claim 7, wherein the elements being traced may be threads, topics, intents, goals, subjects, terms, key phrases, discussion branches, summaries, decisions made, associations, information sources and verification sources, domains of knowledge, described or implied scenarios,conversation meta-data like timestamps, ids and votes, human or automatically assigned tags such as grammar markers, importance scores, and links to related discussions.
+9. The conversation-flow control component of claim 7, wherein the elements being traced may be threads, topics, intents, goals, subjects, terms, key phrases, discussion branches, summaries, decisions made, associations, information sources and verification sources, domains of knowledge, described or implied scenarios,conversation meta-data like timestamps, ids and votes, human or automatically assigned tags such as grammar markers, importance scores, and links to related discussions.
 
-10. The software component of claim 7, wherein the elements being traced are **response-creation tasks,** along with their states their logic and the parameters that determine the tasks direction and resulting response.
+10. The conversation-flow control component of claim 7, wherein the elements being traced are **response-creation tasks,** along with their states their logic and the parameters that determine the tasks direction and resulting response.
 
-11. The software component of claim 7, wherein if there is even the slightest doubt of necessity, any elements being traced, as listed in claims 9 and or 10, are assessed for alignment with the user. 
+11. The conversation-flow control component of claim 7, wherein if there is even the slightest doubt of necessity, any elements being traced, as listed in claims 9 and or 10, are assessed for alignment with the user. 
 
-12. The software component of claim 7, wherein topics and other elements are determined, maintained, accumulated and modified during the length of iterations for each **thread of discussioon.**
+12. The conversation-flow control component of claim 7, wherein topics and other elements are determined, maintained, accumulated and modified during the length of iterations for each **thread of discussioon.**
 
-13. The software component of claim 7, wherein the current topics are detected and analyzed against past and future topics, maintaining the detected topic names across multiple iterations in threads for as long as possible. 
+13. The conversation-flow control component of claim 7, wherein the current topics are detected and analyzed against past and future topics, maintaining the detected topic names across multiple iterations in threads for as long as possible. 
 
-14. The software component of claim 7, wherein a separate response is given **for each topic** found by the analysis of the thread's iterations. In other words, a single iteration's request may contain multiple topics, and a thread with muitiple iterations most definately would have more than one topic in the accumulated requests. When the system respondes to this single requests, or this sequence of requests, as a rule (with possible exceptions, like in the case of a very short and simple set of replies) each topic will get a separate response of its own. 
+14. The conversation-flow control component of claim 7, wherein a separate response is given **for each topic** found by the analysis of the thread's iterations. In other words, a single iteration's request may contain multiple topics, and a thread with muitiple iterations most definately would have more than one topic in the accumulated requests. When the system responds to this single requests, or this sequence of requests, as a rule each topic will get a separate response of its own. 
 
-16. The software component of claim 7, additionally shows or reads the **discussion flow trace** (thread subject, discussion branch, current topic, discussed topics and planned topics), or part of it, to the user upon request or continuously with every iteration, explicitly listed in the response, or implicitly given during the conversation (i.e. in questions like: should we leave Chocolate Cake Recipe IV, and proceed to Dining with your Queen - Part 2?).
+15. Possible exceptions to the rule defined in claim 14 such as in the case of a very short and simple set of replies, where a single response can be given with all of accumulated requests answered in one short and quick answer, sometimes leaving room for the beginning of a more complex answer, that will be continued in the next iterations. 
 
-17. The software component of claim 7, wherein the user may propose a **change to a topic name** or enumeration, and the system of claim 6 engages the user in alignment before accepting the change.
+16. The conversation-flow control component of claim 7, additionally shows or reads the **discussion flow trace** (thread subject, discussion branch, current topic, discussed topics and planned topics), or part of it, to the user upon request or continuously with every iteration, explicitly listed in the response, or implicitly given during the conversation (i.e. in questions like: should we leave Chocolate Cake Recipe IV, and proceed to Dining with your Queen - Part 2?).
+
+17. The conversation-flow control component of claim 7, wherein the user may propose a **change to a topic name** or enumeration, and the system of claim 6 engages the user in alignment before accepting the change.
 
 18. The method of claim 17, wherein changes to a topic name or enumeration will not cause loss of the tracked element and its surrounding data, meaning there is an internal idea to that topic and the name change is tracked with a timestamp and its disucussion highlights stored along with the raw discussion. 
 
 ##### Attentive Alignment Knowledge Gaps
 
-19. The software component of claim 7, wherein any detected topic change or encounter with a new topic flags the need for **alignment with the user.**
+19. The conversation-flow control component of claim 7, wherein any detected topic change or encounter with a new topic flags the need for **alignment with the user.**
 
 20. The system of claim 2, wherein details are addressed one at a time through iterative **threaded discussion,** with continuous active listening and disambiguation through subtle, indirect questioning.
 
-21. The software component of claim 7, wherein **parameter value changes** or missing parameter information (perhaps after a timeout period) will flag a discussion-state change, which causes the discussion to respond logicly by default or according to instructions if such instructions exist.
+21. The conversation-flow control component of claim 7, wherein **parameter value changes** or missing parameter information (perhaps after a timeout period) will flag a discussion-state change, which causes the discussion to respond logicly by default or according to instructions if such instructions exist.
 
 22. The software component of claim 7 wherein a **knowledge-gap** search is executed following each request and response, searching for missing source information, non verified data, controversial claims, and guesses. The software component decides according to the type of discussion and its importance whether to discuss the gap with the user, just notify the user, attempt self research and verification, or ignore with a remark in the logs. 
 
@@ -167,76 +178,103 @@ This four in one solution, in fact
 
 ##### Comprehension base 
 
-30.  The system of claim 1, wherein both **context and knowledge** are persisted and retrieved through modular **comprehension units,** each comprising entities in "perspective layers", and one or more weighted, tagged and named connection layers, loaded and unloaded dynamically by a comprehension base module loading manager. The set of all comprehension units herein will be called the **comprehension base.** 
+30.  The system of claim 1, wherein knowledge is managed through a  **comprehension base** which is an assortment of interlinked **comprehension units**, for mimicking the human processes of knowledge construction according to theory. 
 
-31.  The system of claim 30, wherein connection layers may represent grammar, semantic meaning, logical associations, emotional associations, external links and other aspects relevant to the field of information being retrieved, discussed, and stored.
+A comprehension unit has one or more entity layers, weighted **aspects** which are layers of entities for a common area of interest, and **perspectives**  which are layers of tagged and named connections, linking between the entities. 
 
-32.  The system of claim 30, wherein the stored entities may be non textual representations such as musical notes, image or video data, mathematical formulas, chemical formulas and descriptions etc. 
+31. A comprehension base as described in claim 30,  wherein the comprehension units are loaded or dynamically created as needed, by a comprehension base orchestrator module. 
 
-33. The system of claim 30, wherein comprehension units are interconnected via a master directory, and move in and out of focus by calling each other or through an orchestrator.
+32. An alternative to claim 31 where a comprehension unit module loads itself, and can expand itself calling other units which are created dynamically upon being called, constructed by the calling unit, or by an assisting module, which may be the orchestrator module described in claim 31. 
 
-34. The system of claim 30, wherein new knowledge is acquired by comparing it with existing comprehension units and creating new paradigms, connecting new terms and logic to existing entities and connections, mimicking the human learning process.
+33. A comprehension base as described in claim 30, wherein comprehension units are interconnected via a master directory of knowledge units, possibly including the unit’s aspects and perspectives.
 
-35. The system of claim 30, wherein comprehension units are sourced and continuously updated, with a confidence and approval score, verified by the user, by domain experts, or by automatic verifiers.
+34. An alternative to claim 33 wherein the comprehension units as described in claim 30 are interconnected by comprehension unit modules sending a call to the connected units, and those relevant responding to the call. 
 
-36. The system of claim 30, wherein expert domain knowledge is created and updated continuously, independently of user conversations, and also collaboratively with the user on the fly.
+35.  A comprehension base as described in claim 30, wherein connection layers may represent grammar, semantic meaning, logical associations, emotional associations, external links and other aspects relevant to the field of information being retrieved, discussed, and stored.
+
+36.  A comprehension base as described in claim 30, wherein the stored entities may be non textual representations such as musical notes, image or video data, mathematical formulas, chemical formulas and descriptions etc. 
+
+37. A comprehension base as described in claim 30, wherein dynamic sequences and procedures such as scenarios and logical flow charts  are stored and represented in the comprehension unit aspect and perspective layers,, with placeholder entities that can become dynamically set, or used as variables in a computation. 
+
+38. A comprehension base as described in claim 30, wherein links can be part of multiple perspectives, and entities can be part of multiple aspects. There is no need to duplicate an entity for a separate aspect or duplicate a connection for a separate perspective. 
 
 
-37. The system of claim 30, wherein by traversing the connections between comprehension units, a semantic equivalent can be found for any term, in a manner analogous to how a language model resolves semantic queries, with the potential to reduce or replace language model invocation entirely.
+39. A comprehension base as described in claim 30, wherein perspective connections can point to actual entities inside or outside the aspect, but also to general directions like to a field of knowledge, a domain, a different aspect or comprehension unit, or specifically to an external entity in another comprehension unit. 
+
+40. A comprehension base as described in claim 39, wherein links to entities outside the comprehension unit, have a specialized entity tag (i.e. external) with a link (e.g. using RDF-LD) to the external entity. 
+
+41. A comprehension base as described in claim 30, wherein new knowledge is acquired by comparing it with existing comprehension units and creating new paradigms and metaphors out of the old information, connecting new terms and logic to existing entities and connections,  mimicking the human learning process (for example as described by Lakoff and Mark Johnson’s Conceptual Metaphor Theory (1981) following Jean Peaget’s model of assimilation and accommodation described in The Construction of knowledge in Children (1937).  
+
+This creates a network where everything is connected to everything, mimicking awareness as a process of focusing on processed information, as theorized by Rene Descart’s attentio (1644), Gottfried Leibniz’s apperception - grasping 1704, Wilhelm Wundt, "Blickpunkt" focused eyesight (1874) and William James’ selective attention (1890).
+
+42. A comprehension base as described in claim 30, wherein comprehension unit elements, aspects entities, and perspective connections, are sourced with a confidence and approval score, verified by the user, by domain experts, or by automatic verifiers.
+
+43. A comprehension base as described in claim 30, wherein a focused set of aspects and perspectives are loaded for immediate knowledge retrieval, while a continued search for more details, better verification, or wider context continues, allowing a multiphase answer with immediate results and a refined answer later, mimicking human cognition as described in Daniel Kahneman's book Thinking Fast and Slow (2011). 
+
+44. A comprehension base as described in claim 30, wherein expert domain knowledge is created and updated continuously, independent of user conversations in an ever expanding master knowledge base, perhaps directed by companies, individuals  or groups of supplying or requiring these knowledge base sections. 
 
 
+45. A comprehension base as described in claim 30, wherein by traversing the connections between comprehension units, a semantic equivalent can be found for any term, in a manner analogous to how a language model resolves semantic queries, with the potential to reduce or replace language model invocation entirely.
 
-##### Complex tasks and Structured instruction framework
+##### Contextual Knowledge Base
 
-38. The system of claim 1, wherein a structured natural language format is used for high-level computer instructions, usable for running instructions created by the AI, by a human, or by a human and AI team, and executable by the AI, wherein each instruction comprises a name, a description, one or more intents, one or more goals, expected results, and defined actions on success and on failure.
+46. A comprehension base as described in claim 30, serving as the context storage of claim 23. 
 
-39. The framework of claim 38, wherein missing parts of an instruction have configurable defaults, or are resolved by presenting natural language questions to the user.
+47. A comprehension base as described in claim 46, used by a group of users, creating and maintaining a shared knowledge base of their discussions and studies. 
 
-40.  The framework of claim 38, wherein a verification tool checks the rigidity and completeness of an instruction, and defines what would not be acceptable, including a methodology for testing and rigidifying instructions so that intent is understood correctly.
+48. A comprehension base as described in claim 46, affecting versions of master knowledge, perhaps brought up to a committee of human administrative evaluators and experts, or publicly sharing the new knowledge for review, or perhaps through an automated verification and evaluation process with administrated review, and a listed source trace for transparency. 
 
-41.  The framework of claim 38, wherein an instruction may be rigid or open, constant in time, or changing according to circumstances states and other logic as given in its instructions. 
 
-42.  The framework of claim 38, wherein an instruction placeholder  may be given, with the actual instruction created dynamically on the fly, according to pre-coding instructions. 
+##### Complex tasks and the structured instruction framework
 
-43.  The framework of claim 38, wherein a dynamic state response may be defined according to a logical rule.
+49. The system of claim 1, wherein a structured natural language format is used for high-level computer instructions, usable for running instructions created by the AI, by a human, or by a human and AI team, and executable by the AI, wherein each instruction comprises a name, a description, one or more intents, one or more goals, expected results, and defined actions on success and on failure.
 
-44.  The framework of claim 38, wherein instructions may be composed as a procedure, comprising multiple actions to be run concurrently with the dependencies or lack of dependcies marked in advance, or changed dynamically according to the discussion or the task's state. 
+50. The framework of claim 49, wherein missing parts of an instruction have configurable defaults, or are resolved by asking the user in natural language. 
 
-45.  The framework of claim 38, wherein instructions may be composed as a sequence of ordered steps with dependencies.
+51.  The framework of claim 49, wherein a verification tool checks the rigidity and completeness of an instruction, and defines what would not be acceptable, including a methodology for testing and rigidifying instructions so that intent is understood correctly.
+
+52.  The framework of claim 49, wherein an instruction may be rigid or open, constant in time, or changing according to circumstances states and other logic as given in its instructions. 
+
+53.  The framework of claim 49, wherein an instruction placeholder  may be given, with the actual instruction created dynamically on the fly, according to pre-coding instructions. 
+
+54.  The framework of claim 49, wherein a dynamic state response may be defined according to a logical rule.
+
+55.  The framework of claim 49, wherein instructions may be composed as a procedure, comprising multiple actions to be run concurrently with the dependencies or lack of dependcies marked in advance, or changed dynamically according to the discussion or the task's state. 
+
+56.  The framework of claim 49, wherein instructions may be composed as a sequence of ordered steps with dependencies.
     
-46.   The framework of claim 38, wherein sequences can include procedures and procedures may include sequences at any stage. They both can recursively hold sub-sequences and sub-procedures, and may recursively call themsleves. 
+57.   The framework of claim 49, wherein sequences can include procedures and procedures may include sequences at any stage. They both can recursively hold sub-sequences and sub-procedures, and may recursively call themsleves. 
 
-47. The framework of claim 38 further consisting of a "recursive compiler" which checks the code for mistakes and completeness, runs tests, finds recursive loops and fixes them with a timeout or an ending directive. If the compiler fails and cannot fix the code, it will go to the dedicated human team or to the user, for assistance. 
+58. The framework of claim 49 further consisting of a "recursive compiler" which checks the code for mistakes and completeness, runs tests, finds recursive loops and fixes them with a timeout or an ending directive. If the compiler fails and cannot fix the code, it will go to the dedicated human team or to the user, for assistance. 
 
-48. The system of claim 30, wherein instructions may invoke a tool in standard tool notation.
+59.  The framework of claim 49, wherein instructions may invoke a tool in standard tool notation.
 
-49. The system of claim 30, wherein instructions may define states and responses in a state machine.
+60.  The framework of claim 49, wherein instructions may define states and responses in a state machine.
 
-50. The system of claim 30, wherein instructions may describe logic to be translated to a symbolic logic language.
+61.  The framework of claim 49, wherein instructions may describe logic to be translated to a symbolic logic language.
 
-51.  The system of claim 30, wherein instructions may describe logic to be translated to a symbolic logic language.
+62.  The framework of claim 49,, wherein instructions may describe recursive calls to “itself”.
 
-52.  The system of claim 30, wherein instructions may be written with code from any computer language, translated bvy the system into actual running code (not necessarily in the requested language)
+63.  The framework of claim 49, wherein instructions may be written with code in any computer language, translated by the system into actual running code (not necessarily in the requested language)
 
-
-53.  The system of claim 1, wherein a **task orchestration runner** executes instructions defined in the format of claim 30, managing complex tasks by dividing them into procedures comprising multiple actions not dependent on each other.
+64.  The system of claim 1, wherein a **task orchestration runner** executes instructions defined in the format of claim 30, managing complex tasks by dividing them into procedures comprising multiple actions not dependent on each other.
 
 ##### App Text or Voice control 
 
-54.  The system of claim 1, wherein the system serves as a natural language application runner, effectively creating **text or voice control** over any program or application, in addition to its visual user interface.
+65.  The system of claim 1, wherein the system serves as a natural language application runner, effectively creating **text or voice control** over any program or application, in addition to its visual user interface.
 
 ##### Legal binding
 
-55. The system of claims 1, wherein legally bound authenticated users who accept responsibility for their use of the system may employ it as an **automated legal entity,** authorized to execute binding actions on the user's behalf.
+66. The system of claims 1, wherein legally bound authenticated users who accept responsibility for their use of the system may employ it as an **automated legal entity,** authorized to execute binding actions on the user's behalf.
 
-56. The system of claim 55, wherein the **legal empowerment** is enabled by the fully transparent, auditable and non-fraudulent nature of the system's processes, making it trustworthy to both institutions and users.
+67. The system of claim 66, wherein the **legal empowerment** is enabled by the fully transparent, auditable and non-fraudulent nature of the system's processes, making it trustworthy to both institutions and users.
 
-57. The system of claim 55, wherein binding actions may include **automated signing** or execution of documents in regulated industries such as equity management.
+68. The system of claim 66, wherein binding actions may include **automated signing** or execution of documents in regulated industries such as equity management.
 
-
+69. Extra legal measures may be taken, to keep the comprehension base and especially the dynamic code writing on a non-controversial moral and legal ground, such as a legal and moral scrutiny team that have disclosed access to all activities, with a non-disclosure agreement binding them to secrecy unless suspicious activity is discovered, and an automated warning system, that may alert management and authorities, with a strict user agreement favoring moral and legal conduct by the suppliers of these technologies, and by its users, with financial and punitive results. . 
 
 ## Prior Art
-Note: In the actual patent submittals these will be in separate Information Disclosure Statement documents.
+Note: In the non-provisional patent submittals these will be in separate Information Disclosure Statement documents.
 
 **Claim 1 — Reliable attentive AI collaboration (general):**
 
@@ -270,22 +308,9 @@ Note: In the actual patent submittals these will be in separate Information Disc
 
 # To be completed
 
-Need to think through about comprehension base
+--- 
 
-There is a master kg of kgs (or at least a cloud of interlinked master kgs) that have the links (the paths) to perspectives (entity layers) and to the categories and types of edges in the different kgs. (domain kgs, experience kgs (saving personal preferences and knowledge) and topic kgs (saving discussion flows) and there is the chat history (raw text with timestamp id and topic markers)
-
-
-
-The kgs are eather loaded (in memgraph for quick retrieaval) or stored (in supabase for long term persistance) 
-
-
-
-each edge has a category a type  a target perspective and extra info. 
-
-(cat: archaeological, type:found-at, pers: ancient-city-names, info: coords:  125744n 156232w, country: iraq., current: museum: louvre loc: paris.)  
-
-the master kg helps link the info entries into a kg and perspective  (geographic kg perspectives: museums,  libraries, countries, cities)
-
-*Document Version: 0.051*   
+*Document Version: 0.053*   
 *Date: 2026-03-02*    
-                                    *Note: Parts of this patent have been made public since Feb 07, 2026.*
+*Note: Parts of this patent have been made public since Feb 07, 2026.*
+
