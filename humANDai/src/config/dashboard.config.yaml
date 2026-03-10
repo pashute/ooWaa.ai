@@ -1,2 +1,2 @@
 defaults:
-  kg-view: kg-nodes  # kg-map kg-lexicon
+  kg-view: kg-network  # kg-network (default)  kg-map kg-lexicon
