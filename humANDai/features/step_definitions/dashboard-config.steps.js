@@ -32,7 +32,7 @@ Given('the dashboard config is loaded', function () {
     process.cwd(),
     'src',
     'config',
-    'dashboard.config.yaml',
+    'settings.yaml',
   );
   const contents = fs.readFileSync(filePath, 'utf8');
   kgViewValue = extractDefaultsKgView(contents);

@@ -29,7 +29,7 @@ test('dashboard config defaults.kg-view is valid', () => {
     process.cwd(),
     'src',
     'config',
-    'dashboard.config.yaml',
+    'settings.yaml',
   );
   const contents = fs.readFileSync(filePath, 'utf8');
   const kgViewValue = extractDefaultsKgView(contents);
