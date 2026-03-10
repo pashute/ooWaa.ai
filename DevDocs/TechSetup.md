@@ -37,7 +37,7 @@ ooWaa.ai/
 
 ### Frontend (humANDai dashboard app): 
 - **React Native + Expo** (chosen over alternatives)
-- **Config files (YAML)** - [humANDai/src/config/dashboard.config.yaml](humANDai/src/config/dashboard.config.yaml)
+- **Config files (YAML)** - [humANDai/src/config/settings.yaml](humANDai/src/config/settings.yaml)
 - **Dashboard defaults** - `defaults.kg-view: kg-nodes` (kg-map, kg-lexicon)
 
 ### Backend (humandBrain):  Node.js
@@ -51,11 +51,11 @@ ooWaa.ai/
 - **HOCON Parser** - hocon-parser for analysis reports and kg node representation
 
 - **Ollama** - Replaceable Local LLM and embedding engine  set in config
-- **Config files (YAML)** - [humandBrain/src/config/brain.config.yaml](humandBrain/src/config/brain.config.yaml)
+- **Config files (YAML)** - [humandBrain/src/config/settings.yaml](humandBrain/src/config/settings.yaml)
 
 ### Knowledge base main model and embedding engine
-- **Configured in** [humandBrain/src/config/brain.config.yaml](humandBrain/src/config/brain.config.yaml) (MLL + embedding_model)
-- **See remarks** in [humandBrain/src/config/brain.config.yaml](humandBrain/src/config/brain.config.yaml) for other options
+- **Configured in** [humandBrain/src/config/settings.yaml](humandBrain/src/config/settings.yaml) (MLL + embedding_model)
+- **See remarks** in [humandBrain/src/config/settings.yaml](humandBrain/src/config/settings.yaml) for other options
 
 **Backend Setup Notes:**
 - Copy `.env.example` to `.env` and set API keys.

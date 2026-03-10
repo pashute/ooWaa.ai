@@ -1,6 +1,6 @@
 Feature: Dashboard config
   As the dashboard app
-  I want to read dashboard.config.yaml
+  I want to read settings.yaml
   So that defaults are applied
 
   Scenario: Dashboard kg-view default

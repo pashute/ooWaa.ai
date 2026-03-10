@@ -1,3 +1,4 @@
+# brain settings
 defaults:
   MLL: mixtral  # MoE, ~7-8B eff. / 46B total, 26GB on disk, best local reasoning
   embedding_model: nomic-embed-text  # 768 dims, balanced speed/quality, 274MB
