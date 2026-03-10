@@ -19,10 +19,24 @@ This document outlines all the configuration decisions made for the ooWaa.ai pro
 ooWaa.ai/
 ├── .devcontainer/        # Codespace configuration
 ├── .vscode/              # VSCode settings
+├── DevDocs/              # Project documentation
 ├── humANDai/             # React Native (Expo) workspace
-├── humandBrain/              # Node.js server workspace
+│   ├── App.js            # main (expo)
+│   ├── app.json          # data (expo)
+│   ├── babel.config.js   # config (babel)
+│   ├── assets/           # proj assets (expo req)
+│   ├── src/              # app source code
+│   └── tests/            # all tests
+│       ├── units/        # Jest unit tests
+│       └── features/     # Cucumber BDD
+│           └── done/     # implemented features
+├── humandBrain/          # Node.js server workspace
+│   ├── src/              # backend source code
+│   └── tests/            # all tests (TBD)
 └── package.json          # Root with concurrently scripts
 ```
+
+See [DevDocs/](DevDocs/) for full project documentation.
 
 ## Development Stack and Methodologies
 - js code throughout. 
