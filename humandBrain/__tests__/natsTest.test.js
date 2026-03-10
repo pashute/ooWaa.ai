@@ -1,3 +1,4 @@
+import { jest } from '@jest/globals';
 import { StringCodec } from 'nats';
 import { sendTestMessage } from '../src/natsTest.js';
 
