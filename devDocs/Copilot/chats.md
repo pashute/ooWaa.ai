@@ -1,7 +1,7 @@
 ## Issue #20 — devdocs organization and completion
 
-**Version:** 1.0.0  
-**Last Updated:** 2026-02-04
+**Version:** 1.1.0  
+**Last Updated:** 2026-03-10
 
 Source: https://github.com/pashute/ooWaa.ai/issues/20
 Branch: feature/workspace-setup
