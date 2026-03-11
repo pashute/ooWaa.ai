@@ -1,7 +1,7 @@
 ## Issue #20 — devdocs organization and completion
 
-**Version:** 1.1.0  
-**Last Updated:** 2026-03-10
+**Version:** 1.2.0  
+**Last Updated:** 2026-03-11
 
 Source: https://github.com/pashute/ooWaa.ai/issues/20
 Branch: feature/workspace-setup
@@ -171,6 +171,17 @@ Branch: feature/workspace-setup
   6. Wait for user OK → commit + push + gitflow close feature/workspace-setup → develop
 
 ---
+
+### Session log — 2026-03-11
+
+- All tests confirmed green (12 Jest suites, 1 skipped; 1 humANDai suite) — node/npm re-installed via apk.
+- memgraph-kg-integration.feature confirmed in `pending/` folder.
+- Committed all outstanding changes: commit [8d2bf10](https://github.com/pashute/ooWaa.ai/commit/8d2bf10)
+- Pushed `feature/workspace-setup` to origin.
+- Merged `feature/workspace-setup` → `develop` (no-ff): commit [0a5c704](https://github.com/pashute/ooWaa.ai/commit/0a5c704)
+- Deleted `feature/workspace-setup` locally and on origin.
+- Created `feature/simplePrototype` from `develop`, pushed to origin.
+- NEXT: Continue on `feature/simplePrototype` tomorrow.
 
 ### Current status
 
