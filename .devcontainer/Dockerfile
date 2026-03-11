@@ -23,8 +23,8 @@ ENV LANG=en_US.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=en_US.UTF-8
 
-# Install Expo CLI globally for React Native development
-RUN npm install -g expo-cli @react-native-community/cli
+# Install React Native CLI globally
+RUN npm install -g @react-native-community/cli
 
 # Set the default shell to bash
 SHELL ["/bin/bash", "-c"]
