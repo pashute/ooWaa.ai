@@ -5,12 +5,33 @@ services:
     image: nats:latest
     container_name: oowaa-nats
     ports:
-      - "4222:4222"  # Client connections
-      - "8222:8222"  # HTTP monitoring
-      - "6222:6222"  # Routing port for clustering
-    command: 
-      - "--http_port"
-      - "8222"
+      - '4222:4222' # Client connections
+      - '8222:8222' # HTTP monitoring
+      - '6222:6222' # Routing port for clustering
+    command:
+      - '--http_port'
+      - '8222'
+    restart: unless-stopped
+    networks:
+      - oowaa-network
+
+  memgraph:
+    image: memgraph/memgraph:latest
+    container_name: oowaa-memgraph
+    ports:
+      - '7687:7687' # Bolt protocol
+      - '7444:7444' # HTTP monitoring
+    restart: unless-stopped
+    networks:
+      - oowaa-network
+
+  ollama:
+    image: ollama/ollama:latest
+    container_name: oowaa-ollama
+    ports:
+      - '11434:11434' # REST API
+    volumes:
+      - ollama-data:/root/.ollama
     restart: unless-stopped
     networks:
       - oowaa-network
@@ -18,3 +39,6 @@ services:
 networks:
   oowaa-network:
     driver: bridge
+
+volumes:
+  ollama-data:

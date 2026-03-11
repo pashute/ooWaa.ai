@@ -1,0 +1,17 @@
+# brain settings
+defaults:
+  MLL: mixtral  # MoE, ~7-8B eff. / 46B total, 26GB on disk, best local reasoning
+  embedding_model: nomic-embed-text  # 768 dims, balanced speed/quality, 274MB
+
+# LLM Options:
+# Mistral 7B - 7B params, 4-15GB disk, general purpose, fast
+# Llama 2 7B - 7B params, 4-15GB disk, Meta standard, good foundation
+# CodeLlama 7B - 7B params, 4-15GB disk, code-specialized
+# Qwen 7B - 7B params, 4-15GB disk, competitive with Mistral
+# TinyLlama - 1.1B params, <1GB disk, ultra-lightweight, limited reasoning
+
+# Embedding Model Options:
+# all-minilm - 384 dims, fastest, <1GB, good for lightweight KG
+# mxbai-embed-large - 1024 dims, slower, 1.3GB, best semantic quality
+# jina-embeddings-v2 - 1024 dims, good for semantic search, 1.9GB
+# snowflake-arctic-embed - 1024 dims, strong quality, 2.2GB

@@ -21,23 +21,7 @@ The discussion produces (or updates) a brief and concise HOCON report to support
 
 ## 🏗️ Project Structure
 
-```
-ooWaa.ai/
-├── humANDai/          # React Native mobile application (Expo)
-│   ├── App.js        # Main app component
-│   ├── app.json      # Expo configuration
-│   ├── package.json  # Frontend dependencies
-│   └── assets/       # Images and static assets
-├── humandBrain/          # Node.js backend service
-│   ├── src/
-│   │   └── index.js  # Main backend entry point
-│   ├── package.json  # Backend dependencies (NATS.io, LangChain, LangGraph)
-│   └── .env.example  # Environment variables template
-├── .devcontainer/    # VSCode Codespace configuration
-│   ├── devcontainer.json
-│   └── Dockerfile
-└── package.json      # Root package.json with concurrently scripts
-```
+See [devDocs/TechSetup.md](devDocs/TechSetup.md) for the full directory layout and tech stack details.
 
 ## 🚀 Tech Stack
 

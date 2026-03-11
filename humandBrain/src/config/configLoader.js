@@ -12,5 +12,4 @@ const readYamlConfig = async (fileName) => {
   return parse(contents);
 };
 
-export const loadBrainConfig = () => readYamlConfig('brain.config.yaml');
-export const loadDashboardConfig = () => readYamlConfig('dashboard.config.yaml');
+export const loadBrainConfig = () => readYamlConfig('settings.yaml');

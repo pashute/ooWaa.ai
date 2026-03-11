@@ -1,0 +1,3 @@
+# dashboard settings
+defaults:
+  kg-view: kg-network  # kg-network (default)  kg-map kg-lexicon

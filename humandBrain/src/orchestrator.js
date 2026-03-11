@@ -7,6 +7,11 @@ import { strollAnalyzer } from './modules/strollAnalyzer.js';
 import { alignMngr } from './modules/alignMngr.js';
 import { knowledgeMngr } from './modules/knowledgeMngr.js';
 
+// Todo: For testing only. The actual new chat will be defined in the dashboard features
+export function newChat() {
+  throw new Error('Not implemented yet');
+}
+
 export function orchestrateTestMessage(message) {
   const results = [
     inAnalyzer(message),
