@@ -17,6 +17,10 @@
     "npx cucumber-js": true,
     "git add": true,
     "git commit": true,
-    "git push": true
+    "git push": true,
+    "docker-compose": true,
+    "npm test": true,
+    "apk": true,
+    "type": true
   }
 }

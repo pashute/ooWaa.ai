@@ -17,7 +17,7 @@
             "icon": "terminal-powershell"
           }
         },
-        "files.eol": "\r\n",
+        "files.eol": "\n",
         "locale": "en",
         "git.enableSmartCommit": true,
         "git.confirmSync": false,
@@ -49,8 +49,9 @@
       "dockerDashComposeVersion": "v2"
     }
   },
-  "forwardPorts": [8081, 3000, 4222],
+  "forwardPorts": [8081, 3000, 4222, 7687, 11434],
   "postCreateCommand": "npm install",
+  "postStartCommand": "sudo nohup dockerd &>/tmp/dockerd.log & sleep 3 || true",
   "remoteUser": "vscode",
   "idleTimeoutMinutes": 5
 }
