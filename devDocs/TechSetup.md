@@ -1,7 +1,7 @@
 # Project Configuration Overview
 
-**Version:** 1.1.0  
-**Last Updated:** 2026-03-10
+**Version:** 1.1.1  
+**Last Updated:** March 15, 2026
 
 ## Environment: GitHub Codespaces + VSCode (Windows-Compatible)
 
@@ -149,13 +149,6 @@ All ports auto-forward in Codespaces.
 }
 ```
 
-**Benefits:**
-- Shared dependencies hoisted to root
-- Single `node_modules` for common packages
-- Workspace-specific scripts
-- Easier dependency management
-- Can develop and run separately at will
-
 ### Dependency Strategy
 - **Root**: Development tools (`concurrently`)
 - **Frontend**: React Native, Expo, navigation
@@ -236,10 +229,3 @@ npm run dev          # Start everything
 ### Future steps
 - Add TypeScript (recommended for scaling)
 - Add authentication service
-
-
----
-
-**Configuration Date**: December 8, 2024  
-**Configured For**: Windows + VSCode + Codespaces + English  
-**Ready For**: Detailed requirements and feature implementation
