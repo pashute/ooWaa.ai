@@ -1,6 +1,6 @@
 # Project Configuration Overview
 
-**Version:** 1.1.1  
+**Version:** 1.2.0  
 **Last Updated:** March 15, 2026
 
 ## Environment: GitHub Codespaces + VSCode (Windows-Compatible)
@@ -95,6 +95,54 @@ See [devDocs/](devDocs/) for full project documentation.
 - Both logs visible in same terminal
 - Auto-restart on file changes
 - Can be tested logged and run individually (see instructions section)
+
+## 🔗 Frontend → Backend Communication
+
+The dashboard frontend (`humANDai`) calls the brain orchestrator through the humandBrain **HTTP API gateway** (Express, port 3000).
+
+### API Client Module
+
+`humANDai/src/api/brainApi.js` provides two functions:
+
+```js
+const { sendMessage, newChat } = require('./src/api/brainApi');
+
+// Send a message through the full orchestrator pipeline:
+const result = await sendMessage({ type: 'testSent', payload: 'hello' });
+// result: { type: 'testReceived', original: {...}, results: [...] }
+
+// Request a new chat session (placeholder — returns 501 until implemented):
+const res = await newChat();
+```
+
+### Endpoints
+
+| Method | Path | Handler | Description |
+|--------|------|---------|-------------|
+| `POST` | `/api/message` | `orchestrateTestMessage(msg)` | Fans message out through all brain modules; returns `testReceived` with all results |
+| `POST` | `/api/newChat` | `newChat()` | Starts a new chat session. Currently throws `501 "Not implemented yet"` (placeholder) |
+
+### How It Works
+
+```
+humANDai (button onPress)
+  └─► brainApi.newChat() / brainApi.sendMessage()
+        └─► POST http://localhost:3000/api/newChat  (or /api/message)
+              └─► humandBrain/src/api/server.js  (Express gateway)
+                    └─► orchestrator.newChat() / orchestrateTestMessage()
+                          └─► all brain modules (inAnalyzer, outAnalyzer, flowMngr, …)
+```
+
+### Configuration
+
+- Backend port: `3000` (default). Set `API_PORT` env var in `humandBrain/.env` to change.
+- Frontend URL: `http://localhost:3000` (default). Set `BRAIN_API_URL` env var to override.
+
+### Tests
+
+- **Unit** (`humANDai/tests/units/brainApi.test.js`): mocks `fetch`; verifies correct URL, method, headers, and response handling for `sendMessage` and `newChat`.
+- **BDD / e2e** (`humANDai/tests/features/done/e2e-testing-works.feature`): verifies end-to-end chain — dashboard "New Chat" button → `/api/newChat` → `orchestrator.newChat()` → `501 "Not implemented yet"`.
+- **API integration** (`humandBrain/tests/api/apiGateway.test.js`): Supertest hits `POST /api/message`, verifies `200` + `testReceived` response.
 
 ## 🐳 Codespace Configuration
 ### Devcontainer Features

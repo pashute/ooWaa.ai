@@ -1,5 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { newChat } from './src/api/brainApi';
 
 export default function App() {
   return (
@@ -10,7 +11,7 @@ export default function App() {
         Knows what it doesn't. Teams with you to get it right.
       </Text>
       {/* Todo: For testing only. The actual new chat will be defined in the dashboard features */}
-      <TouchableOpacity style={styles.newChatButton} testID="new-chat-button">
+      <TouchableOpacity style={styles.newChatButton} testID="new-chat-button" onPress={() => newChat()}>
         <Text style={styles.newChatText}>New Chat</Text>
       </TouchableOpacity>
       <StatusBar style="auto" />
