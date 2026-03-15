@@ -12,7 +12,8 @@
     "dev:humandBrain": "npm run dev --workspace=humandBrain",
     "dev:humANDai": "npm run start --workspace=humANDai",
     "install:all": "npm install && npm install --workspace=humANDai && npm install --workspace=humandBrain",
-    "clean": "npm run clean --workspace=humANDai && npm run clean --workspace=humandBrain && rimraf node_modules"
+    "clean": "npm run clean --workspace=humANDai && npm run clean --workspace=humandBrain && rimraf node_modules",
+    "branch:check": "bash scripts/git-branch-base-check.sh"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
