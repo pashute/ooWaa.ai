@@ -1,0 +1,22 @@
+# Enforce LF line endings for all files on all platforms
+* text=auto eol=lf
+
+# Explicitly LF for scripts and config
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.json text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.md text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.jsx text eol=lf
+*.tsx text eol=lf
+*.feature text eol=lf
+
+# Binaries — no line ending conversion
+*.png binary
+*.jpg binary
+*.gif binary
+*.ico binary
+*.zip binary

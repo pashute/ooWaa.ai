@@ -1,26 +1,27 @@
 # ooWaa.ai
 
+**Version:** 1.0.0  
+**Last Updated:** 2026-02-04
+
 The AI reformer. Knows what it doesn't. Teams with you to get it right.
+
+## The hum&ai aligned discussion
+
+The AI and the human work as a team to get results through structured aligned discussions.
+
+The prompt is part of a structured aligned discussion called hum&ai, where the AI and the human work as a team to get results.
+
+The discussion runs in **threads** (lines of thought), with **strolls** (a sequence of request-response iterations on a topic) possibly broken into **sections** (a subtopic stroll) and if needed, further broken into **parts**.
+
+This way, **without losing information**, long detailed responses are cut up into short parts, each discussed in several aligned iterations, **proceeding at a human pace**.
+
+The discussion produces (or updates) a brief and concise HOCON report to support the hum&ai process.
+
+**Planned threads:** The remainder of topics not discussed yet, in this and other threads is remembered and maintained with alignment discussions.
 
 ## 🏗️ Project Structure
 
-```
-ooWaa.ai/
-├── humANDai/          # React Native mobile application (Expo)
-│   ├── App.js        # Main app component
-│   ├── app.json      # Expo configuration
-│   ├── package.json  # Frontend dependencies
-│   └── assets/       # Images and static assets
-├── humandBrain/          # Node.js backend service
-│   ├── src/
-│   │   └── index.js  # Main backend entry point
-│   ├── package.json  # Backend dependencies (NATS.io, LangChain, LangGraph)
-│   └── .env.example  # Environment variables template
-├── .devcontainer/    # VSCode Codespace configuration
-│   ├── devcontainer.json
-│   └── Dockerfile
-└── package.json      # Root package.json with concurrently scripts
-```
+See [devDocs/TechSetup.md](devDocs/TechSetup.md) for the full directory layout and tech stack details.
 
 ## 🚀 Tech Stack
 
@@ -172,6 +173,6 @@ Details will be provided.
 
 More features and requirements will be added as the project evolves.
 
-See Features.md gathered from the brain and dashboard requirements.md files under the two project's src directory. 
+See DevDocs/Frontend/features.app.md and DevDocs/Backend/features.brain.md for current feature plans.
 
 **Note**: This is an initial setup. Detailed Requirements and features will be implemented in subsequent iterations. 
