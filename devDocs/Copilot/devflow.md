@@ -1,31 +1,24 @@
 # Dev Flow
 
-**Version:** 1.0.0  
-**Last Updated:** 2026-02-04
+**Version:** 1.1.0  
+**Last Updated:** 2026-03-19
 
-## Current Commit - Issue #35 (Second commit)
+## ⚠️ DO NOT ERASE until feature/simplePrototype is merged → develop → main (beta release)
 
-**My Summary:**  
-Updated CopilotInstructions.md to clarify prompt output format (markdown in chat for easy copying).
+### Issue #55 — 6 commits in main NOT in develop (harmless, do not touch)
 
-**Issue #35: "Copilot instructions doc"**  
-Link: https://github.com/pashute/ooWaa.ai/issues/35  
-Checklist:
-- New devdocs/copilot folder with instructions and two working files
-- Long discussion breakdown using chats.md
-- Project task tracking: commit with push, get and read proj task link, commit comment with file changes and summary + task summary and link, prompt for proj assistant
+After merging develop→main on 2026-03-19, `main` is 6 commits ahead of `develop`.
+These commits pre-date proper gitflow. They are annotated with `git notes` (run `git log --show-notes` to see).
+No action needed — they will naturally merge in when develop next catches up to main.
 
-**Previous commit:** e2a1a20 - Added Copilot folder structure
-**Files changed (this commit):**
-- devDocs/Copilot/CopilotInstructions.md (updated prompt output format)
-- devDocs/Copilot/github_copilot_prompt.md (created as temp file, will be removed)
+| Hash      | Commit                                     | Reason                                    |
+| --------- | ------------------------------------------ | ----------------------------------------- |
+| `35b80cf` | merge: bring develop into main (issue #55) | The catchup merge commit itself           |
+| `841259d` | Rename index.js to index.js                | Mistaken move + revert, direct-to-main    |
+| `d8e24fd` | Delete issues directory                    | Direct-to-main                            |
+| `7a1aef2` | Reopened issue #8                          | Direct-to-main                            |
+| `7a1383e` | Merge feature/workspace-setup into develop | GitFlow violation — went to main directly |
+| `9c6492b` | Initial commit                             | Pre-gitflow, expected                     |
 
-**Commit Message:**
-```
-Update CopilotInstructions for markdown prompt output
-
-Clarified that prompts for GitHub Copilot assistant should be output as markdown in chat (not as files) for easy copying via VSCode interface.
-
-Issue: https://github.com/pashute/ooWaa.ai/issues/35
-Closes #35
-```
+**To see notes:** `git log --show-notes origin/develop..origin/main`  
+**To push notes to remote:** `git push origin refs/notes/commits`
