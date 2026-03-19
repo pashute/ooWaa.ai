@@ -1,5 +1,12 @@
 # Backend Service
 
-Node.js backend service with NATS.io messaging and LangChain/LangGraph AI capabilities.
+The AI reformer. Knows what it doesn't. Teams with you to get it right.
 
-For setup see DevDocs/BackendSetup.md
+
+
+For setup see [devDocs/TechSetup.md](../devDocs/TechSetup.md).
+
+For features see [devDocs/Backend/features.brain.md](../devDocs/Backend/features.brain.md).
+
+
+
