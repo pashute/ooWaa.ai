@@ -26,7 +26,7 @@ Instead of unpredictable outputs that drift off-course — surprising us with fa
 
 The results of this system are coherent and cohesive because they are constructed logically.
 
-They are logical due to a foundational pullout from AI controlling the conversation, to a rule-based or grounded external discussion-managing component, that aligns with the user, interprets the questions and results into clear instructions, before reaching out to the AI, if at all.
+They are logical due to a foundational pullout from AI controlling the conversation, to a rule-based or grounded external discussion-managing component, that aligns with the user, interprets the questions and resolves as clear instructions, before reaching out to the AI, if at all.
 
 2. The second leg: A **smart chat** with **attentive alignment** — asking the right questions.
 
