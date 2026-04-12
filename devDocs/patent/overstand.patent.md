@@ -14,9 +14,13 @@ Instead of unpredictable outputs that drift off-course — surprising us with fa
 
 ![fig 1 Smart Chat.SVG](./fig1_smart_chat.SVG)
 
+![fig 1 Comprehension Base.SVG](./fig2_comprehension_base.SVG)
 
+![fig 3 Discussion Flow.SVG](./fig3_discussion_flow.SVG)
 
-## The Four "Legs"
+![fig 4 Dynamic AI Instructions.SVG](./fig4_dynamic_ai_instructions.SVG)
+
+## Four components
 
 1. The first leg: **Logic behind the conversation:**
 
