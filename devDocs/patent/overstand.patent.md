@@ -16,7 +16,7 @@ Instead of unpredictable outputs that drift off-course — surprising us with fa
 
 ![fig 1 Comprehension Base.SVG](./fig2_comprehension_base.SVG)
 
-![fig 3 Orchestration.SVG](./fig3_discussion_flow.SVG)
+![fig 3 Orchestration.SVG](./fig3_orchestration.SVG)
 
 ![fig 4 Dynamic AI Instructions.SVG](./fig4_dynamic_ai_instructions.SVG)
 
