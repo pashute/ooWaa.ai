@@ -1,0 +1,234 @@
+<svg viewBox="0 0 1000 820" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- Title -->
+  <text x="500" y="24" text-anchor="middle" font-size="15" font-weight="bold">Pillar 4: Dynamic AI Instructions Framework</text>
+  <text x="500" y="40" text-anchor="middle" font-size="10" fill="#444">Structured Natural Language Instructions · Parallel Execution · Recursive Compiler · Dynamic Tooling</text>
+  <line x1="20" y1="46" x2="980" y2="46" stroke="#000" stroke-width="1"/>
+
+  <!-- TOP LEFT: INSTRUCTION BLOCK -->
+  <rect x="20" y="54" width="290" height="310" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="20" y="54" width="290" height="20" rx="4" fill="#111"/>
+  <text x="165" y="68" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="bold">📋  Instruction Block Structure</text>
+
+  <rect x="30" y="80" width="270" height="274" rx="4" fill="#f9f9f9" stroke="#555" stroke-width="1"/>
+  <rect x="30" y="80" width="270" height="16" rx="3" fill="#222"/>
+  <text x="165" y="91" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">TASK: Load_Cuneiform_Signs</text>
+
+  <text x="40" y="107" font-size="7.5" font-weight="bold">Name:</text>
+  <text x="40" y="117" font-size="7">Load_Cuneiform_Signs · v2.1</text>
+  <text x="40" y="130" font-size="7.5" font-weight="bold">Description:</text>
+  <text x="40" y="140" font-size="7">Extract and classify cuneiform signs from MS S799</text>
+  <text x="40" y="153" font-size="7.5" font-weight="bold">Intent(s):</text>
+  <text x="40" y="163" font-size="7">▪ Identify all sign forms in tablet scan</text>
+  <text x="40" y="173" font-size="7">▪ Map to known Akkadian sign list</text>
+  <text x="40" y="186" font-size="7.5" font-weight="bold">Goal(s):</text>
+  <text x="40" y="196" font-size="7">▪ Complete sign inventory with confidence scores</text>
+  <text x="40" y="206" font-size="7">▪ Flag ambiguous signs for human review</text>
+  <text x="40" y="219" font-size="7.5" font-weight="bold">Parameters:</text>
+  <text x="40" y="229" font-size="7">scan_res: 600dpi [default: 300dpi]</text>
+  <text x="40" y="239" font-size="7">conf_threshold: 0.85 [default: 0.70]</text>
+  <text x="40" y="249" font-size="7">sign_list: GZ_Lexicon [required]</text>
+  <text x="40" y="262" font-size="7.5" font-weight="bold">Expected Results:</text>
+  <text x="40" y="272" font-size="7">signs[ ] with id, conf, position, variant</text>
+  <text x="40" y="285" font-size="7.5" font-weight="bold">On Success → next action(s):</text>
+  <text x="40" y="295" font-size="7">→ Cuneiform_Transcribe  → Load_Related_Texts</text>
+  <text x="40" y="308" font-size="7.5" font-weight="bold">On Failure → failover:</text>
+  <text x="40" y="318" font-size="7">→ notify user  → escalate to human team</text>
+  <text x="40" y="331" font-size="7.5" font-weight="bold">Affected Tasks:</text>
+  <text x="40" y="341" font-size="7">▪ Language_Detection [blocking]</text>
+  <text x="40" y="351" font-size="7">▪ Compare_Cambridge [non-blocking]</text>
+
+  <!-- TOP MIDDLE: EXECUTION MODELS -->
+  <rect x="322" y="54" width="380" height="310" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="322" y="54" width="380" height="20" rx="4" fill="#111"/>
+  <text x="512" y="68" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="bold">⚙  Execution Models</text>
+
+  <rect x="332" y="78" width="170" height="132" rx="4" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="332" y="78" width="170" height="14" rx="3" fill="#333"/>
+  <text x="417" y="88" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="bold">SEQUENCE  (blocking)</text>
+  <rect x="342" y="98" width="150" height="14" rx="3" fill="#222"/>
+  <text x="417" y="108" text-anchor="middle" font-size="7" fill="#fff">Step 1: Raw Transcript</text>
+  <line x1="417" y1="112" x2="417" y2="120" stroke="#000" stroke-width="1" marker-end="url(#arr4)"/>
+  <rect x="342" y="120" width="150" height="14" rx="3" fill="#333"/>
+  <text x="417" y="130" text-anchor="middle" font-size="7" fill="#fff">Step 2: Sign Transcript</text>
+  <line x1="417" y1="134" x2="417" y2="142" stroke="#000" stroke-width="1" marker-end="url(#arr4)"/>
+  <rect x="342" y="142" width="150" height="14" rx="3" fill="#333"/>
+  <text x="417" y="152" text-anchor="middle" font-size="7" fill="#fff">Step 3: Load Related Texts</text>
+  <line x1="417" y1="156" x2="417" y2="164" stroke="#000" stroke-width="1" marker-end="url(#arr4)"/>
+  <rect x="342" y="164" width="150" height="14" rx="3" fill="#444"/>
+  <text x="417" y="174" text-anchor="middle" font-size="7" fill="#fff">Step 4: Language Detection</text>
+  <text x="342" y="196" font-size="6.5" fill="#888">Each step waits for previous · dependencies enforced</text>
+  <text x="342" y="206" font-size="6.5" fill="#888">Sub-sequences and sub-procedures nestable</text>
+
+  <rect x="514" y="78" width="178" height="132" rx="4" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="514" y="78" width="178" height="14" rx="3" fill="#333"/>
+  <text x="603" y="88" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="bold">PROCEDURE  (parallel)</text>
+  <line x1="603" y1="96" x2="603" y2="104" stroke="#000" stroke-width="1"/>
+  <line x1="555" y1="104" x2="651" y2="104" stroke="#000" stroke-width="1"/>
+  <line x1="555" y1="104" x2="555" y2="112" stroke="#000" stroke-width="1" marker-end="url(#arr4)"/>
+  <line x1="651" y1="104" x2="651" y2="112" stroke="#000" stroke-width="1" marker-end="url(#arr4)"/>
+  <rect x="524" y="112" width="62" height="28" rx="3" fill="#222"/>
+  <text x="555" y="123" text-anchor="middle" font-size="6.5" fill="#fff">Track A</text>
+  <text x="555" y="133" text-anchor="middle" font-size="6" fill="#ddd">Israeli sources</text>
+  <rect x="620" y="112" width="62" height="28" rx="3" fill="#222"/>
+  <text x="651" y="123" text-anchor="middle" font-size="6.5" fill="#fff">Track B</text>
+  <text x="651" y="133" text-anchor="middle" font-size="6" fill="#ddd">Palestinian src</text>
+  <line x1="586" y1="126" x2="620" y2="126" stroke="#000" stroke-width="0.8" stroke-dasharray="3,2" marker-end="url(#arr4)"/>
+  <text x="603" y="122" text-anchor="middle" font-size="5.5" fill="#555">msg: done</text>
+  <line x1="555" y1="140" x2="555" y2="150" stroke="#000" stroke-width="1"/>
+  <line x1="651" y1="140" x2="651" y2="150" stroke="#000" stroke-width="1"/>
+  <line x1="555" y1="150" x2="651" y2="150" stroke="#000" stroke-width="1"/>
+  <line x1="603" y1="150" x2="603" y2="158" stroke="#000" stroke-width="1" marker-end="url(#arr4)"/>
+  <rect x="560" y="158" width="86" height="14" rx="3" fill="#111"/>
+  <text x="603" y="168" text-anchor="middle" font-size="6.5" fill="#fff">Merge + Report</text>
+  <text x="514" y="196" font-size="6.5" fill="#888">Independent tracks · interruption msgs · join on complete</text>
+  <text x="514" y="206" font-size="6.5" fill="#888">Sequences nestable inside procedures and vice versa</text>
+
+  <rect x="332" y="216" width="360" height="138" rx="4" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="332" y="216" width="360" height="14" rx="3" fill="#333"/>
+  <text x="512" y="226" text-anchor="middle" font-size="7.5" fill="#fff" font-weight="bold">MESSAGING + DYNAMIC STATE MACHINE</text>
+  <ellipse cx="380" cy="258" rx="32" ry="14" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="380" y="262" text-anchor="middle" font-size="7" font-weight="bold">IDLE</text>
+  <ellipse cx="470" cy="258" rx="32" ry="14" fill="#eee" stroke="#000" stroke-width="1"/>
+  <text x="470" y="262" text-anchor="middle" font-size="7">RUNNING</text>
+  <ellipse cx="560" cy="258" rx="32" ry="14" fill="#eee" stroke="#000" stroke-width="1"/>
+  <text x="560" y="262" text-anchor="middle" font-size="7">WAITING</text>
+  <ellipse cx="650" cy="258" rx="32" ry="14" fill="#222" stroke="#000" stroke-width="1"/>
+  <text x="650" y="262" text-anchor="middle" font-size="7" fill="#fff">DONE</text>
+  <line x1="412" y1="258" x2="438" y2="258" stroke="#000" stroke-width="1" marker-end="url(#arr4)"/>
+  <line x1="502" y1="258" x2="528" y2="258" stroke="#000" stroke-width="1" marker-end="url(#arr4)"/>
+  <line x1="592" y1="258" x2="618" y2="258" stroke="#000" stroke-width="1" marker-end="url(#arr4)"/>
+  <path d="M528,248 Q495,232 502,248" fill="none" stroke="#000" stroke-width="0.8" marker-end="url(#arr4)"/>
+  <text x="512" y="238" text-anchor="middle" font-size="6" fill="#555">msg received</text>
+  <text x="340" y="286" font-size="7" font-weight="bold">State Connector:</text>
+  <text x="340" y="297" font-size="6.5" fill="#333">▪ Any state can connect to a Procedure or Sequence</text>
+  <text x="340" y="307" font-size="6.5" fill="#333">▪ States respond to messages from other tasks</text>
+  <text x="340" y="318" font-size="6.5" fill="#333">▪ Logical rules define transitions · fuzzy logic supported</text>
+  <text x="340" y="329" font-size="6.5" fill="#333">▪ Dynamic state response definable per rule</text>
+  <text x="340" y="340" font-size="6.5" fill="#888" font-style="italic">All tasks communicate through messages — no direct coupling</text>
+  <text x="340" y="350" font-size="6.5" fill="#888" font-style="italic">Blocking msgs wait · Non-blocking msgs fire and continue</text>
+
+  <!-- TOP RIGHT: RECURSIVE COMPILER -->
+  <rect x="714" y="54" width="266" height="310" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="714" y="54" width="266" height="20" rx="4" fill="#111"/>
+  <text x="847" y="68" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="bold">🔁  Recursive Compiler</text>
+  <rect x="724" y="80" width="246" height="18" rx="3" fill="#222"/>
+  <text x="847" y="92" text-anchor="middle" font-size="8" fill="#fff">On every instruction submitted:</text>
+  <rect x="724" y="102" width="246" height="16" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="847" y="113" text-anchor="middle" font-size="7.5">① Check completeness + rigidity</text>
+  <line x1="847" y1="118" x2="847" y2="126" stroke="#000" stroke-width="0.8" marker-end="url(#arr4)"/>
+  <rect x="724" y="126" width="246" height="16" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="847" y="137" text-anchor="middle" font-size="7.5">② Detect recursive loops</text>
+  <line x1="847" y1="142" x2="847" y2="150" stroke="#000" stroke-width="0.8" marker-end="url(#arr4)"/>
+  <rect x="724" y="150" width="246" height="16" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="847" y="161" text-anchor="middle" font-size="7.5">③ Add timeout / ending directive</text>
+  <line x1="847" y1="166" x2="847" y2="174" stroke="#000" stroke-width="0.8" marker-end="url(#arr4)"/>
+  <rect x="724" y="174" width="246" height="16" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="847" y="185" text-anchor="middle" font-size="7.5">④ Run artificial tests</text>
+  <line x1="847" y1="190" x2="847" y2="198" stroke="#000" stroke-width="0.8" marker-end="url(#arr4)"/>
+  <rect x="724" y="198" width="246" height="16" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="847" y="209" text-anchor="middle" font-size="7.5">⑤ Verify intent understood correctly</text>
+  <line x1="847" y1="214" x2="847" y2="222" stroke="#000" stroke-width="0.8" marker-end="url(#arr4)"/>
+  <rect x="774" y="222" width="146" height="16" rx="3" fill="#111"/>
+  <text x="847" y="233" text-anchor="middle" font-size="7.5" fill="#fff">⑥ Pass / Fail?</text>
+  <line x1="774" y1="230" x2="754" y2="230" stroke="#000" stroke-width="0.8"/>
+  <line x1="754" y1="230" x2="754" y2="260" stroke="#000" stroke-width="0.8" marker-end="url(#arr4)"/>
+  <text x="748" y="248" text-anchor="end" font-size="7" fill="#555">PASS</text>
+  <line x1="920" y1="230" x2="940" y2="230" stroke="#000" stroke-width="0.8"/>
+  <line x1="940" y1="230" x2="940" y2="260" stroke="#000" stroke-width="0.8" marker-end="url(#arr4)"/>
+  <text x="946" y="248" font-size="7" fill="#555">FAIL</text>
+  <rect x="724" y="260" width="100" height="22" rx="3" fill="#222"/>
+  <text x="774" y="272" text-anchor="middle" font-size="7" fill="#fff">✓ Execute</text>
+  <text x="774" y="281" text-anchor="middle" font-size="6.5" fill="#ddd">instruction live</text>
+  <rect x="884" y="260" width="86" height="22" rx="3" fill="#555"/>
+  <text x="927" y="272" text-anchor="middle" font-size="7" fill="#fff">→ Escalate</text>
+  <text x="927" y="281" text-anchor="middle" font-size="6.5" fill="#ddd">human / user</text>
+  <line x1="724" y1="296" x2="970" y2="296" stroke="#aaa" stroke-width="0.5"/>
+  <text x="724" y="308" font-size="7.5" font-weight="bold">Unique Methodologies:</text>
+  <text x="724" y="320" font-size="7">▪ Artificial Spec Preview</text>
+  <text x="724" y="330" font-size="7">▪ Artificial Testing + Test-Driven</text>
+  <text x="724" y="340" font-size="7">▪ Artificial Domain + Behavior Driven</text>
+  <text x="724" y="350" font-size="7">▪ Versioning + Cleaning</text>
+
+  <!-- BOTTOM LEFT: UNIQUE CODING FEATURES -->
+  <rect x="20" y="374" width="310" height="230" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="20" y="374" width="310" height="20" rx="4" fill="#111"/>
+  <text x="175" y="388" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="bold">⚡  Unique Coding Features</text>
+  <text x="30" y="408" font-size="8" font-weight="bold">Dynamic On-the-Fly Coding:</text>
+  <text x="30" y="420" font-size="7" fill="#333">Instructions written in any language → translated to</text>
+  <text x="30" y="430" font-size="7" fill="#333">running code dynamically (not necessarily same lang)</text>
+  <text x="30" y="444" font-size="8" font-weight="bold">Recursive Stateful Coding:</text>
+  <text x="30" y="456" font-size="7" fill="#333">Tasks may call themselves recursively · state preserved</text>
+  <text x="30" y="466" font-size="7" fill="#333">across calls · loop guards enforced by compiler</text>
+  <text x="30" y="480" font-size="8" font-weight="bold">Fuzzy Coding:</text>
+  <text x="30" y="492" font-size="7" fill="#333">Instructions may be open / approximate · system</text>
+  <text x="30" y="502" font-size="7" fill="#333">resolves ambiguity through alignment with user</text>
+  <text x="30" y="516" font-size="8" font-weight="bold">RT Code Requesting:</text>
+  <text x="30" y="528" font-size="7" fill="#333">System requests code fragments at runtime from</text>
+  <text x="30" y="538" font-size="7" fill="#333">instruction pool or generates them on demand</text>
+  <text x="30" y="552" font-size="8" font-weight="bold">Code Scraping:</text>
+  <text x="30" y="564" font-size="7" fill="#333">High-level abstraction layer — no copyright</text>
+  <text x="30" y="574" font-size="7" fill="#333">infringement · concept extraction only</text>
+  <text x="30" y="586" font-size="7" fill="#333">→ Spec Assistant guides translation to runnable code</text>
+
+  <!-- BOTTOM MIDDLE: PRETESTED POOL -->
+  <rect x="342" y="374" width="316" height="230" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="342" y="374" width="316" height="20" rx="4" fill="#111"/>
+  <text x="500" y="388" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="bold">🗂  Pretested Instruction Pool</text>
+  <text x="352" y="408" font-size="7.5" font-weight="bold">Ready-to-use verified instruction blocks:</text>
+  <rect x="352" y="414" width="138" height="60" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="421" y="426" text-anchor="middle" font-size="7.5" font-weight="bold">Tools</text>
+  <text x="360" y="438" font-size="6.5">▪ Web search · Fetch</text>
+  <text x="360" y="448" font-size="6.5">▪ File I/O · DB query</text>
+  <text x="360" y="458" font-size="6.5">▪ OCR · TTS · Image gen</text>
+  <text x="360" y="468" font-size="6.5">▪ API caller · App control</text>
+  <rect x="500" y="414" width="148" height="60" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="574" y="426" text-anchor="middle" font-size="7.5" font-weight="bold">Spec Assistant</text>
+  <text x="508" y="438" font-size="6.5">▪ Clarifies intent before exec</text>
+  <text x="508" y="448" font-size="6.5">▪ Validates instruction rigor</text>
+  <text x="508" y="458" font-size="6.5">▪ Previews expected outcome</text>
+  <text x="508" y="468" font-size="6.5">▪ Suggests param defaults</text>
+  <line x1="352" y1="484" x2="648" y2="484" stroke="#aaa" stroke-width="0.5"/>
+  <text x="352" y="496" font-size="7.5" font-weight="bold">Instruction formats accepted:</text>
+  <text x="352" y="508" font-size="7">▪ Natural language description</text>
+  <text x="352" y="518" font-size="7">▪ Structured NL (name/intent/goal/params)</text>
+  <text x="352" y="528" font-size="7">▪ Code in any language → translated</text>
+  <text x="352" y="538" font-size="7">▪ State machine definition</text>
+  <text x="352" y="548" font-size="7">▪ Symbolic logic expression</text>
+  <text x="352" y="558" font-size="7">▪ Placeholder (resolved dynamically)</text>
+  <text x="352" y="574" font-size="6.5" fill="#888" font-style="italic">All instructions pretested · versioned · confidence scored</text>
+  <text x="352" y="584" font-size="6.5" fill="#888" font-style="italic">Human or AI authored · or human+AI team</text>
+  <text x="352" y="594" font-size="6.5" fill="#888" font-style="italic">Shared pool · reusable across sessions and users</text>
+
+  <!-- BOTTOM RIGHT: LIBRARIES -->
+  <rect x="670" y="374" width="310" height="230" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="670" y="374" width="310" height="20" rx="4" fill="#111"/>
+  <text x="825" y="388" text-anchor="middle" font-size="9.5" fill="#fff" font-weight="bold">📦  Language Links + Libraries</text>
+  <text x="680" y="408" font-size="7.5" font-weight="bold">Backend:</text>
+  <rect x="680" y="412" width="290" height="44" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="685" y="424" font-size="7">Node.js · Python · Docker · REST APIs</text>
+  <text x="685" y="436" font-size="7">Database connectors · Message queues (RabbitMQ, Kafka)</text>
+  <text x="685" y="448" font-size="7">Cloud: AWS · GCP · Azure · serverless functions</text>
+  <text x="680" y="466" font-size="7.5" font-weight="bold">Frontend:</text>
+  <rect x="680" y="470" width="290" height="30" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="685" y="482" font-size="7">React · Vue · WebAssembly</text>
+  <text x="685" y="492" font-size="7">Gaming: Unity (C#) · Godot · WebGL · Three.js</text>
+  <text x="680" y="512" font-size="7.5" font-weight="bold">Hardware + Robotics:</text>
+  <rect x="680" y="516" width="290" height="30" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="685" y="528" font-size="7">Arduino · Raspberry Pi · ROS (Robot OS)</text>
+  <text x="685" y="538" font-size="7">Sensors · Actuators · IoT · Embedded C/C++</text>
+  <text x="680" y="558" font-size="7.5" font-weight="bold">Natural Language + AI:</text>
+  <rect x="680" y="562" width="290" height="30" rx="3" fill="#f5f5f5" stroke="#555" stroke-width="0.8"/>
+  <text x="685" y="574" font-size="7">LLM APIs · SLM local · Fuzzy logic engines</text>
+  <text x="685" y="584" font-size="7">Symbolic reasoning · Rule engines (Drools, CLIPS)</text>
+  <text x="680" y="596" font-size="6.5" fill="#888" font-style="italic">Any language accepted · translated to target at runtime</text>
+
+  <defs>
+    <marker id="arr4" markerWidth="5" markerHeight="5" refX="4" refY="2.5" orient="auto">
+      <path d="M0,0 L5,2.5 L0,5 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <line x1="20" y1="798" x2="980" y2="798" stroke="#000" stroke-width="0.5"/>
+  <text x="500" y="812" text-anchor="middle" font-size="7.5" fill="#666">Overstand Patent · System and Method for Reliable Attentive AI Collaboration · Fig. 4: Dynamic AI Instructions</text>
+</svg>
