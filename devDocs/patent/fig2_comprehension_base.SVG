@@ -1,0 +1,274 @@
+<svg viewBox="0 0 900 720" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- Title -->
+  <text x="450" y="28" text-anchor="middle" font-size="15" font-weight="bold">Pillar 3: Comprehension Base</text>
+  <text x="450" y="44" text-anchor="middle" font-size="10" fill="#444">Modular Knowledge Graphs · Lexicon · Thesaurus · Dynamic Context Storage</text>
+  <line x1="30" y1="50" x2="870" y2="50" stroke="#000" stroke-width="1"/>
+
+  <!-- TOP LEFT: DOMAIN KNOWLEDGE GRAPHS -->
+  <rect x="20" y="58" width="380" height="310" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="20" y="58" width="380" height="22" rx="4" fill="#111"/>
+  <text x="210" y="73" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">⬡  Domain Comprehension Units</text>
+
+  <!-- Domain1.kg -->
+  <rect x="30" y="88" width="170" height="265" rx="5" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="30" y="88" width="170" height="18" rx="3" fill="#333"/>
+  <text x="115" y="100" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="bold">Domain1.kg — Akkadian</text>
+
+  <circle cx="80" cy="130" r="18" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="80" y="134" text-anchor="middle" font-size="7" font-weight="bold">Signs</text>
+  <circle cx="150" cy="120" r="16" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="150" y="124" text-anchor="middle" font-size="7" font-weight="bold">Phonemes</text>
+  <circle cx="170" cy="170" r="14" fill="#eee" stroke="#000" stroke-width="1"/>
+  <text x="170" y="174" text-anchor="middle" font-size="6.5">Logograms</text>
+  <circle cx="100" cy="185" r="16" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="100" y="189" text-anchor="middle" font-size="7" font-weight="bold">Grammar</text>
+  <circle cx="50" cy="175" r="13" fill="#eee" stroke="#000" stroke-width="1"/>
+  <text x="50" y="179" text-anchor="middle" font-size="6.5">Syntax</text>
+  <circle cx="120" cy="235" r="15" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="120" y="239" text-anchor="middle" font-size="7" font-weight="bold">Lexemes</text>
+  <circle cx="60" cy="240" r="13" fill="#eee" stroke="#000" stroke-width="1"/>
+  <text x="60" y="244" text-anchor="middle" font-size="6.5">Roots</text>
+  <circle cx="165" cy="235" r="12" fill="#eee" stroke="#000" stroke-width="1"/>
+  <text x="165" y="239" text-anchor="middle" font-size="6.5">Variants</text>
+
+  <line x1="80" y1="148" x2="100" y2="169" stroke="#000" stroke-width="0.8"/>
+  <line x1="150" y1="136" x2="100" y2="169" stroke="#000" stroke-width="0.8"/>
+  <line x1="170" y1="156" x2="150" y2="136" stroke="#000" stroke-width="0.8"/>
+  <line x1="80" y1="148" x2="50" y2="162" stroke="#000" stroke-width="0.8"/>
+  <line x1="100" y1="201" x2="120" y2="220" stroke="#000" stroke-width="0.8"/>
+  <line x1="100" y1="201" x2="60" y2="227" stroke="#000" stroke-width="0.8"/>
+  <line x1="120" y1="220" x2="165" y2="223" stroke="#000" stroke-width="0.8"/>
+  <line x1="170" y1="184" x2="165" y2="223" stroke="#000" stroke-width="0.8"/>
+
+  <text x="35" y="270" font-size="6.5" fill="#555" font-style="italic">Aspects:</text>
+  <text x="35" y="280" font-size="6.5" fill="#333">▪ Phonological  ▪ Morphological</text>
+  <text x="35" y="290" font-size="6.5" fill="#555" font-style="italic">Perspectives:</text>
+  <text x="35" y="300" font-size="6.5" fill="#333">▪ Semantic  ▪ Grammatical  ▪ Historical</text>
+  <text x="35" y="312" font-size="6" fill="#888">← swappable layers →</text>
+  <text x="35" y="323" font-size="6" fill="#888">nodes shared across aspects</text>
+  <text x="35" y="334" font-size="6" fill="#888">links shared across perspectives</text>
+
+  <!-- Domain2.kg -->
+  <rect x="215" y="88" width="170" height="265" rx="5" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="215" y="88" width="170" height="18" rx="3" fill="#333"/>
+  <text x="300" y="100" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="bold">Domain2.kg — Cuneiform</text>
+
+  <circle cx="270" cy="130" r="17" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="270" y="134" text-anchor="middle" font-size="7" font-weight="bold">Tablets</text>
+  <circle cx="345" cy="125" r="15" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="345" y="129" text-anchor="middle" font-size="7" font-weight="bold">Scripts</text>
+  <circle cx="360" cy="175" r="13" fill="#eee" stroke="#000" stroke-width="1"/>
+  <text x="360" y="179" text-anchor="middle" font-size="6.5">Periods</text>
+  <circle cx="285" cy="180" r="16" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="285" y="184" text-anchor="middle" font-size="7" font-weight="bold">Regions</text>
+  <circle cx="235" cy="170" r="13" fill="#eee" stroke="#000" stroke-width="1"/>
+  <text x="235" y="174" text-anchor="middle" font-size="6.5">Sumerian</text>
+  <circle cx="300" cy="235" r="15" fill="#fff" stroke="#000" stroke-width="1.5"/>
+  <text x="300" y="239" text-anchor="middle" font-size="7" font-weight="bold">Signs</text>
+  <circle cx="245" cy="240" r="13" fill="#eee" stroke="#000" stroke-width="1"/>
+  <text x="245" y="244" text-anchor="middle" font-size="6.5">OCR</text>
+
+  <line x1="270" y1="147" x2="285" y2="164" stroke="#000" stroke-width="0.8"/>
+  <line x1="345" y1="140" x2="285" y2="164" stroke="#000" stroke-width="0.8"/>
+  <line x1="360" y1="162" x2="345" y2="140" stroke="#000" stroke-width="0.8"/>
+  <line x1="270" y1="147" x2="235" y2="157" stroke="#000" stroke-width="0.8"/>
+  <line x1="285" y1="196" x2="300" y2="220" stroke="#000" stroke-width="0.8"/>
+  <line x1="285" y1="196" x2="245" y2="227" stroke="#000" stroke-width="0.8"/>
+  <line x1="300" y1="220" x2="360" y2="188" stroke="#000" stroke-width="0.8"/>
+
+  <line x1="195" y1="175" x2="215" y2="175" stroke="#000" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arr2)"/>
+  <text x="205" y="170" text-anchor="middle" font-size="6" fill="#555">RDF-LD</text>
+
+  <text x="220" y="270" font-size="6.5" fill="#555" font-style="italic">Aspects:</text>
+  <text x="220" y="280" font-size="6.5" fill="#333">▪ Geographic  ▪ Temporal</text>
+  <text x="220" y="290" font-size="6.5" fill="#555" font-style="italic">Perspectives:</text>
+  <text x="220" y="300" font-size="6.5" fill="#333">▪ Linguistic  ▪ Archaeological</text>
+
+  <!-- TOP RIGHT: CONTEXT STORES -->
+  <rect x="415" y="58" width="465" height="310" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="415" y="58" width="465" height="22" rx="4" fill="#111"/>
+  <text x="647" y="73" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">🗄  Context Knowledge Stores</text>
+
+  <!-- Experience.kg -->
+  <rect x="425" y="88" width="215" height="265" rx="5" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="425" y="88" width="215" height="18" rx="3" fill="#333"/>
+  <text x="532" y="100" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="bold">Experience.kg</text>
+
+  <text x="435" y="118" font-size="7.5" font-weight="bold">Conversation History:</text>
+  <rect x="435" y="122" width="195" height="11" rx="2" fill="#222"/>
+  <text x="532" y="130" text-anchor="middle" font-size="6.5" fill="#fff">Thread: Antiquity › S799 › Cuneiform OCR</text>
+  <rect x="435" y="135" width="195" height="11" rx="2" fill="#444"/>
+  <text x="532" y="143" text-anchor="middle" font-size="6.5" fill="#fff">Thread: Sports › Lamin Yamal</text>
+  <rect x="435" y="148" width="195" height="11" rx="2" fill="#444"/>
+  <text x="532" y="156" text-anchor="middle" font-size="6.5" fill="#fff">Thread: Media › Miss Universe</text>
+
+  <text x="435" y="175" font-size="7.5" font-weight="bold">Decisions Made:</text>
+  <text x="435" y="186" font-size="6.5" fill="#333">▪ B not V in Akkadian (GZ, medium conf.)</text>
+  <text x="435" y="196" font-size="6.5" fill="#333">▪ S799 = target manuscript confirmed</text>
+  <text x="435" y="206" font-size="6.5" fill="#333">▪ Parallel verify: Ungnad 1906</text>
+
+  <text x="435" y="222" font-size="7.5" font-weight="bold">Knowledge Gaps Logged:</text>
+  <text x="435" y="232" font-size="6.5" fill="#555">▪ GZ Lexicon source unverified</text>
+  <text x="435" y="242" font-size="6.5" fill="#555">▪ Year of discovery: unknown</text>
+  <text x="435" y="252" font-size="6.5" fill="#555">▪ Cambridge S7886 not yet loaded</text>
+
+  <text x="435" y="268" font-size="7.5" font-weight="bold">Breadcrumb Trail:</text>
+  <text x="435" y="278" font-size="6.5" fill="#333">Antiquity›S799›CuneiformOCR›AccV&amp;F</text>
+  <text x="435" y="288" font-size="6" fill="#888">timestamped · navigable · resumable</text>
+  <text x="435" y="303" font-size="6" fill="#888" font-style="italic">stored outside LLM · loaded per thread state</text>
+  <text x="435" y="313" font-size="6" fill="#888" font-style="italic">survives session end · branch-aware</text>
+
+  <!-- Preferences.kg -->
+  <rect x="652" y="88" width="215" height="265" rx="5" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="652" y="88" width="215" height="18" rx="3" fill="#333"/>
+  <text x="759" y="100" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="bold">Preferences.kg</text>
+
+  <text x="662" y="118" font-size="7.5" font-weight="bold">User Profile:</text>
+  <text x="662" y="129" font-size="6.5" fill="#333">▪ Domain: Ancient Near East linguistics</text>
+  <text x="662" y="139" font-size="6.5" fill="#333">▪ Level: advanced researcher</text>
+  <text x="662" y="149" font-size="6.5" fill="#333">▪ Language: English (Hebrew fluent)</text>
+  <text x="662" y="159" font-size="6.5" fill="#333">▪ Prefers: concise, sourced answers</text>
+
+  <text x="662" y="175" font-size="7.5" font-weight="bold">Interaction Style:</text>
+  <text x="662" y="186" font-size="6.5" fill="#333">▪ Pace: slow, deliberate</text>
+  <text x="662" y="196" font-size="6.5" fill="#333">▪ Verification: always cite sources</text>
+  <text x="662" y="206" font-size="6.5" fill="#333">▪ Gap handling: notify + research</text>
+  <text x="662" y="216" font-size="6.5" fill="#333">▪ Branching: keep abandoned topics</text>
+
+  <text x="662" y="232" font-size="7.5" font-weight="bold">Active Persona:</text>
+  <text x="662" y="243" font-size="6.5" fill="#333">▪ Researcher mode (not casual)</text>
+  <text x="662" y="253" font-size="6.5" fill="#333">▪ Collaborative — human+AI team</text>
+
+  <text x="662" y="269" font-size="7.5" font-weight="bold">Instruction History:</text>
+  <text x="662" y="280" font-size="6.5" fill="#333">▪ "Always check Cambridge corpus"</text>
+  <text x="662" y="290" font-size="6.5" fill="#333">▪ "Flag if conf. below high"</text>
+  <text x="662" y="300" font-size="6.5" fill="#333">▪ "Resume S799 after media thread"</text>
+  <text x="662" y="316" font-size="6" fill="#888" font-style="italic">default profile + apparent conversational persona</text>
+
+  <line x1="640" y1="200" x2="652" y2="200" stroke="#aaa" stroke-width="1" stroke-dasharray="3,2"/>
+
+  <!-- BOTTOM: LEXICON / THESAURUS / TERM CLOUD -->
+  <rect x="20" y="378" width="860" height="300" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="20" y="378" width="860" height="22" rx="4" fill="#111"/>
+  <text x="450" y="393" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">📖  Term Dictionary · Lexicon · Thesaurus · Textbook Examples</text>
+
+  <!-- Term Dictionary + Lexicon -->
+  <rect x="30" y="408" width="265" height="258" rx="5" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="30" y="408" width="265" height="16" rx="3" fill="#333"/>
+  <text x="162" y="419" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">Term Dictionary + Lexicon</text>
+
+  <text x="40" y="436" font-size="7.5" font-weight="bold">Entry: B / V distinction (Akkadian)</text>
+  <rect x="40" y="440" width="245" height="50" rx="3" fill="#f9f9f9" stroke="#ccc" stroke-width="0.8"/>
+  <text x="48" y="452" font-size="7">Term: bilabial stop · Class: phoneme</text>
+  <text x="48" y="463" font-size="7">Definition: labial consonant, no labiodental</text>
+  <text x="48" y="474" font-size="7">fricative equivalent in early Akkadian</text>
+  <text x="48" y="485" font-size="7">Source: GZ Lexicon (Ungnad 1906) · conf: med</text>
+
+  <text x="40" y="502" font-size="7.5" font-weight="bold">Thesaurus Links:</text>
+  <text x="40" y="513" font-size="7">B → {bilabial, labial stop, plosive}</text>
+  <text x="40" y="523" font-size="7">V → {labiodental, fricative, absent}</text>
+  <text x="40" y="533" font-size="7">GZ → {Geez, Ethiopic, South Semitic}</text>
+
+  <text x="40" y="549" font-size="7.5" font-weight="bold">Textbook Example:</text>
+  <rect x="40" y="553" width="245" height="42" rx="3" fill="#f0f0f0" stroke="#ccc" stroke-width="0.8"/>
+  <text x="48" y="565" font-size="7" font-style="italic">"In GZ script, the bilabial stop [b]</text>
+  <text x="48" y="575" font-size="7" font-style="italic"> has no fricative counterpart. MS S799</text>
+  <text x="48" y="585" font-size="7" font-style="italic"> sign ◁ = /b/, not /v/."</text>
+  <text x="48" y="595" font-size="6.5" fill="#888">— Ungnad, Akkadian Grammar, 1906, §12</text>
+  <text x="40" y="610" font-size="6" fill="#888" font-style="italic">reliability score: 0.72 · verified: pending</text>
+
+  <!-- Term Map -->
+  <rect x="307" y="408" width="270" height="258" rx="5" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="307" y="408" width="270" height="16" rx="3" fill="#333"/>
+  <text x="442" y="419" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">Term Map — Inter-domain Links</text>
+
+  <text x="380" y="448" font-size="11" font-weight="bold">bilabial</text>
+  <text x="470" y="438" font-size="9">phoneme</text>
+  <text x="530" y="455" font-size="8" fill="#444">Akkadian</text>
+  <text x="320" y="460" font-size="8" fill="#444">cuneiform</text>
+  <text x="340" y="480" font-size="10" font-weight="bold">GZ Lexicon</text>
+  <text x="490" y="472" font-size="9">S799</text>
+  <text x="540" y="490" font-size="8" fill="#444">tablet</text>
+  <text x="320" y="500" font-size="8" fill="#888">Sumerian</text>
+  <text x="430" y="495" font-size="11" font-weight="bold">sign</text>
+  <text x="490" y="510" font-size="9">OCR</text>
+  <text x="355" y="518" font-size="9">logograms</text>
+  <text x="525" y="525" font-size="8" fill="#444">script</text>
+  <text x="320" y="535" font-size="10" font-weight="bold">morpheme</text>
+  <text x="460" y="530" font-size="8" fill="#888">Geez</text>
+  <text x="530" y="545" font-size="9">Semitic</text>
+  <text x="340" y="553" font-size="8" fill="#444">plosive</text>
+  <text x="440" y="550" font-size="11" font-weight="bold">root</text>
+  <text x="315" y="572" font-size="9">grammar</text>
+  <text x="420" y="568" font-size="8" fill="#888">fricative</text>
+  <text x="490" y="562" font-size="9">Babylonian</text>
+  <text x="340" y="588" font-size="8" fill="#444">syntax</text>
+  <text x="440" y="585" font-size="10" font-weight="bold">lexeme</text>
+  <text x="530" y="578" font-size="8" fill="#444">Assyrian</text>
+  <text x="320" y="605" font-size="8" fill="#888">variant</text>
+  <text x="420" y="602" font-size="9">transliteration</text>
+  <text x="525" y="598" font-size="8" fill="#888">period</text>
+
+  <line x1="408" y1="443" x2="395" y2="450" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="408" y1="443" x2="480" y2="440" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="370" y1="476" x2="350" y2="463" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="435" y1="490" x2="495" y2="473" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="435" y1="490" x2="370" y2="500" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="348" y1="548" x2="365" y2="515" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="450" y1="545" x2="435" y2="530" stroke="#aaa" stroke-width="0.5"/>
+  <line x1="450" y1="580" x2="435" y2="565" stroke="#aaa" stroke-width="0.5"/>
+  <text x="442" y="652" text-anchor="middle" font-size="6" fill="#888" font-style="italic">term size = relevance weight · lines = semantic links across domains</text>
+
+  <!-- Comprehension Unit Structure -->
+  <rect x="589" y="408" width="280" height="258" rx="5" fill="none" stroke="#555" stroke-width="1"/>
+  <rect x="589" y="408" width="280" height="16" rx="3" fill="#333"/>
+  <text x="729" y="419" text-anchor="middle" font-size="8" fill="#fff" font-weight="bold">Comprehension Unit Structure</text>
+
+  <rect x="600" y="428" width="258" height="130" rx="4" fill="#f5f5f5" stroke="#000" stroke-width="1"/>
+  <text x="729" y="442" text-anchor="middle" font-size="8" font-weight="bold">Comprehension Unit: Akkadian.B-V</text>
+
+  <text x="608" y="456" font-size="7" font-weight="bold">Aspects (entity layers):</text>
+  <rect x="608" y="460" width="72" height="14" rx="2" fill="#222"/>
+  <text x="644" y="470" text-anchor="middle" font-size="6.5" fill="#fff">Phonological</text>
+  <rect x="686" y="460" width="72" height="14" rx="2" fill="#444"/>
+  <text x="722" y="470" text-anchor="middle" font-size="6.5" fill="#fff">Morphological</text>
+  <rect x="764" y="460" width="72" height="14" rx="2" fill="#666" stroke-dasharray="3,2"/>
+  <text x="800" y="470" text-anchor="middle" font-size="6.5" fill="#fff">+ add aspect</text>
+
+  <text x="608" y="488" font-size="7" font-weight="bold">Perspectives (link layers):</text>
+  <rect x="608" y="492" width="55" height="14" rx="2" fill="#333"/>
+  <text x="635" y="502" text-anchor="middle" font-size="6.5" fill="#fff">Semantic</text>
+  <rect x="669" y="492" width="60" height="14" rx="2" fill="#333"/>
+  <text x="699" y="502" text-anchor="middle" font-size="6.5" fill="#fff">Grammatical</text>
+  <rect x="735" y="492" width="55" height="14" rx="2" fill="#333"/>
+  <text x="762" y="502" text-anchor="middle" font-size="6.5" fill="#fff">Historical</text>
+  <rect x="796" y="492" width="55" height="14" rx="2" fill="#555" stroke-dasharray="3,2"/>
+  <text x="823" y="502" text-anchor="middle" font-size="6.5" fill="#fff">+ add</text>
+
+  <text x="608" y="520" font-size="7" font-weight="bold">Entities:</text>
+  <text x="608" y="530" font-size="6.5">▪ [b] bilabial  ▪ [v] absent  ▪ GZ-sign-◁</text>
+  <text x="608" y="540" font-size="6.5">▪ shared across aspects — no duplication</text>
+
+  <text x="608" y="552" font-size="7" font-weight="bold">Links:</text>
+  <text x="608" y="562" font-size="6.5">▪ [b] —[synonym]→ {bilabial, plosive}</text>
+  <text x="608" y="572" font-size="6.5">▪ [b] —[absent-in]→ GZ Fricative set</text>
+  <text x="608" y="582" font-size="6.5">▪ shared across perspectives — no duplication</text>
+
+  <text x="600" y="600" font-size="7" font-weight="bold">External Links (RDF-LD):</text>
+  <rect x="600" y="604" width="258" height="20" rx="3" fill="#eee" stroke="#aaa" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <text x="729" y="617" text-anchor="middle" font-size="6.5" fill="#444">→ Domain2.kg:Signs  → Cambridge.kg:S7886</text>
+
+  <text x="600" y="636" font-size="6.5" fill="#555">⚡ Loaded dynamically on topic detection</text>
+  <text x="600" y="646" font-size="6.5" fill="#555">⚡ Fast: focused aspects · Slow: full traverse</text>
+  <text x="600" y="656" font-size="6" fill="#888" font-style="italic">mimics Kahneman System 1 + System 2 cognition</text>
+
+  <defs>
+    <marker id="arr2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <line x1="20" y1="700" x2="880" y2="700" stroke="#000" stroke-width="0.5"/>
+  <text x="450" y="714" text-anchor="middle" font-size="7.5" fill="#666">Overstand Patent · System and Method for Reliable Attentive AI Collaboration · Fig. 2: Comprehension Base</text>
+</svg>
