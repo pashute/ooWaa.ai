@@ -344,17 +344,12 @@ Similar thread/topic/breakpoint model. Very different — no auto-detection of t
 
 **Claims 66–69 — Legal binding:**
 
-[Patent US20210216712](https://patents.google.com/patent/US20210216712A1/en) — Automated execution of smart contracts. 2021. Discloses a system for the blockchain-based execution of contracts when pre-defined logical conditions are met.
-
-**Assessment:** The cited reference focuses on the conditional execution of decentralized blockchain code. The present invention differs by establishing an automated legal entity authorized to act as a fiduciary on behalf of an authenticated user. This empowerment is derived not from blockchain consensus, but from the transparent and auditable nature of the underlying four-legged framework, which allows institutions to accept automated signing in regulated environments such as equity management. It does not enable automated actions from a (previously unreliable) AI.
-
-
 [Patent US20230014140](https://patents.google.com/patent/US20230014140A1/en) — Smart contract system using artificial intelligence, Fortior Blockchain, 2023. Uses AI to analyze and execute blockchain-based smart contracts, with trust enforced through cryptographic consensus.
 
 **Assessment:** Trust here is derived from blockchain immutability and cryptography — not from the reliability of the AI itself. The present invention differs fundamentally: legal empowerment is granted because the underlying system is demonstrably non-hallucinating and fully auditable, making the AI trustworthy enough to act as a fiduciary on the user's behalf without requiring a blockchain infrastructure.
 
 ---
 
-*Document Version: 0.055.4*
+*Document Version: 1.0*
 *Date: 2026-03-20*
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
