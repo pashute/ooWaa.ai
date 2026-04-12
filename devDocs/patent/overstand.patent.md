@@ -10,6 +10,14 @@ While each leg is designed to stand on its own, their collective strength provid
 
 Instead of unpredictable outputs that drift off-course — surprising us with failed understandings at the most critical moments — the proposed system ensures logically cohesive responses, achieved through a transparent, attentive steering process that prioritizes reliability over unvetted immediacy, allowing the system to progress stage-by-stage at the user's deliberate pace.
 
+## Schematics
+
+![fig 1 Smart Chat.SVG](./fig1_smart_chat.SVG)
+
+
+
+## The Four "Legs"
+
 1. The first leg: **Logic behind the conversation:**
 
 The results of this system are coherent and cohesive because they are constructed logically.
