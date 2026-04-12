@@ -299,19 +299,24 @@ Note: In the non-provisional patent submittals these will be in separate Informa
 
 **Claims 7–18 — Conversation flow control, thread/topic tracking:**
 
-[Patent US20080172462](https://patents.google.com/patent/US20080172462) — Thread-based conversation management. 2008. Microsoft. Thread storage with topic/context metadata, lifecycle management. Similar structure — but pre-AI, no alignment with user, no topic change detection or dynamic loading.
+[Patent US20080172462](https://patents.google.com/patent/US20080172462) — Thread-based conversation management. 2008. Microsoft. Organizing conversations in resumable and continued threads (multi modal sources: from chat, email, or online). Thread storage with topic/context metadata, lifecycle management. Similar structure — but pre-AI, no reasoning, no alignment with user, no topic or subtopic change detection or dynamic loading.  Relevant but very different. 
 
-[Patent US8001126](https://patents.google.com/patent/US8001126B2/en) — Conversation persistence, threads, topics, breakpoints. 2011. No major company. Similar thread/topic/breakpoint model. Very different — no AI, no alignment, no knowledge gap detection.
+[Patent US8001126](https://patents.google.com/patent/US8001126B2/en) — Continued conversation persistence after one side disconnects. Threads, topics, breakpoints. 2011. No major company. 
+Similar thread/topic/breakpoint model. Very different — no auto-detection of topic and thread, no AI, no alignment, no knowledge gap detection.
 
 **Claims 7–18 — Topic tracking with AI:**
 
-[Patent US10990421](https://patents.google.com/patent/US10990421B2/fr) — AI-driven topic association for activities. 2021. Microsoft (Bill Gates listed). Topics linked to user content via activity graph. Similar topic abstraction — but for content organization, not conversation alignment. No user-paced discussion, no knowledge gap.
+[Patent US10990421](https://patents.google.com/patent/US10990421B2/fr) — AI-driven topic association for MS Office activities, so user can retrieve activities by topic. 2021. Microsoft (Bill Gates listed). Topics linked to user content via activity graph. Similar topic abstraction — but for content organization, not for conversation alignment and discussion flow. so no topic changing detection, no topic change tracking, no topic proposal. No user-paced discussion. no knowledge gap detection. 
 
 **Claims 19–22 — Alignment and knowledge gaps:**
 
 [Patent US10467544](https://patents.google.com/patent/US10467544B2/en) — Intelligent assistant providing proactive suggestions and clarifying intent. 2019. Apple Inc. Discloses a system that detects ambiguity in user requests and initiates proactive clarifying dialogues to resolve intent prior to execution.
 
-**Assessment:** While the cited reference teaches intent disambiguation for command execution, it does not address the reliability of information post-response. The present invention differs in its focus on knowledge-gap detection, specifically targeting missing source information, non-verified data, and controversial claims. Furthermore, the present invention utilizes recursive assessment of its own responses to ensure alignment with shifting user focus, a feature not disclosed in the cited reference.
+**Assessment:** While the cited reference teaches intent disambiguation for command execution, it does not address the reliability of information post-response. The present invention differs in its focus on knowledge-gap detection, specifically targeting missing source information, non-verified data, and controversial claims. Furthermore, the present invention utilizes recursive assessment of its own responses to ensure alignment with shifting user focus, a feature not disclosed in the cited reference. 
+
+[Patent US20230274095](https://patents.google.com/patent/US20230274095A1/en) — Autonomous Conversational AI, GotIt! Inc., 2023. Automatically detects topics, intents, and response flows from historical conversation logs to configure a chatbot with no human setup required.
+
+**Assessment:** Topic detection here is a batch training process over past logs, not real-time tracking of a live conversation. The present invention differs by detecting and following topics dynamically during an ongoing discussion, using them to align with the user and detect knowledge gaps — not to train a static response system. Topic detection in the current application is dynamically integrating with past topics and checking for nuanced changes to be notified or dealt with, not present in the cited reference.
 
 **Claims 23–29 — Context storage (lexicon/thesaurus):**
 
@@ -345,6 +350,6 @@ Note: In the non-provisional patent submittals these will be in separate Informa
 
 ---
 
-*Document Version: 0.055.2*
+*Document Version: 0.055.3*
 *Date: 2026-03-20*
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
