@@ -293,9 +293,9 @@ Note: In the non-provisional patent submittals these will be in separate Informa
 
 **Claims 2–6 — Orchestration layer:**
 
-[Thoughts on external memory for LLMs](https://medium.com/@chipiga86/thoughts-on-external-memory-for-llms-e2ee21be3292) 
+[Thoughts on external memory for LLMs](https://medium.com/@chipiga86/thoughts-on-external-memory-for-llms-e2ee21be3292) - A blog about bio-mimicking short term memory with a linked list of "embedded" experiences. No user alignment, no comprehension structure, no lookup and key-phrase or key-word linking, no conversation flow. 
 
-[Patent US11056107](https://patents.google.com/patent/US11056107B2/en) — Conversational framework with workflow orchestration. 2021. IBM. Conversation + application orchestration with dialog context. Similar but theirs routes to microservices, not a reliability-first pre-LLM layer. No bypass of LLM.
+[Patent US11056107](https://patents.google.com/patent/US11056107B2/en) — Conversational framework with workflow orchestration. 2021. IBM. Conversation + application orchestration with dialog context stored externally. Allows conversation with AI to relay service information (i.e. banking account information) and remember what (micro-service) system requests and responses were given and what conversational elements were given. However there is no general comprehension attempt, no structured lexicon, no topic tracking, no knowledge gap detection, no ambiguity questioning and no user alignment. No bypass of LLM, no reliability-first pre-LLM layer.
 
 **Claims 7–18 — Conversation flow control, thread/topic tracking:**
 
@@ -345,6 +345,6 @@ Note: In the non-provisional patent submittals these will be in separate Informa
 
 ---
 
-*Document Version: 0.055.1*
+*Document Version: 0.055.2*
 *Date: 2026-03-20*
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
