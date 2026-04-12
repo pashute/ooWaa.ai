@@ -219,7 +219,7 @@ A comprehension unit has one or more entity layers, weighted **aspects** which a
 
 41. A comprehension base as described in claim 30, wherein new knowledge is acquired by comparing it with existing comprehension units and creating new paradigms and metaphors out of the old information, connecting new terms and logic to existing entities and connections, mimicking the human learning process (for example as described by Lakoff and Mark Johnson's Conceptual Metaphor Theory (1981) following Jean Piaget's model of assimilation and accommodation described in The Construction of Knowledge in Children (1937)).
 
-This creates a network where everything is connected to everything, mimicking awareness as a process of focusing on processed information, as theorized by René Descartes' attentio (1644), Gottfried Leibniz's apperception — grasping (1704), Wilhelm Wundt's "Blickpunkt" — focused eyesight (1874) and William James' selective attention (1890).
+This creates a network where everything is connected to everything, mimicking awareness as a process of focusing on processed information, as theorized by René Descartes' indubitable ideas and maintained focused clarity only under attention (1644), Gottfried Leibniz's apperception — grasping (1704), Wilhelm Wundt's "Blickpunkt" — focused eyesight (1874) and William James' selective attention (1890).
 
 42. A comprehension base as described in claim 30, wherein comprehension unit elements, aspects entities, and perspective connections, are sourced with a confidence and approval score, verified by the user, by domain experts, or by automatic verifiers.
 
@@ -362,6 +362,6 @@ Similar thread/topic/breakpoint model. Very different — no auto-detection of t
 
 ---
 
-*Document Version: 1.0*
+*Document Version: 1.1*
 *Date: 2026-03-20*
 *Note: Parts of this patent have been made public since Feb 07, 2026.*
