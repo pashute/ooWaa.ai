@@ -1,0 +1,182 @@
+<svg viewBox="0 0 900 680" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif">
+
+  <!-- Title -->
+  <text x="450" y="28" text-anchor="middle" font-size="15" font-weight="bold">Pillar 2: Smart Chat with Attentive Alignment</text>
+  <text x="450" y="44" text-anchor="middle" font-size="10" fill="#444">Conversation Flow Control · Topic Tracking · Knowledge Gap Detection</text>
+  <line x1="30" y1="50" x2="870" y2="50" stroke="#000" stroke-width="1"/>
+
+  <!-- LEFT: CHAT PANEL -->
+  <rect x="20" y="58" width="235" height="590" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="20" y="58" width="235" height="22" rx="4" fill="#111"/>
+  <text x="137" y="73" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">💬  Smart Chat</text>
+
+  <rect x="55" y="90" width="185" height="22" rx="5" fill="#eee" stroke="#999" stroke-width="1"/>
+  <text x="148" y="105" text-anchor="middle" font-size="8.5">So it's B or V?</text>
+
+  <rect x="25" y="122" width="215" height="50" rx="5" fill="#fff" stroke="#000" stroke-width="1"/>
+  <text x="35" y="136" font-size="8.5" font-weight="bold">It's B because in GZ there was no V.</text>
+  <text x="35" y="150" font-size="8.5">We are still talking about</text>
+  <text x="35" y="162" font-size="8.5">manuscript S799. Right?</text>
+  <text x="237" y="130" text-anchor="end" font-size="7" fill="#888">⚑ ⚠</text>
+
+  <rect x="25" y="180" width="215" height="30" rx="4" fill="#f9f9f9" stroke="#aaa" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="35" y="192" font-size="7.5" font-weight="bold">⚠ Knowledge Gap Flagged:</text>
+  <text x="35" y="204" font-size="7" fill="#555">Source: GZ Lexicon — unverified</text>
+
+  <rect x="55" y="218" width="185" height="52" rx="5" fill="#eee" stroke="#999" stroke-width="1"/>
+  <text x="65" y="232" font-size="8.5">How did you come to that</text>
+  <text x="65" y="244" font-size="8.5">conclusion?</text>
+  <text x="65" y="256" font-size="8.5">What is your source and</text>
+  <text x="65" y="268" font-size="8.5">what year was that?</text>
+
+  <rect x="25" y="278" width="215" height="44" rx="5" fill="#fff" stroke="#000" stroke-width="1"/>
+  <text x="35" y="291" font-size="8" font-weight="bold">⚠ Addressing gap:</text>
+  <text x="35" y="303" font-size="7.5" fill="#444">Source: Ungnad (1906), GZ Lexicon</text>
+  <text x="35" y="315" font-size="7.5" fill="#444">Confidence: medium</text>
+  <text x="35" y="325" font-size="7.5" fill="#444">Cross-checking initiated →</text>
+
+  <rect x="25" y="330" width="215" height="44" rx="4" fill="#fff" stroke="#000" stroke-width="1"/>
+  <text x="35" y="343" font-size="8" font-weight="bold">📋 Planned Topics</text>
+  <text x="35" y="355" font-size="7.5">→ Accadian translit (next)</text>
+  <text x="35" y="365" font-size="7.5">→ Compare MS Cambridge S7886</text>
+  <text x="35" y="375" font-size="7.5" fill="#aaa">→ Sports: Lamin Yamal (paused)</text>
+
+  <rect x="25" y="382" width="215" height="36" rx="4" fill="#f5f5f5" stroke="#aaa" stroke-width="1"/>
+  <text x="35" y="395" font-size="8" font-weight="bold">🔖 Breadcrumb Trail</text>
+  <text x="35" y="406" font-size="7">Antiquity › S799 › Cuneiform OCR</text>
+  <text x="35" y="416" font-size="7">  › Accadian V and F › [here]</text>
+
+  <line x1="25" y1="428" x2="232" y2="428" stroke="#aaa" stroke-width="0.5"/>
+  <text x="25" y="440" font-size="7.5" font-weight="bold">Legend:</text>
+  <text x="25" y="452" font-size="7.5">⚑ = alignment check triggered</text>
+  <text x="25" y="464" font-size="7.5">⚠ = knowledge gap flagged</text>
+  <text x="25" y="476" font-size="7.5">- - - = gap response block</text>
+  <text x="25" y="488" font-size="7.5">Slow pace · one topic at a time</text>
+  <text x="25" y="500" font-size="7.5">LLM deferred until params ready</text>
+
+  <!-- MIDDLE: DISCUSSION FLOW -->
+  <rect x="268" y="58" width="320" height="590" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="268" y="58" width="320" height="22" rx="4" fill="#111"/>
+  <text x="428" y="73" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">📂  Discussion Flow Trace</text>
+
+  <text x="278" y="92" font-size="7.5" fill="#888" font-style="italic">3 hrs ago</text>
+  <line x1="278" y1="95" x2="581" y2="95" stroke="#ccc" stroke-width="0.5"/>
+  <rect x="278" y="98" width="300" height="16" rx="3" fill="#555"/>
+  <text x="288" y="109" font-size="8" fill="#fff" font-weight="bold">Thread: Sports</text>
+  <text x="533" y="109" text-anchor="end" font-size="7" fill="#ccc">info</text>
+  <text x="288" y="122" font-size="7.5">└ Lamin Yamal : player profile and stats</text>
+
+  <text x="278" y="136" font-size="7.5" fill="#888" font-style="italic">1 hr ago</text>
+  <line x1="278" y1="139" x2="581" y2="139" stroke="#ccc" stroke-width="0.5"/>
+  <rect x="278" y="142" width="300" height="16" rx="3" fill="#222"/>
+  <text x="288" y="153" font-size="8" fill="#fff" font-weight="bold">Thread: Antiquity</text>
+  <text x="533" y="153" text-anchor="end" font-size="7" fill="#aaa">action</text>
+  <text x="288" y="168" font-size="7.5" font-weight="bold">  └ Manuscript S799</text>
+
+  <rect x="298" y="172" width="278" height="13" rx="2" fill="#444"/>
+  <text x="308" y="181" font-size="7" fill="#fff">Topic: Cuneiform OCR</text>
+  <text x="308" y="194" font-size="7" fill="#555" font-style="italic">+ Tasks:</text>
+  <text x="318" y="205" font-size="7">✓ 1. Raw transcript</text>
+  <text x="318" y="215" font-size="7">✓ 2. Cuneiform sign transcript</text>
+  <text x="318" y="225" font-size="7">↻ 3. Load related texts</text>
+  <text x="318" y="235" font-size="7" fill="#aaa">○ 4. Language detection</text>
+
+  <rect x="298" y="240" width="278" height="13" rx="2" fill="#555"/>
+  <text x="308" y="249" font-size="7" fill="#fff">Topic: Compare with MS Cambridge S7886</text>
+  <rect x="298" y="257" width="278" height="13" rx="2" fill="#555"/>
+  <text x="308" y="266" font-size="7" fill="#fff">Topic: S799 Scientific Reviews</text>
+  <rect x="298" y="274" width="278" height="13" rx="2" fill="#555"/>
+  <text x="308" y="283" font-size="7" fill="#fff">Topic: Accadian Transliteration</text>
+
+  <text x="278" y="298" font-size="7.5" fill="#888" font-style="italic">20 min ago</text>
+  <line x1="278" y1="301" x2="581" y2="301" stroke="#ccc" stroke-width="0.5"/>
+  <rect x="278" y="304" width="300" height="16" rx="3" fill="#555"/>
+  <text x="288" y="315" font-size="8" fill="#fff" font-weight="bold">Thread: Media</text>
+  <text x="533" y="315" text-anchor="end" font-size="7" fill="#ccc">info + images</text>
+  <text x="288" y="328" font-size="7.5" font-weight="bold">  └ Miss Universe — Israel</text>
+
+  <rect x="298" y="332" width="278" height="13" rx="2" fill="#666"/>
+  <text x="308" y="341" font-size="7" fill="#fff">Topic: Controversy with Palestinian</text>
+  <text x="308" y="354" font-size="7" fill="#555" font-style="italic">Tasks:</text>
+  <text x="318" y="364" font-size="7">Israeli side (Channel 14, Kan 11)</text>
+  <text x="318" y="374" font-size="7">Palestinian side (Al Jazeera, CNN)</text>
+  <rect x="298" y="379" width="278" height="13" rx="2" fill="#666"/>
+  <text x="308" y="388" font-size="7" fill="#fff">Topic: Videos and Memes</text>
+
+  <text x="278" y="403" font-size="7.5" fill="#888" font-style="italic">recent</text>
+  <line x1="278" y1="406" x2="581" y2="406" stroke="#ccc" stroke-width="0.5"/>
+  <rect x="278" y="409" width="300" height="16" rx="3" fill="#000"/>
+  <text x="288" y="420" font-size="8" fill="#fff" font-weight="bold">◀ Topic: Accadian V and F (B and P)</text>
+  <rect x="288" y="429" width="288" height="12" rx="2" fill="#333"/>
+  <text x="298" y="438" font-size="7" fill="#ddd">Section 1: Egyptian and Geez</text>
+  <rect x="288" y="443" width="288" height="12" rx="2" fill="#333"/>
+  <text x="298" y="452" font-size="7" fill="#ddd">Section 2: Babylonian</text>
+  <rect x="288" y="457" width="288" height="12" rx="2" fill="#333"/>
+  <text x="298" y="466" font-size="7" fill="#ddd">Section 3: Assyrian</text>
+  <rect x="288" y="471" width="288" height="12" rx="2" fill="#111"/>
+  <text x="298" y="480" font-size="7" fill="#fff" font-weight="bold">▶ Section 4: Western Semitic  ← current</text>
+
+  <line x1="278" y1="494" x2="581" y2="494" stroke="#aaa" stroke-width="0.5"/>
+  <text x="278" y="506" font-size="7" font-weight="bold">Status:</text>
+  <text x="278" y="518" font-size="7">✓ = done   ↻ = in progress   ○ = queued</text>
+  <text x="278" y="530" font-size="7">◀ = current thread/topic   ▶ = current section</text>
+
+  <!-- RIGHT: ALIGNMENT ENGINE -->
+  <rect x="598" y="58" width="272" height="590" rx="6" fill="none" stroke="#000" stroke-width="1.5"/>
+  <rect x="598" y="58" width="272" height="22" rx="4" fill="#111"/>
+  <text x="734" y="73" text-anchor="middle" font-size="10" fill="#fff" font-weight="bold">⚑  Alignment Engine</text>
+
+  <text x="612" y="92" font-size="8.5" font-weight="bold">On each iteration:</text>
+
+  <rect x="612" y="98" width="244" height="30" rx="3" fill="#f5f5f5" stroke="#000" stroke-width="1"/>
+  <text x="734" y="110" text-anchor="middle" font-size="8.5" font-weight="bold">1. Detect topic change?</text>
+  <text x="734" y="122" text-anchor="middle" font-size="7.5" fill="#444">Compare to current thread state</text>
+  <line x1="734" y1="128" x2="734" y2="138" stroke="#000" stroke-width="1"/>
+
+  <rect x="612" y="138" width="244" height="30" rx="3" fill="#f5f5f5" stroke="#000" stroke-width="1"/>
+  <text x="734" y="150" text-anchor="middle" font-size="8.5" font-weight="bold">2. Ambiguity found?</text>
+  <text x="734" y="162" text-anchor="middle" font-size="7.5" fill="#444">Flag → ask subtle question</text>
+  <line x1="734" y1="168" x2="734" y2="178" stroke="#000" stroke-width="1"/>
+
+  <rect x="612" y="178" width="244" height="30" rx="3" fill="#f5f5f5" stroke="#000" stroke-width="1"/>
+  <text x="734" y="190" text-anchor="middle" font-size="8.5" font-weight="bold">3. Knowledge gap search</text>
+  <text x="734" y="202" text-anchor="middle" font-size="7.5" fill="#444">Unverified? Controversial? Guess?</text>
+  <line x1="734" y1="208" x2="734" y2="218" stroke="#000" stroke-width="1"/>
+
+  <rect x="612" y="218" width="244" height="40" rx="3" fill="#f5f5f5" stroke="#000" stroke-width="1"/>
+  <text x="734" y="230" text-anchor="middle" font-size="8.5" font-weight="bold">4. Gap disposition</text>
+  <text x="734" y="242" text-anchor="middle" font-size="7.5" fill="#444">Discuss / Notify / Research</text>
+  <text x="734" y="253" text-anchor="middle" font-size="7.5" fill="#444">/ Log silently</text>
+  <line x1="734" y1="258" x2="734" y2="268" stroke="#000" stroke-width="1"/>
+
+  <rect x="612" y="268" width="244" height="30" rx="3" fill="#f5f5f5" stroke="#000" stroke-width="1"/>
+  <text x="734" y="280" text-anchor="middle" font-size="8.5" font-weight="bold">5. Param change detected?</text>
+  <text x="734" y="292" text-anchor="middle" font-size="7.5" fill="#444">Update state · apply defaults</text>
+  <line x1="734" y1="298" x2="734" y2="308" stroke="#000" stroke-width="1"/>
+
+  <rect x="612" y="308" width="244" height="30" rx="3" fill="#222"/>
+  <text x="734" y="320" text-anchor="middle" font-size="8.5" fill="#fff" font-weight="bold">6. Respond per-topic</text>
+  <text x="734" y="332" text-anchor="middle" font-size="7.5" fill="#ddd">One response per detected topic</text>
+
+  <line x1="612" y1="350" x2="856" y2="350" stroke="#aaa" stroke-width="0.5"/>
+  <text x="734" y="364" text-anchor="middle" font-size="8" font-weight="bold">Design Principles:</text>
+  <text x="612" y="378" font-size="7.5">· Slow pace — one topic at a time</text>
+  <text x="612" y="392" font-size="7.5">· Confirms with user before proceeding</text>
+  <text x="612" y="406" font-size="7.5">· LLM deferred until params sufficient</text>
+  <text x="612" y="420" font-size="7.5">· Abandoned branches preserved</text>
+  <text x="612" y="434" font-size="7.5">· Resume from any breadcrumb point</text>
+  <text x="612" y="448" font-size="7.5">· Recursive self-assessment of response</text>
+  <text x="612" y="462" font-size="7.5">· No information dumping</text>
+
+  <line x1="255" y1="300" x2="266" y2="300" stroke="#000" stroke-width="1.5" marker-end="url(#arr)"/>
+  <line x1="590" y1="300" x2="596" y2="300" stroke="#000" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <defs>
+    <marker id="arr" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <line x1="20" y1="656" x2="880" y2="656" stroke="#000" stroke-width="0.5"/>
+  <text x="450" y="670" text-anchor="middle" font-size="7.5" fill="#666">Overstand Patent · System and Method for Reliable Attentive AI Collaboration · Fig. 1: Smart Chat + Conversation Flow</text>
+</svg>
