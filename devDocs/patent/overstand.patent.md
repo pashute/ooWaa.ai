@@ -12,11 +12,11 @@ Instead of unpredictable outputs that drift off-course — surprising us with fa
 
 ## Schematics
 
-![fig 1 Smart Chat.SVG](./fig1_smart_chat.SVG)
+![fig 1 Orchestration.SVG](./fig1_orchestration.SVG)
 
-![fig 1 Comprehension Base.SVG](./fig2_comprehension_base.SVG)
+![fig 2 Smart Chat.SVG](./fig2_smart_chat.SVG)
 
-![fig 3 Orchestration.SVG](./fig3_orchestration.SVG)
+![fig 3 Comprehension Base.SVG](./fig3_comprehension_base.SVG)
 
 ![fig 4 Dynamic AI Instructions.SVG](./fig4_dynamic_ai_instructions.SVG)
 
